@@ -1,0 +1,16 @@
+.nav {
+  border: 1px solid red;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navlist {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.navitem {
+  padding: 1rem 2rem;
+}
