@@ -1,13 +1,19 @@
 // import logo from './logo.svg';
 import './App.scss';
 import Header from './Components/Header/Header.jsx';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import HomePage from './Pages/HomePage/HomePage';
 
 function App() {
   return (
-    <div>
-      This is the start
+    <BrowserRouter>
       <Header></Header>
-    </div>
+      <Switch>
+        <Route path='/'>
+          <HomePage></HomePage>
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
