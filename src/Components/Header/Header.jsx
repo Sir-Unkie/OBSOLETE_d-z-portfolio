@@ -1,8 +1,18 @@
 import React from 'react';
-import styles from './Header.module.scss';
+import Navigation from '../Navigation/Navigation';
+import ThemeBtn from '../ThemeBtn/ThemeBtn';
+// import styles from './Header.module.scss';
 
 const Header = () => {
-  return <div className={styles.nav}>this is the header</div>;
+  return (
+    <header>
+      <div>
+        <div className='logo'>here will be the logo</div>
+        <ThemeBtn></ThemeBtn>
+      </div>
+      <Navigation></Navigation>
+    </header>
+  );
 };
 
 export default Header;
