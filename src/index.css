@@ -1,5 +1,13 @@
 :root {
-  --primary-color: hsl(152, 35%, 51%);
+  /* Here go my colours */
+  /* This is the first version of grey color - kinda light and not so contrasty */
+  /* --color-grey-1: hsl(0, 0%, 64%); */
+  /* This is the second version of grey color - passes the contrast check */
+  --color-grey-1: hsl(0, 0%, 46%);
+  /* --color-black-1: hsl(0, 0%, 25%); */
+  --color-black-2: hsl(0, 0%, 0%);
+  --color-accent-1: hsl(32, 55%, 52%);
+  --color-white-1: hsl(0, 0%, 100%);
 }
 
 body {
