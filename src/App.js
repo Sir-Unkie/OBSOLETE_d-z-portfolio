@@ -9,6 +9,7 @@ function App() {
     <BrowserRouter>
       <Header></Header>
       <Switch>
+        <Route path='/projects'>Projects</Route>
         <Route path='/'>
           <HomePage></HomePage>
         </Route>

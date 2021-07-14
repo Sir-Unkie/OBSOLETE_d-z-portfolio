@@ -1,0 +1,59 @@
+.iconsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.icon {
+  & path {
+    fill: var(--color-grey-1);
+    transition: all 0.2s;
+  }
+  &:hover {
+    cursor: pointer;
+    & path {
+      fill: var(--color-accent-1);
+    }
+  }
+}
+
+// this is needed just to add a toolip so user knows that VPN is needed for Linked in
+// cause without VPN the link will not work
+
+.iconLinked {
+  position: relative;
+  & path {
+    fill: var(--color-grey-1);
+    transition: all 0.2s;
+  }
+  &:hover {
+    cursor: pointer;
+    & path {
+      fill: var(--color-accent-1);
+    }
+    &:hover::after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &::after {
+    font-size: 1.6rem;
+    visibility: hidden;
+    text-align: center;
+    padding: 1rem;
+    content: 'VPN is needed in Russia';
+    width: 20rem;
+    height: 3.6rem;
+    position: absolute;
+    inset: 0;
+    top: -80%;
+    left: 0;
+    opacity: 0;
+    border-radius: 1rem;
+    color: hsl(0, 0%, 95%);
+    background-color: var(--color-grey-1);
+    box-shadow: 0 0.1rem 5rem hsla(0, 0%, 0%, 0.246);
+  }
+}

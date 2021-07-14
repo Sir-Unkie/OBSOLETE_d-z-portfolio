@@ -29,6 +29,7 @@
 .navlin:visited {
   display: flex;
   align-items: center;
+  // border: 1px solid red;
   height: 100%;
   text-decoration: none;
   color: var(--color-grey-1);
@@ -39,6 +40,7 @@
   position: absolute;
   inset: 0;
   content: '';
+  // width: 100%;
   width: 100%;
   transform: scaleX(0%);
   height: 6%;
