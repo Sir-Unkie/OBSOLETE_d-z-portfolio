@@ -2,7 +2,18 @@
   position: relative;
   width: 80%;
   margin: 0 auto;
-  height: calc(100vh - 6rem);
+  min-height: calc(100vh - 6rem);
+}
+
+.bg {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  z-index: -1;
+  width: 100%;
+  min-height: calc(100vh - 6rem);
+  background-image: url('../../Assets/img/HomePageImage.png');
 }
 
 .primaryHeading {

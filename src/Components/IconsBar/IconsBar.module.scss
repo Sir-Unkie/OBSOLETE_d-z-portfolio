@@ -3,6 +3,7 @@
   flex-direction: row;
   gap: 2.5rem;
   align-items: center;
+  margin-bottom: 6rem;
 }
 
 .icon {
@@ -43,7 +44,7 @@
     visibility: hidden;
     text-align: center;
     padding: 1rem;
-    content: 'VPN is needed in Russia';
+    content: 'VPN is required in Russia';
     width: 20rem;
     height: 3.6rem;
     position: absolute;
