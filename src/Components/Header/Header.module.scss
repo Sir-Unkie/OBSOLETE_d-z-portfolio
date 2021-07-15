@@ -17,5 +17,16 @@
 .leftSide {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 5rem;
+  align-items: center;
+}
+
+.logo {
+  width: 10rem;
+  height: 5rem;
+  cursor: pointer;
+  // border: 1px solid red;
+  background-image: url(../../Assets/img/FakeLogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }

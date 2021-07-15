@@ -1,0 +1,46 @@
+.outerCircle {
+  position: relative;
+  display: block;
+  width: 6rem;
+  height: 3rem;
+  cursor: pointer;
+
+  border-radius: 10rem;
+  background-color: #ffffff;
+  box-shadow: inset 0 0.2rem 1rem rgba(black, 0.1),
+    inset 0 0.2rem 0.2rem rgba(black, 0.1),
+    inset 0 -0.1rem 0.1rem rgba(black, 0.1);
+  transition: all 0.3s;
+
+  &.dark {
+    background-color: rgb(49, 49, 49);
+    box-shadow: inset 0 0.2rem 1rem rgba(black, 0.9),
+      inset 0 0.2rem 0.2rem rgba(black, 0.9),
+      inset 0 -0.1rem 0.1rem rgba(black, 0.9);
+  }
+}
+
+.innerCircle {
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+
+  border-radius: 50%;
+  transform: scale(0.76);
+  background: linear-gradient(to bottom, rgb(209, 209, 209), white);
+  box-shadow: 0 0.2rem 0.5rem rgba(black, 0.1),
+    inset 0 0.1rem 0.7rem rgba(rgb(255, 255, 255), 0.2),
+    inset 0 -0.1rem 0.7rem rgba(white, 0.2);
+}
+
+.outerCircle.dark .innerCircle {
+  left: 3rem;
+  right: 0;
+  //   background: linear-gradient(to bottom, rgb(27, 27, 27), rgb(0, 0, 0));
+  box-shadow: 0 0.2rem 0.5rem rgba(black, 0.1),
+    inset 0 0.1rem 0.7rem rgba(rgb(255, 255, 255), 0.3),
+    inset 0 -0.1rem 0.7rem rgba(white, 0.3);
+}

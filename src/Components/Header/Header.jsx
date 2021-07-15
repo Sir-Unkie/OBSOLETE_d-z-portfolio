@@ -9,7 +9,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles[`header-container`]}>
         <div className={styles.leftSide}>
-          <div className={styles.logo}>here will be the logo</div>
+          <div className={styles.logo}></div>
           <ThemeBtn></ThemeBtn>
         </div>
         <Navigation></Navigation>

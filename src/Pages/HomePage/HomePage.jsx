@@ -8,7 +8,7 @@ const HomePage = () => {
     <Fragment>
       <div className={styles.bg}></div>
       <div className={styles.homepage}>
-        <main className='leftside'>
+        <main>
           <h1 className={styles.primaryHeading}>
             FRONT-END
             <br />
