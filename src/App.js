@@ -15,6 +15,7 @@ import ProjectsPage from './Pages/ProjectsPage/ProjectsPage';
 // add a night icon on the toggle theme btn
 // design the footer and update it
 // change the colors for the project card: change the project name font color (prob darker)
+// project card - animate image on hover (lighten it scale and maybe slide in some info)
 
 function App() {
   return (

@@ -11,6 +11,8 @@ const ProjectsPage = () => {
         {/* here i should make an additional data array and loop through it to load the components */}
         <div className={styles.projectsContainer}>
           <ProjectCard></ProjectCard>
+          <ProjectCard></ProjectCard>
+          <ProjectCard></ProjectCard>
         </div>
       </main>
       <Footer></Footer>

@@ -1,4 +1,5 @@
 .projectCard {
+  margin: 5rem 0;
   background-color: var(--color-prCard-light);
   display: flex;
   flex-direction: row;
@@ -7,18 +8,46 @@
   box-shadow: 0 1rem 3rem hsla(0, 0%, 0%, 0.2);
   padding: 3rem 2rem;
   transition: all 0.3s;
+  position: relative;
 
   &:hover {
     transform: translateX(4rem);
+
+    & .image {
+      background-size: 110%;
+      filter: brightness(100%);
+    }
+
+    // &::after {
+    //   transform: translateX(108%);
+    // }
   }
+
+  //   &::after {
+  //     transition: all 0.3s;
+  //     content: '';
+  //     border-radius: 2rem;
+  //     position: absolute;
+  //     top: 0;
+  //     right: 0;
+  //     left: 0;
+  //     bottom: 0;
+  //     z-index: 3;
+  //     background-color: rgba(0, 0, 0, 0.452);
+  //     transform: translateX(130%);
+  //     box-shadow: 0 1rem 3rem hsla(0, 0%, 0%, 0.2);
+  //   }
 }
 
 .image {
+  //   border: 1px solid red;
+  transition: all 1.3s;
+  filter: brightness(65%);
   display: block;
   width: 30%;
   height: auto;
   background-image: url(../../Assets/img/draftMonitor.png);
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
