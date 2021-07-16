@@ -4,13 +4,13 @@ import styles from './ThemeBtn.module.scss';
 const ThemeBtn = () => {
   const [theme, setTheme] = useState('light');
   const clickHandler = () => {
+    const htmlEl = document.querySelector('html');
     if (theme === 'light') {
-      console.log(theme);
       setTheme('dark');
     } else {
-      console.log(theme);
       setTheme('light');
     }
+    htmlEl.classList.toggle('dark');
   };
 
   return (

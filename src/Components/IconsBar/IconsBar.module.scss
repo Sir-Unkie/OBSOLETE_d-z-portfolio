@@ -8,7 +8,7 @@
 
 .icon {
   & path {
-    fill: var(--color-grey-1);
+    fill: var(--color-light-text);
     transition: all 0.2s;
   }
   &:hover {
@@ -25,7 +25,7 @@
 .iconLinked {
   position: relative;
   & path {
-    fill: var(--color-grey-1);
+    fill: var(--color-light-text);
     transition: all 0.2s;
   }
   &:hover {
@@ -54,7 +54,7 @@
     opacity: 0;
     border-radius: 1rem;
     color: hsl(0, 0%, 95%);
-    background-color: var(--color-grey-1);
+    background-color: var(--color-light-text);
     box-shadow: 0 0.1rem 5rem hsla(0, 0%, 0%, 0.246);
   }
 }

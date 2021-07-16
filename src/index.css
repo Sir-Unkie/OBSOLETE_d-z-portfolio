@@ -1,22 +1,10 @@
-:root {
-  /* Here go my colours */
-  /* This is the first version of grey color - kinda light and not so contrasty */
-  /* --color-grey-1: hsl(0, 0%, 64%); */
-  /* This is the second version of grey color - passes the contrast check */
-  --color-grey-1: hsl(0, 0%, 46%);
-  /* --color-black-1: hsl(0, 0%, 25%); */
-  --color-black-2: hsl(0, 0%, 0%);
-  --color-accent-1: hsl(32, 55%, 52%);
-  --color-white-1: hsl(0, 0%, 100%);
-}
-
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  background: linear-gradient(180deg, #ffffff 0%, #dadada 100%);
+  background: linear-gradient(180deg, var(--color-bg-1), var(--color-bg-2));
 }
 
 *,
@@ -30,6 +18,42 @@ body {
 html {
   /* to set 1rem=10px */
   font-size: 62.5%;
+
+  /* Here go my colours */
+
+  /* color for h1, nav items and icons header border (slightly lighter grey) */
+  --color-light-text: hsl(0, 0%, 46%);
+
+  /* this is the color for paragraphs (black one)  */
+  --color-dark-text: hsl(0, 0%, 0%);
+
+  /* this is the main accent colour */
+  --color-accent-1: hsl(32, 55%, 52%);
+
+  --color-white-1: hsl(0, 0%, 100%);
+
+  /* colors for bg gradient in the light mode */
+  --color-bg-1: white;
+  --color-bg-2: hsl(0, 0%, 85%);
+}
+
+html.dark {
+  /* Here go my colours for dark mode */
+
+  /* color for h1, nav items and icons header border (slightly lighter grey) */
+  --color-light-text: hsl(0, 0%, 75%);
+
+  /* this is the color for paragraphs (black one)  */
+  --color-dark-text: hsl(0, 0%, 89%);
+
+  /* this is the main accent colour */
+  --color-accent-1: hsl(32, 55%, 52%);
+
+  --color-white-1: hsl(0, 0%, 100%);
+
+  /* colors for bg gradient in the light mode */
+  --color-bg-1: hsl(0, 0%, 25%);
+  --color-bg-2: hsl(0, 0%, 20%);
 }
 
 /* for future */
