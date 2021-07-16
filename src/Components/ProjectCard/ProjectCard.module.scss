@@ -1,0 +1,60 @@
+.projectCard {
+  background-color: var(--color-prCard-light);
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 3rem hsla(0, 0%, 0%, 0.2);
+  padding: 3rem 2rem;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translateX(4rem);
+  }
+}
+
+.image {
+  display: block;
+  width: 30%;
+  height: auto;
+  background-image: url(../../Assets/img/draftMonitor.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content {
+}
+
+.projectName {
+  font-weight: 300;
+  color: var(--color-light-text);
+  font-size: 5rem;
+}
+
+.listsContainer {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 13rem;
+}
+
+.technologyStack,
+.mainFeatures {
+  font-weight: 300;
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+  color: var(--color-light-text);
+}
+
+.list {
+  padding-left: 3rem;
+  padding-top: 1rem;
+}
+
+.btnContainer {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}

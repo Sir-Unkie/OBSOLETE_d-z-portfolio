@@ -35,6 +35,9 @@ html {
   /* colors for bg gradient in the light mode */
   --color-bg-1: white;
   --color-bg-2: hsl(0, 0%, 85%);
+
+  /* colour for project card light version */
+  --color-prCard-light: hsl(0, 0%, 93%);
 }
 
 html.dark {

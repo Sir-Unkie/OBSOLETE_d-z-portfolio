@@ -1,0 +1,17 @@
+.projectsPage {
+  min-height: calc(100vh - 6rem - 6rem);
+  width: 80%;
+  margin: auto;
+  padding-top: 5rem;
+}
+
+.projectsHeading {
+  font-size: 6.2rem;
+  font-weight: 300;
+  padding-left: 1rem;
+  color: var(--color-light-text);
+}
+
+.projectsContainer {
+  width: 100%;
+}

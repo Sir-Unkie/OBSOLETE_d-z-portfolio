@@ -13,6 +13,8 @@ import ProjectsPage from './Pages/ProjectsPage/ProjectsPage';
 // Update Hero image
 // Optimize the image for different screens
 // add a night icon on the toggle theme btn
+// design the footer and update it
+// change the colors for the project card: change the project name font color (prob darker)
 
 function App() {
   return (
