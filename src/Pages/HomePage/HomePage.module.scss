@@ -13,7 +13,7 @@
   z-index: -1;
   width: 100%;
   min-height: calc(100vh - 6rem);
-  background-image: url('../../Assets/img/HomePageImage.png');
+  background-image: url('../../Assets/img/HomePageImage\ compressed.png');
 }
 
 .primaryHeading {
@@ -70,6 +70,7 @@
   // border-radius: 5rem;
   border-radius: 1rem;
   box-shadow: 0 0.3rem 2rem hsla(0, 0%, 0%, 0.157);
+
   display: inline-block;
   transition: all 0.2s;
 }
