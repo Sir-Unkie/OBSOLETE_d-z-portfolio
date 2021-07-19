@@ -1,0 +1,52 @@
+.aboutMe {
+  width: 80%;
+  margin: auto;
+  height: calc(100vh - 6rem);
+  position: relative;
+  border: 1px solid green;
+}
+
+.optionsContainer {
+  top: 20%;
+  left: 30%;
+  height: 70%;
+  width: 30%;
+  position: absolute;
+  border: 1px solid red;
+
+  & > * {
+    position: absolute;
+    z-index: 10;
+  }
+}
+
+.techStack {
+}
+
+.experience {
+  top: 25%;
+  left: 30%;
+}
+
+.Education {
+  top: 60%;
+  left: 50%;
+}
+
+.bg {
+  margin-top: 10rem;
+  position: absolute;
+  width: 100%;
+  height: calc(80vh - 6rem);
+  background-image: url('../../Assets/img/aboutMePage\ compressed.png');
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.textArea {
+  position: absolute;
+  right: 20%;
+  top: 20%;
+  border: 1px solid red;
+}

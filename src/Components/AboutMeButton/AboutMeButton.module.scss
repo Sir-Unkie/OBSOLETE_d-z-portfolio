@@ -1,0 +1,23 @@
+.aboutMeButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  width: 15rem;
+  height: 15rem;
+  border: none;
+  font-size: 2rem;
+  border-radius: 50%;
+  background-color: var(--color-about-option);
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--color-about-option-selected);
+  }
+
+  &.selected {
+    background-color: var(--color-about-option-selected);
+  }
+}

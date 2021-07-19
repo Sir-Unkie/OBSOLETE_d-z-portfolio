@@ -39,6 +39,10 @@ html {
 
   /* colour for project card light version */
   --color-prCard-light: hsl(0, 0%, 93%);
+
+  /* color for circle options on about me page */
+  --color-about-option: hsla(0, 0%, 46%, 0.548);
+  --color-about-option-selected: hsla(32, 55%, 52%, 0.904);
 }
 
 html.dark {
