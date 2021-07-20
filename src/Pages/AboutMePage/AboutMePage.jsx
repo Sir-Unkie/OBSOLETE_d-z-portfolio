@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './AboutMePage.module.scss';
 import AboutMeButton from '../../Components/AboutMeButton/AboutMeButton';
+import TechStackContent from '../../Components/TechStackContent/TechStackContent';
 import { useState } from 'react';
 
 const AboutMePage = () => {
@@ -51,9 +52,7 @@ const AboutMePage = () => {
           </div>
         </div>
         <div className={styles.textArea}>
-          <div>11111</div>
-          <div>2222</div>
-          <div>3333</div>
+          <TechStackContent></TechStackContent>
         </div>
       </div>
     </React.Fragment>

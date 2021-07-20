@@ -20,6 +20,7 @@ import ContactPage from './Pages/ContactPage/ContactPage';
 // project card - animate image on hover (lighten it scale and maybe slide in some info)
 // make motion transitions
 // burger navigation
+// in future i can add google stats
 
 function App() {
   return (
