@@ -9,7 +9,8 @@ const Navigation = () => {
         <li className={styles.navitem}>
           <NavLink
             className={styles.navlink}
-            to='/home'
+            to='/'
+            exact
             activeClassName={styles.activeNavlink}
           >
             Home
