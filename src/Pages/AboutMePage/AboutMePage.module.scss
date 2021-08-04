@@ -3,16 +3,17 @@
   margin: auto;
   height: calc(100vh - 6rem);
   position: relative;
-  border: 1px solid green;
+  padding-top: 5rem;
+  // border: 1px solid green;
 }
 
 .optionsContainer {
-  top: 20%;
+  top: 18%;
   left: 30%;
-  height: 70%;
-  width: 30%;
+  height: 80%;
+  width: 40%;
   position: absolute;
-  border: 1px solid red;
+  // border: 1px solid red;
 
   & > * {
     position: absolute;
@@ -21,32 +22,39 @@
 }
 
 .techStack {
+  top: 5%;
+  left: 0%;
 }
 
 .experience {
-  top: 25%;
+  top: 35%;
   left: 30%;
 }
 
 .Education {
-  top: 60%;
+  top: 70%;
   left: 50%;
 }
 
 .bg {
   margin-top: 10rem;
   position: absolute;
+  top: 5%;
+  left: 9%;
   width: 100%;
-  height: calc(80vh - 6rem);
+  // height: calc(80vh - 6rem);
+  height: 85vh;
   background-image: url('../../Assets/img/aboutMePage\ compressed.png');
   background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
+  // border: 1px solid red;
 }
 
 .textArea {
   position: absolute;
-  right: 0%;
-  top: 20%;
+  right: -10%;
+  top: 15%;
+  width: 80rem;
   // border: 1px solid red;
 }

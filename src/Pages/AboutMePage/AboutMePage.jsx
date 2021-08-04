@@ -4,6 +4,7 @@ import AboutMeButton from '../../Components/AboutMeButton/AboutMeButton';
 import TechStackContent from '../../Components/TechStackContent/TechStackContent';
 import ExperienceContent from '../../Components/ExperienceContent/ExperienceContent';
 import EducationContent from '../../Components/EducationContent/EducationContent';
+import MyHeading from '../../Components/MyHeading/MyHeading';
 import { useState } from 'react';
 
 const AboutMePage = () => {
@@ -24,6 +25,7 @@ const AboutMePage = () => {
     <React.Fragment>
       <div className={styles.bg}></div>
       <div className={styles.aboutMe}>
+        <MyHeading>About me</MyHeading>
         <div className={styles.optionsContainer}>
           <div className={styles.techStack}>
             <AboutMeButton
