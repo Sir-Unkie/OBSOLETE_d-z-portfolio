@@ -4,6 +4,7 @@
   height: calc(100vh - 6rem);
   position: relative;
   padding-top: 5rem;
+
   // border: 1px solid green;
 }
 
@@ -22,28 +23,28 @@
 }
 
 .techStack {
-  top: 5%;
-  left: 0%;
+  top: 0%;
+  left: -15%;
 }
 
 .experience {
-  top: 35%;
-  left: 30%;
+  top: 30%;
+  left: 15%;
 }
 
 .Education {
   top: 70%;
-  left: 50%;
+  left: 25%;
 }
 
 .bg {
   margin-top: 10rem;
   position: absolute;
-  top: 5%;
-  left: 9%;
+  bottom: 0%;
+  left: 0%;
   width: 100%;
   // height: calc(80vh - 6rem);
-  height: 85vh;
+  height: 82vh;
   background-image: url('../../Assets/img/aboutMePage\ compressed.png');
   background-position: left;
   background-size: contain;
