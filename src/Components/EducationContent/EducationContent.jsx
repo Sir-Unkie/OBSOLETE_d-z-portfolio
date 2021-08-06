@@ -11,19 +11,43 @@ const EducationContent = () => {
             <ul>
               <li>
                 Complete React Developer in 2021
-                <a href='#'>Certificate</a>
+                <a
+                  href='https://www.udemy.com/certificate/UC-f64ceeab-e856-4ec6-86f0-00123192d6f0/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Certificate
+                </a>
               </li>
               <li>
                 React - The Complete Guide (incl Hooks, React Router, Redux)
-                <a href='#'>Certificate</a>
+                <a
+                  href='https://www.udemy.com/certificate/UC-668b2b17-b269-4bf8-8560-1c16f24d3b0e/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Certificate
+                </a>
               </li>
               <li>
                 The Complete JavaScript Course 2021: From Zero to Expert
-                <a href='#'>Certificate</a>
+                <a
+                  href='https://www.udemy.com/certificate/UC-a85b6ad1-920b-4c96-afc3-ee77b10801a8/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Certificate
+                </a>
               </li>
               <li>
                 Understanding TypeScript - 2021 Edition
-                <a href='#'>Certificate</a>
+                <a
+                  href='https://www.udemy.com/certificate/UC-d33869e7-56ba-42cc-8ac6-3b2c1a165047/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Certificate
+                </a>
               </li>
             </ul>
           </div>
