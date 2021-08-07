@@ -10,7 +10,10 @@ const TechStackContent = () => {
           <div className={styles.list}>
             <ul>
               <li>React</li>
-              <li>React ecosystem (Redux, React Router)</li>
+              <li>
+                React ecosystem (React-Redux + toolkit, React Router, Styled
+                Components, CSS Modules)
+              </li>
             </ul>
           </div>
           <div className={styles.icons}>icons</div>

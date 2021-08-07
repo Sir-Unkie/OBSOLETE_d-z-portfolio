@@ -10,7 +10,7 @@ const IconsBar = () => {
     <div className={styles.iconsContainer}>
       <a
         className={styles.iconLinked}
-        href='https://www.linkedin.com/in/dmitry-zhidovlenkov-98b8a1169'
+        href='https://www.linkedin.com/in/dmitry-zhidovlenkov'
         target='_blank'
         rel='noreferrer'
       >

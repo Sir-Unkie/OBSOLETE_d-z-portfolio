@@ -1,7 +1,7 @@
 .aboutMe {
   width: 80%;
   margin: auto;
-  height: calc(100vh - 6rem);
+  min-height: calc(100vh - 6rem);
   position: relative;
   padding-top: 5rem;
 
@@ -9,11 +9,13 @@
 }
 
 .optionsContainer {
-  top: 18%;
-  left: 30%;
-  height: 80%;
+  top: 15%;
+  left: 16%;
+  height: 84%;
+  width: 40%;
   width: 40%;
   position: absolute;
+  overflow: hidden;
   // border: 1px solid red;
 
   & > * {
@@ -23,18 +25,18 @@
 }
 
 .techStack {
-  top: 0%;
-  left: -15%;
+  top: 5%;
+  left: 5%;
 }
 
 .experience {
-  top: 30%;
-  left: 15%;
+  top: 32%;
+  left: 34%;
 }
 
 .Education {
   top: 70%;
-  left: 25%;
+  left: 45%;
 }
 
 .relative {
@@ -43,24 +45,19 @@
 }
 
 .bg {
-  margin-top: 10rem;
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
+  background-position: left;
   width: 100%;
-  // height: calc(80vh - 6rem);
-  height: 82vh;
+  min-height: calc(100vh - 6rem);
   background-image: url('../../Assets/img/aboutMePage\ compressed.png');
   background-position: left;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   // border: 1px solid red;
 }
 
 .textArea {
-  position: absolute;
-  right: -10%;
-  top: 15%;
-  width: 80rem;
+  position: relative;
+  right: -50%;
+  width: 100rem;
   // border: 1px solid red;
 }

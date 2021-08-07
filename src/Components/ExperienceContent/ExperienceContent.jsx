@@ -47,29 +47,49 @@ const ExperienceContent = () => {
         </div>
       </section>
       <section className={`${styles.section} ${styles.sectionDark}`}>
-        <h2>Programming/Markup languages:</h2>
+        <h2>
+          2016-2017 Oboronenergo (electric utility company) - Leading
+          specialist:
+        </h2>
         <div className={styles.row}>
           <div className={styles.list}>
             <ul>
-              <li>Vanilla Javascript </li>
-              <li>Typescript</li>
-              <li>CSS</li>
-              <li>SASS preprocessor</li>
-              <li>HTML</li>
+              <li>
+                Saved 16 man-hours (monthly) by developing an application that
+                automates the documentation creation process.
+              </li>
+              <li>
+                Increased the fill rate of the database from 0.7 up to 0.98 (by
+                improving database structure and coordination of 2 departments
+                which were working with the database).
+              </li>
+              <li>
+                Prepared and automated various reports for Ministry of energy of
+                Russian Federation.
+              </li>
+              <li>
+                Provided the full documentation support for grid connection
+                process.
+              </li>
             </ul>
           </div>
           <div className={styles.icons}>icons</div>
         </div>
       </section>
       <section className={styles.section}>
-        <h2>Design:</h2>
+        <h2>2015-2016 MOESK - Specialist:</h2>
         <div className={styles.row}>
           <div className={styles.list}>
             <ul>
-              <li>Figma </li>
-              <li>Adobe XD</li>
-              <li>Adobe Photoshop</li>
-              <li>Adobe InDesign</li>
+              <li>
+                Performed calculations of Moscow region electricity distribution
+                network (the biggest in Russia) bandwidth.
+              </li>
+              <li>
+                Prepared technical specifications for 0,4-6-10-20 kV grid
+                connections. Worked on most efficient solutions for grid
+                connections.
+              </li>
             </ul>
           </div>
           <div className={styles.icons}>icons</div>

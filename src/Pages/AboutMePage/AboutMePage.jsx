@@ -22,55 +22,52 @@ const AboutMePage = () => {
   };
 
   return (
-    <React.Fragment>
-      <div className={styles.relative}>
-        <div className={styles.bg}></div>
-        <div className={styles.aboutMe}>
-          <MyHeading>About me</MyHeading>
-          <div className={styles.optionsContainer}>
-            <div className={styles.techStack}>
-              <AboutMeButton
-                option={'tech'}
-                clickHandler={selectOption}
-                selected={visibleOption.tech}
-              >
-                My tech stack
-              </AboutMeButton>
-            </div>
-            <div className={styles.experience}>
-              <AboutMeButton
-                clickHandler={selectOption}
-                option={'exp'}
-                selected={visibleOption.exp}
-              >
-                My Experience
-              </AboutMeButton>
-            </div>
-            <div className={styles.Education}>
-              <AboutMeButton
-                clickHandler={selectOption}
-                option={'education'}
-                selected={visibleOption.education}
-              >
-                My Education
-              </AboutMeButton>
-            </div>
+    <div className={styles.bg}>
+      <div className={styles.aboutMe}>
+        <MyHeading>About me</MyHeading>
+        <div className={styles.optionsContainer}>
+          <div className={styles.techStack}>
+            <AboutMeButton
+              option={'tech'}
+              clickHandler={selectOption}
+              selected={visibleOption.tech}
+            >
+              My Tech Stack
+            </AboutMeButton>
           </div>
-          <div className={styles.textArea}>
-            {/* <TechStackContent></TechStackContent> */}
-            {visibleOption.tech === true ? (
-              <TechStackContent></TechStackContent>
-            ) : null}
-            {visibleOption.exp === true ? (
-              <ExperienceContent></ExperienceContent>
-            ) : null}
-            {visibleOption.education === true ? (
-              <EducationContent></EducationContent>
-            ) : null}
+          <div className={styles.experience}>
+            <AboutMeButton
+              clickHandler={selectOption}
+              option={'exp'}
+              selected={visibleOption.exp}
+            >
+              My Experience
+            </AboutMeButton>
+          </div>
+          <div className={styles.Education}>
+            <AboutMeButton
+              clickHandler={selectOption}
+              option={'education'}
+              selected={visibleOption.education}
+            >
+              My Education
+            </AboutMeButton>
           </div>
         </div>
+        <div className={styles.textArea}>
+          {/* <TechStackContent></TechStackContent> */}
+          {visibleOption.tech === true ? (
+            <TechStackContent></TechStackContent>
+          ) : null}
+          {visibleOption.exp === true ? (
+            <ExperienceContent></ExperienceContent>
+          ) : null}
+          {visibleOption.education === true ? (
+            <EducationContent></EducationContent>
+          ) : null}
+        </div>
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 

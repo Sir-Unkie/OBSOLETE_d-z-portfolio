@@ -6,6 +6,7 @@ body {
   box-sizing: border-box;
   background: linear-gradient(180deg, var(--color-bg-1), var(--color-bg-2));
   overflow-x: hidden;
+  min-height: calc(100vh);
 }
 
 *,
@@ -37,7 +38,8 @@ html {
 
   /* color for circle options on about me page */
   --color-about-option: hsla(0, 0%, 46%, 0.548);
-  --color-about-option-selected: hsla(32, 55%, 52%, 0.904);
+  /* --color-about-option-selected: hsla(32, 55%, 52%, 0.904); */
+  --color-about-option-selected: rgba(159, 127, 43, 0.59);
 
   /* colors for bg gradient in the light mode */
   --color-bg-1: white;
