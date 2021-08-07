@@ -6,14 +6,15 @@
 }
 
 .bg {
-  position: absolute;
   background-repeat: no-repeat;
   background-position: right;
-  background-size: contain;
+  background-size: cover;
   z-index: -1;
   width: 100%;
   min-height: calc(100vh - 6rem);
+  // height: 100vh;
   background-image: url('../../Assets/img/HomePageImage\ compressed.png');
+  // border: 0px solid transparent;
 }
 
 .primaryHeading {
