@@ -1,5 +1,8 @@
 import React from 'react';
 import styles from './TechStackContent.module.scss';
+import FrameworksIcons from '../FrameworksIcons/FrameworksIcons';
+import DesignIcons from '../DesignIcons/DesignIcons';
+import LanguagesIcons from '../LanguagesIcons/LanguagesIcons';
 
 const TechStackContent = () => {
   return (
@@ -16,7 +19,9 @@ const TechStackContent = () => {
               </li>
             </ul>
           </div>
-          <div className={styles.icons}>icons</div>
+          <div className={styles.icons}>
+            <FrameworksIcons></FrameworksIcons>
+          </div>
         </div>
       </section>
       <section className={`${styles.section} ${styles.sectionDark}`}>
@@ -31,7 +36,9 @@ const TechStackContent = () => {
               <li>HTML</li>
             </ul>
           </div>
-          <div className={styles.icons}>icons</div>
+          <div className={styles.icons}>
+            <LanguagesIcons></LanguagesIcons>
+          </div>
         </div>
       </section>
       <section className={styles.section}>
@@ -45,7 +52,9 @@ const TechStackContent = () => {
               <li>Adobe InDesign</li>
             </ul>
           </div>
-          <div className={styles.icons}>icons</div>
+          <div className={styles.icons}>
+            <DesignIcons></DesignIcons>
+          </div>
         </div>
       </section>
     </div>

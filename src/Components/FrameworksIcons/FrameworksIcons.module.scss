@@ -1,0 +1,13 @@
+.iconsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 70%;
+  justify-content: center;
+  flex-wrap: wrap;
+  //   border: 1px solid red;
+}
+
+.icon {
+  height: 4rem;
+}
