@@ -18,7 +18,7 @@ const ProjectsData = [
     ],
     website: '',
     github: '',
-    image: '',
+    image: '/img/draftMonitor.png',
   },
   {
     projectName: 'ON Journey landing page',
@@ -30,7 +30,7 @@ const ProjectsData = [
     ],
     website: '',
     github: '',
-    image: '',
+    image: '/img/draftMonitor.png',
   },
   {
     projectName: 'Tavrida Electric selection tool',
@@ -42,7 +42,7 @@ const ProjectsData = [
     ],
     website: '',
     github: '',
-    image: '',
+    image: '/img/draftMonitor.png',
   },
 ];
 

@@ -16,6 +16,7 @@ const ProjectsPage = () => {
               technologyStack={project.technologyStack}
               mainFeatures={project.mainFeatures}
               projectName={project.projectName}
+              imageLink={project.image}
             ></ProjectCard>
           );
         })}

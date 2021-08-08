@@ -13,7 +13,13 @@ const ProjectCard = ({
   return (
     <div className={styles.projectCard}>
       <div className={styles.imageContainer}>
-        <div className={styles.image}></div>
+        <div
+          className={styles.image}
+          style={{
+            backgroundImage: `url(${imageLink})`,
+          }}
+          // style={{ backgroundImage: `url(${props.imageUrl})` }}
+        ></div>
       </div>
       <div className={styles.content}>
         <h2 className={styles.projectName}>{projectName}</h2>
