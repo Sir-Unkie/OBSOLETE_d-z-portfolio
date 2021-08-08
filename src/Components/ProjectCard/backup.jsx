@@ -12,9 +12,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div className={styles.projectCard}>
-      <div className={styles.imageContainer}>
-        <div className={styles.image}></div>
-      </div>
+      <div className={styles.image}></div>
       <div className={styles.content}>
         <h2 className={styles.projectName}>{projectName}</h2>
         <div className={styles.listsContainer}>
@@ -24,14 +22,17 @@ const ProjectCard = ({
               {technologyStack.map(elem => {
                 return <li className={styles.listItem}>{elem}</li>;
               })}
+              <li className={styles.listItem}>React</li>
+              <li className={styles.listItem}>Redux</li>
+              <li className={styles.listItem}>React Router</li>
             </ul>
           </div>
           <div className={styles.mainFeatures}>
             <p className={styles.paragraph}>Main Features:</p>
             <ul className={styles.list}>
-              {mainFeatures.map(feature => {
-                return <li className={styles.listItem}>{feature}</li>;
-              })}
+              <li className={styles.listItem}>Cart functionality</li>
+              <li className={styles.listItem}>Authentication</li>
+              <li className={styles.listItem}>Stripe payments</li>
             </ul>
           </div>
         </div>

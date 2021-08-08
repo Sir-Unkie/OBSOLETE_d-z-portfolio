@@ -18,6 +18,7 @@ const ProjectsData = [
     ],
     website: '',
     github: '',
+    image: '',
   },
   {
     projectName: 'ON Journey landing page',
@@ -29,6 +30,7 @@ const ProjectsData = [
     ],
     website: '',
     github: '',
+    image: '',
   },
   {
     projectName: 'Tavrida Electric selection tool',
@@ -40,5 +42,8 @@ const ProjectsData = [
     ],
     website: '',
     github: '',
+    image: '',
   },
 ];
+
+export default ProjectsData;
