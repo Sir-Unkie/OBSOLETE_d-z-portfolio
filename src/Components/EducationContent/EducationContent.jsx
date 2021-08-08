@@ -1,5 +1,8 @@
 import React from 'react';
 import styles from './EducationContent.module.scss';
+import { ReactComponent as UdemyLogo } from '../../Assets/icons/Education Icons/logos_udemy.svg';
+import MPEILogo from '../../Assets/img/AboutMePageImages/MPEI.png';
+import MSULogo from '../../Assets/img/AboutMePageImages/msu.png';
 
 const EducationContent = () => {
   return (
@@ -51,7 +54,9 @@ const EducationContent = () => {
               </li>
             </ul>
           </div>
-          <div className={styles.icons}>IMAGE of UDEMY</div>
+          <div className={styles.icons}>
+            <UdemyLogo></UdemyLogo>
+          </div>
         </div>
       </section>
       <section className={`${styles.section} ${styles.sectionDark}`}>
@@ -87,7 +92,9 @@ const EducationContent = () => {
               </li>
             </ul>
           </div>
-          <div className={styles.icons}>icons</div>
+          <div className={styles.icons}>
+            <img src={MPEILogo} width='100' alt='MPEI logo' />
+          </div>
         </div>
       </section>
       <section className={styles.section}>
@@ -98,7 +105,9 @@ const EducationContent = () => {
               <li>Faculty of Mechanics and Mathematics.</li>
             </ul>
           </div>
-          <div className={styles.icons}>icons</div>
+          <div className={styles.icons}>
+            <img src={MSULogo} alt='MSU logo' width='200' />
+          </div>
         </div>
       </section>
     </div>
