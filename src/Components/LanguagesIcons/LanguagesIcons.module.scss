@@ -1,9 +1,31 @@
 .iconsContainer {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
+  display: grid;
+  grid-template-areas:
+    'a b'
+    'c d'
+    'e e';
+  gap: 1rem;
+  align-items: center;
 }
 
 .icon {
-  height: 3rem;
+  width: 4rem;
+}
+
+.JS {
+  grid-area: a;
+}
+.TS {
+  grid-area: b;
+}
+.SASS {
+  grid-area: c;
+}
+.HTML {
+  grid-area: d;
+}
+.CSS {
+  grid-area: e;
+  align-self: end;
+  justify-self: center;
 }

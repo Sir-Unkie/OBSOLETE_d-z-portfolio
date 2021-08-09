@@ -13,7 +13,6 @@
   left: 16%;
   height: 84%;
   width: 40%;
-  width: 40%;
   position: absolute;
   overflow: hidden;
   // border: 1px solid red;
@@ -57,7 +56,8 @@
 
 .textArea {
   position: relative;
-  right: -50%;
-  width: 100rem;
+  right: -58%;
+  // width: 100rem;
+  max-width: 50%;
   // border: 1px solid red;
 }

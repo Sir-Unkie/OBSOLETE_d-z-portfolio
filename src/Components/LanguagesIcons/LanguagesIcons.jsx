@@ -9,11 +9,11 @@ import { ReactComponent as CSSLogo } from '../../Assets/icons/tech stack icons/s
 const LanguagesIcons = () => {
   return (
     <div className={styles.iconsContainer}>
-      <JSLogo className={styles.icon}></JSLogo>
-      <TSLogo className={styles.icon}></TSLogo>
-      <SASSLogo className={styles.icon}></SASSLogo>
-      <HTMLLogo className={styles.icon}></HTMLLogo>
-      <CSSLogo className={styles.icon}></CSSLogo>
+      <JSLogo className={`${styles.icon} ${styles.JS}`}></JSLogo>
+      <TSLogo className={`${styles.icon} ${styles.TS}`}></TSLogo>
+      <SASSLogo className={`${styles.icon} ${styles.SASS}`}></SASSLogo>
+      <HTMLLogo className={`${styles.icon} ${styles.HTML}`}></HTMLLogo>
+      <CSSLogo className={`${styles.icon} ${styles.CSS}`}></CSSLogo>
     </div>
   );
 };

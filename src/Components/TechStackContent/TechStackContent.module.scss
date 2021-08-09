@@ -16,8 +16,8 @@
 
 .section {
   padding: 2rem 7rem;
-  width: 100%;
   display: block;
+  width: 100%;
 
   &.sectionDark {
     background-color: var(--color-light-text);
@@ -32,16 +32,18 @@
   margin: auto;
   display: flex;
   flex-direction: row;
-  gap: 3rem;
   justify-content: space-between;
+  align-items: center;
+
+  .rowText {
+    width: 50%;
+  }
 
   .list {
     width: 65%;
   }
-
   .icons {
-    // background-image: url('../../Assets/img/AboutMePageImages/TEL.png');
-    // background-repeat: no-repeat;
-    // background-size: contain;
+    // this one is to push the icons to the right to compensate the listed items offset
+    width: 10%;
   }
 }

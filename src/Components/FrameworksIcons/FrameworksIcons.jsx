@@ -7,9 +7,9 @@ import { ReactComponent as RouterLogo } from '../../Assets/icons/tech stack icon
 const FrameworksIcons = () => {
   return (
     <div className={styles.iconsContainer}>
-      <ReactLogo className={styles.icon}></ReactLogo>
-      <RouterLogo className={styles.icon}></RouterLogo>
-      <ReduxLogo className={styles.icon}></ReduxLogo>
+      <ReactLogo className={`${styles.icon} ${styles.react}`}></ReactLogo>
+      <RouterLogo className={`${styles.icon} ${styles.router}`}></RouterLogo>
+      <ReduxLogo className={`${styles.icon} ${styles.redux}`}></ReduxLogo>
     </div>
   );
 };
