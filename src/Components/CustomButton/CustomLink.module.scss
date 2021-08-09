@@ -1,8 +1,33 @@
 .customLink,
 customLink:link,
 customLink:visited {
+  display: inline-block;
+  // min-width: 21rem;
+  // text-align: center;
   font-family: inherit;
-  color: black;
+  color: var(--color-whitish-text);
   font-size: 2rem;
   text-decoration: none;
+  background-color: var(--color-customLink-default);
+  padding: 1.2rem;
+  border-radius: 1rem;
+  border: 2px solid transparent;
+  transition: all 0.1s;
+
+  &:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+    border: 2px solid black;
+  }
+}
+
+.customLink.dark {
+  background-color: var(--color-customLink-dark);
+  color: var(--color-whitish-text);
+  border: 2px solid transparent;
+  &:hover {
+    background-color: lighten(hsl(0, 0%, 86%), 20%);
+    color: black;
+    border: 2px solid black;
+  }
 }

@@ -1,9 +1,16 @@
 import React from 'react';
 import styles from './CustomLink.module.scss';
 
-const CustomLink = ({ children }) => {
+const CustomLink = ({ children, link, dark }) => {
   return (
-    <a href='#' className={styles.customLink}>
+    <a
+      href={link}
+      className={
+        dark ? `${styles.customLink} ${styles.dark}` : `${styles.customLink}`
+      }
+      target='_blank'
+      rel='noreferrer'
+    >
       {children}
     </a>
   );

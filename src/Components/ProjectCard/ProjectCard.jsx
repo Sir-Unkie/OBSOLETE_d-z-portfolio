@@ -9,9 +9,16 @@ const ProjectCard = ({
   imageLink,
   websiteURL,
   githubURL,
+  dark,
 }) => {
   return (
-    <div className={styles.projectCard}>
+    <div
+      className={
+        dark === true
+          ? `${styles.projectCard} ${styles.dark}`
+          : `${styles.projectCard}`
+      }
+    >
       <div className={styles.imageContainer}>
         <div
           className={styles.image}
@@ -42,8 +49,24 @@ const ProjectCard = ({
           </div>
         </div>
         <div className={styles.btnContainer}>
-          <CustomLink>Go to the website</CustomLink>
-          <CustomLink>GitHub repo</CustomLink>
+          {dark ? (
+            <CustomLink darkBG={true} dark={false} link={websiteURL}>
+              Go to the website
+            </CustomLink>
+          ) : (
+            <CustomLink darkBG={false} dark={true} link={websiteURL}>
+              Go to the website
+            </CustomLink>
+          )}
+          {dark ? (
+            <CustomLink link={githubURL} darkBG={true} dark={false}>
+              GitHub repo
+            </CustomLink>
+          ) : (
+            <CustomLink link={githubURL} darkBG={false} dark={false}>
+              GitHub repo
+            </CustomLink>
+          )}
         </div>
       </div>
     </div>

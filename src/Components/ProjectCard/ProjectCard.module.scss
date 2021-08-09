@@ -72,3 +72,13 @@
   flex-direction: row;
   gap: 5rem;
 }
+
+.dark {
+  background-color: var(--color-prCard-dark);
+
+  .projectName,
+  .technologyStack,
+  .mainFeatures {
+    color: var(--color-whitish-text);
+  }
+}

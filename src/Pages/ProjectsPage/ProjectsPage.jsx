@@ -8,15 +8,17 @@ const ProjectsPage = () => {
   return (
     <main className={styles.projectsPage}>
       <MyHeading>My projects</MyHeading>
-      {/* here i should make an additional data array and loop through it to load the components */}
       <div className={styles.projectsContainer}>
-        {ProjectsData.map(project => {
+        {ProjectsData.map((project, index) => {
           return (
             <ProjectCard
               technologyStack={project.technologyStack}
               mainFeatures={project.mainFeatures}
               projectName={project.projectName}
               imageLink={project.image}
+              websiteURL={project.website}
+              githubURL={project.github}
+              dark={index % 2 === 1 ? true : false}
             ></ProjectCard>
           );
         })}
