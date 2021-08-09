@@ -17,8 +17,8 @@ const ProjectsData = [
       'Stripe payments',
       'Responsive design',
     ],
-    website: 'https://app.netlify.com/sites/myfirst-app-unkie/overview',
-    github: 'https://app.netlify.com/sites/myfirst-app-unkie/overview',
+    website: 'https://e-commerce-test-website.netlify.app/',
+    github: 'https://github.com/Sir-Unkie/e-commerce-trainings',
     image: '/img/draftMonitor.png',
   },
   {
@@ -29,8 +29,8 @@ const ProjectsData = [
       'Responvsive design',
       'BEM methotodology',
     ],
-    website: '',
-    github: '',
+    website: 'https://on-journey-demo.netlify.app/',
+    github: 'https://github.com/Sir-Unkie/ON-JOURNEY-DEMO-WEBSITE',
     image: '/img/draftMonitor.png',
   },
   {
@@ -41,8 +41,8 @@ const ProjectsData = [
       'Authentication (Google, Linkedin and email)',
       'Responsive design',
     ],
-    website: '',
-    github: '',
+    website: 'https://vcb-configurator.netlify.app/',
+    github: 'https://github.com/Sir-Unkie/Tavrida-VCB-Configurator',
     image: '/img/draftMonitor.png',
   },
   {

@@ -12,12 +12,14 @@ customLink:visited {
   padding: 1.2rem;
   border-radius: 1rem;
   border: 2px solid transparent;
-  transition: all 0.1s;
+  transition: all 0.3s;
 
   &:hover {
     background-color: hsl(0, 0%, 100%);
     color: black;
     border: 2px solid black;
+    transform: translateY(-0.4rem);
+    box-shadow: 0 0.4rem 1.4rem rgba(0, 0, 0, 0.308);
   }
 }
 
@@ -26,8 +28,29 @@ customLink:visited {
   color: var(--color-whitish-text);
   border: 2px solid transparent;
   &:hover {
-    background-color: lighten(hsl(0, 0%, 86%), 20%);
-    color: black;
+    background-color: hsl(0, 0%, 100%);
+    color: var(--color-dark-text);
     border: 2px solid black;
+  }
+}
+.customLink.darkBG {
+  background-color: var(--color-customLink-light);
+  color: var(--color-whitish-text);
+  border: 2px solid transparent;
+  &:hover {
+    background-color: rgb(255, 255, 255);
+    color: var(--color-dark-text);
+    border: 2px solid black;
+    // border: 2px solid transparent;
+  }
+}
+.customLink.darkBG.dark {
+  background-color: var(--color-customLink-dark);
+  color: var(--color-whitish-text);
+  &:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: var(----color-dark-text);
+    border: 2px solid black;
+    // border: 2px solid transparent;
   }
 }

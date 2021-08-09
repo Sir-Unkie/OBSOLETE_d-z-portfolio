@@ -16,12 +16,11 @@ import ContactPage from './Pages/ContactPage/ContactPage';
 // Optimize the image for different screens
 // add a night icon on the toggle theme btn
 // design the footer and update it
-// change the colors for the project card: change the project name font color (prob darker)
-// project card - animate image on hover (lighten it scale and maybe slide in some info)
 // make motion transitions
 // burger navigation
 // in future i can add google stats
 // the theme should be stored somewhere (for example redux store or local storage so the theme is not switched on page reload) - you can do it with a useEffect hook on a top level
+// add mailto icon on the homepage
 
 function App() {
   return (

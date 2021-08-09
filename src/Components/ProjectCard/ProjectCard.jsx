@@ -59,7 +59,7 @@ const ProjectCard = ({
             </CustomLink>
           )}
           {dark ? (
-            <CustomLink link={githubURL} darkBG={true} dark={false}>
+            <CustomLink link={githubURL} darkBG={true} dark={true}>
               GitHub repo
             </CustomLink>
           ) : (

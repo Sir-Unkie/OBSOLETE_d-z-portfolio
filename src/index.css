@@ -52,6 +52,8 @@ html {
   /* CustomLink colors */
   --color-customLink-default: hsl(0, 0%, 41%);
   --color-customLink-dark: hsl(0, 0%, 15%);
+  --color-customLink-light: hsl(0, 0%, 93%);
+  --color-customLink-light: hsl(0, 0%, 63%);
 }
 
 html.dark {
