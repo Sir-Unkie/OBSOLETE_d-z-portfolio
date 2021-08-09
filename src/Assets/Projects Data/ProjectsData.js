@@ -44,6 +44,19 @@ const ProjectsData = [
     github: '',
     image: '/img/draftMonitor.png',
   },
+  {
+    projectName: 'Food application',
+    technologyStack: ['Javascript', 'SCSS', 'HTML'],
+    mainFeatures: [
+      'External API',
+      'MVC architecture',
+      'Pagination',
+      'Bookmarks functionality',
+    ],
+    website: '',
+    github: '',
+    image: '/img/draftMonitor.png',
+  },
 ];
 
 export default ProjectsData;

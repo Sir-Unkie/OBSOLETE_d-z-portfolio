@@ -42,8 +42,8 @@ const ProjectCard = ({
           </div>
         </div>
         <div className={styles.btnContainer}>
-          <CustomLink></CustomLink>
-          <CustomLink></CustomLink>
+          <CustomLink>Go to the website</CustomLink>
+          <CustomLink>GitHub repo</CustomLink>
         </div>
       </div>
     </div>
