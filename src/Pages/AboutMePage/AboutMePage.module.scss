@@ -4,8 +4,6 @@
   min-height: calc(100vh - 6rem);
   position: relative;
   padding-top: 5rem;
-
-  // border: 1px solid green;
 }
 
 .optionsContainer {
@@ -15,7 +13,6 @@
   width: 40%;
   position: absolute;
   overflow: hidden;
-  // border: 1px solid red;
 
   & > * {
     position: absolute;
@@ -51,13 +48,11 @@
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
-  // border: 1px solid red;
 }
 
 .textArea {
   position: relative;
   right: -58%;
-  // width: 100rem;
+
   max-width: 50%;
-  // border: 1px solid red;
 }

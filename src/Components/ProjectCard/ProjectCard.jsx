@@ -35,16 +35,24 @@ const ProjectCard = ({
             <div className={styles.technologyStack}>
               <p className={styles.paragraph}>Technology stack:</p>
               <ul className={styles.list}>
-                {technologyStack.map(elem => {
-                  return <li className={styles.listItem}>{elem}</li>;
+                {technologyStack.map((elem, index) => {
+                  return (
+                    <li key={index} className={styles.listItem}>
+                      {elem}
+                    </li>
+                  );
                 })}
               </ul>
             </div>
             <div className={styles.mainFeatures}>
               <p className={styles.paragraph}>Main Features:</p>
               <ul className={styles.list}>
-                {mainFeatures.map(feature => {
-                  return <li className={styles.listItem}>{feature}</li>;
+                {mainFeatures.map((feature, index) => {
+                  return (
+                    <li key={index} className={styles.listItem}>
+                      {feature}
+                    </li>
+                  );
                 })}
               </ul>
             </div>

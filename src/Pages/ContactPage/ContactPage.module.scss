@@ -1,7 +1,79 @@
 .contactPage {
-  width: 80%;
-  margin: auto;
-  height: calc(100vh - 6rem);
+  width: 90%;
+  right: -10%;
+  // border: 1px solid red;
+  min-height: calc(100vh - 6rem);
   position: relative;
   padding-top: 5rem;
+}
+
+.contactMeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.leftArea {
+  border: 1px solid red;
+  width: 100%;
+
+  h2 {
+    font-size: 2.4rem;
+    color: var(--color-light-text);
+    font-weight: bold;
+  }
+
+  .paragraph {
+    font-weight: 300;
+    color: var(--color-dark-text);
+    font-size: 2rem;
+  }
+
+  .colored {
+    color: var(--color-accent-1);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .contactForm {
+    width: 70%;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(212, 212, 212);
+  }
+}
+
+.rightArea {
+  width: 100%;
+  border: 1px solid red;
+  min-height: calc(100vh - 6rem - 7.5rem - 5rem);
+  position: relative;
+
+  .github {
+    position: absolute;
+    top: 0;
+    left: 60%;
+  }
+  .mail {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+  }
+  .whatsapp {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+  }
+  .telegram {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+  }
+  .linkedIn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+  }
 }

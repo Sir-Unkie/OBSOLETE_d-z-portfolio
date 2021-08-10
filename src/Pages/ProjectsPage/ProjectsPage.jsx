@@ -12,6 +12,7 @@ const ProjectsPage = () => {
         {ProjectsData.map((project, index) => {
           return (
             <ProjectCard
+              key={project.projectName}
               technologyStack={project.technologyStack}
               mainFeatures={project.mainFeatures}
               projectName={project.projectName}

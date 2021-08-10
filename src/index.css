@@ -54,6 +54,10 @@ html {
   --color-customLink-dark: hsl(0, 0%, 15%);
   --color-customLink-light: hsl(0, 0%, 93%);
   --color-customLink-light: hsl(0, 0%, 63%);
+
+  /* colors for contact buttons */
+  --color-outer-circle: hsl(0, 0%, 86%);
+  --color-small-outer-circle: hsl(0, 0%, 72%);
 }
 
 html.dark {
