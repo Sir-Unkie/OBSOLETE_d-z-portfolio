@@ -14,7 +14,7 @@ const ContactPage = () => {
             <h2>Have any questions or an interesting project towork on?</h2>
             <p className={styles.paragraph}>
               I'd love to hear from you!<br></br>
-              Just fill up the form or send an email to
+              Just fill up the form or send an email at&nbsp;
               <a
                 href='mailto:zhidovlenkovDI@gmail.com'
                 className={styles.colored}
@@ -26,19 +26,19 @@ const ContactPage = () => {
           </div>
           <div className={styles.rightArea}>
             <div className={styles.github}>
-              <ContactButton icon='github'></ContactButton>
+              <ContactButton icon='GitHub'></ContactButton>
             </div>
             <div className={styles.mail}>
               <ContactButton icon='mail'></ContactButton>
             </div>
             <div className={styles.whatsapp}>
-              <ContactButton icon='whatsapp'></ContactButton>
+              <ContactButton icon='WhatsApp'></ContactButton>
             </div>
             <div className={styles.telegram}>
-              <ContactButton icon='telegram'></ContactButton>
+              <ContactButton icon='Telegram'></ContactButton>
             </div>
             <div className={styles.linkedIn}>
-              <ContactButton icon='linkedIn'></ContactButton>
+              <ContactButton icon='LinkedIn'></ContactButton>
             </div>
           </div>
         </div>

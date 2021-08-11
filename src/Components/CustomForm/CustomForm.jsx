@@ -9,6 +9,9 @@ const CustomForm = () => {
   const emailChangeHandler = e => {
     setEmail(e.target.value);
   };
+  const messageChangeHandler = e => {
+    setMessage(e.target.value);
+  };
 
   return (
     <form className={styles.contactForm}>
@@ -33,13 +36,17 @@ const CustomForm = () => {
           </label>
         </div>
         <div className={styles.formGroup}>
-          <textarea id='message'></textarea>
+          <textarea
+            id='message'
+            onChange={messageChangeHandler}
+            value={message}
+          ></textarea>
           <label
             htmlFor='message'
             className={
               message === ''
                 ? `${styles.labelTextArea}`
-                : `${styles.labelTextArea}${styles.shrinked}`
+                : `${styles.labelTextArea} ${styles.shrinked}`
             }
           >
             Your message...

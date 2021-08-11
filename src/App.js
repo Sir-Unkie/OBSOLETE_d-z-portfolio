@@ -19,8 +19,9 @@ import ContactPage from './Pages/ContactPage/ContactPage';
 // make motion transitions
 // burger navigation
 // in future i can add google stats
-// the theme should be stored somewhere (for example redux store or local storage so the theme is not switched on page reload) - you can do it with a useEffect hook on a top level
+// the theme and probably an about me choice should be stored somewhere (for example redux store or local storage so the theme is not switched on page reload) - you can do it with a useEffect hook on a top level
 // add mailto icon on the homepage
+// https://gooey-react.netlify.app  gooey effect on some elements?
 
 function App() {
   return (

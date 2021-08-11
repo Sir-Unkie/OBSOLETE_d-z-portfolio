@@ -3,6 +3,22 @@
   transform: translateY(-190%);
 }
 
+.bg {
+  position: relative;
+  overflow: hidden;
+  &::after {
+    z-index: -1;
+    bottom: -40%;
+    right: -20%;
+    content: '';
+    position: absolute;
+    background-color: hsla(0, 0%, 0%, 0.767);
+    width: 130rem;
+    height: 130rem;
+    border-radius: 50%;
+  }
+}
+
 .contactPage {
   width: 90%;
   right: -10%;
@@ -19,19 +35,23 @@
 }
 
 .leftArea {
-  border: 1px solid red;
+  // border: 1px solid red;
   width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 
   h2 {
     font-size: 2.4rem;
     color: var(--color-light-text);
     font-weight: bold;
+    margin-bottom: 1rem;
   }
 
   .paragraph {
     font-weight: 300;
     color: var(--color-dark-text);
     font-size: 2rem;
+    margin-bottom: 5rem;
   }
 
   .colored {
@@ -43,7 +63,7 @@
 
 .rightArea {
   width: 100%;
-  border: 1px solid red;
+  // border: 1px solid red;
   min-height: calc(100vh - 6rem - 7.5rem - 5rem);
   position: relative;
 
@@ -55,21 +75,21 @@
   .mail {
     position: absolute;
     top: 15%;
-    left: 40%;
+    left: 25%;
   }
   .whatsapp {
     position: absolute;
     top: 30%;
-    left: 30%;
+    left: 10%;
   }
   .telegram {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 3%;
   }
   .linkedIn {
     position: absolute;
     top: 70%;
-    left: 50%;
+    left: 1%;
   }
 }

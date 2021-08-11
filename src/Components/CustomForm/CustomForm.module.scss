@@ -1,6 +1,13 @@
 @mixin shrinkLabel {
   font-size: 1.6rem;
-  transform: translateY(-190%);
+  transform: translateY(-230%);
+}
+
+@mixin shrinkLabelMessage {
+  font-size: 1.6rem;
+  //   left: 0;
+  //   top: 0;
+  transform: translate(-378%, -1350%);
 }
 
 .contactForm {
@@ -10,6 +17,8 @@
   display: flex;
   flex-direction: column;
   background-color: rgb(212, 212, 212);
+  //   box-shadow: 0.2rem 1rem 1rem hsla(0, 0%, 0%, 0.26);
+  box-shadow: 0 0.3rem 2rem hsla(0, 0%, 0%, 0.253);
 
   .formContainer {
     width: 100%;
@@ -20,7 +29,7 @@
     position: relative;
     // border: 1px solid red;
     &:not(:last-child) {
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
     }
     &:last-child {
       display: flex;
@@ -34,7 +43,7 @@
     color: var(--color-light-text);
     font-weight: 300;
     font-family: inherit;
-    padding: 0.6rem;
+    padding: 1rem;
     font-size: 1.6rem;
     border-radius: 0.7rem;
     border: none;
@@ -47,6 +56,7 @@
   }
 
   textarea {
+    min-height: 25rem;
     width: 100%;
     color: var(--color-light-text);
     font-weight: 300;
@@ -57,6 +67,25 @@
     border: none;
     &:focus {
       outline: none;
+    }
+
+    &:focus ~ .labelTextArea {
+      @include shrinkLabelMessage;
+    }
+  }
+
+  .labelTextArea {
+    transition: all 0.2s;
+    font-size: 2rem;
+    color: var(--color-light-text);
+    font-weight: 300;
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
+    transform: translateY(-50%);
+
+    &.shrinked {
+      @include shrinkLabelMessage;
     }
   }
 
@@ -76,9 +105,16 @@
   }
 
   .btn {
+    display: block;
+    width: 9rem;
+    text-align: center;
     font-family: inherit;
+    font-size: 1.6rem;
     border: none;
     padding: 1rem;
+    background-color: var(--color-accent-1);
+    color: white;
+    border-radius: 0.5rem;
 
     &:hover {
       cursor: pointer;
