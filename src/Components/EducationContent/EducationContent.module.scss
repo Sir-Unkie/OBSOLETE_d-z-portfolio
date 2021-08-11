@@ -6,6 +6,7 @@
   padding: 2rem 0rem;
   color: var(--color-light-text);
   font-size: 1.6rem;
+  // border: 1px solid red;
 
   h2 {
     color: var(--color-light-text);
@@ -16,9 +17,18 @@
 }
 
 .section {
+  // border: 1px solid red;
   padding: 2rem 7rem;
   width: 100%;
   display: block;
+
+  a:link,
+  a:visited,
+  a:active {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-light-text);
+  }
 
   &.sectionDark {
     background-color: var(--color-light-text);
@@ -31,13 +41,57 @@
 }
 
 .row {
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: row;
   gap: 3rem;
   justify-content: space-between;
+  // border: 2px solid blue;
+
+  .rowText {
+    width: 70%;
+    // border: 1px solid red;
+  }
 }
 
 .mtMid {
   margin-top: 3rem;
+}
+
+.icons {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 0;
+  // align-items: center;
+  // border: 1px solid green;
+
+  .MPEILogo {
+    background-image: url('../../Assets/img/AboutMePageImages/MPEI.png');
+    width: 70%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .MPEILogo2 {
+    // border: 1px solid blue;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../Assets/img/AboutMePageImages/MPEI2_L.png');
+    background-size: contain;
+  }
+
+  .MSULogo {
+    min-height: 7rem;
+    // border: 1px solid green;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../../Assets/img/AboutMePageImages/msu.png');
+  }
 }

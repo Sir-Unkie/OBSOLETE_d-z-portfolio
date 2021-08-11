@@ -53,6 +53,7 @@
   transition: all 0.3s;
 
   & > * > * {
+    width: 3.5rem;
     fill: hsl(0, 0%, 60%);
     transition: all 0.3s;
   }

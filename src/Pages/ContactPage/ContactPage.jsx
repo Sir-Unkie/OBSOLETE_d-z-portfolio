@@ -29,7 +29,7 @@ const ContactPage = () => {
               <ContactButton icon='GitHub'></ContactButton>
             </div>
             <div className={styles.mail}>
-              <ContactButton icon='mail'></ContactButton>
+              <ContactButton icon='Mail'></ContactButton>
             </div>
             <div className={styles.whatsapp}>
               <ContactButton icon='WhatsApp'></ContactButton>
