@@ -57,7 +57,7 @@ const EducationContent = () => {
             </div>
           </div>
           <div className={styles.icons}>
-            <UdemyLogo></UdemyLogo>
+            <UdemyLogo className={styles.UdemyLogo}></UdemyLogo>
           </div>
         </div>
       </section>

@@ -60,6 +60,7 @@
 }
 
 .icons {
+  position: relative;
   width: 30%;
   display: flex;
   flex-direction: row;
@@ -69,14 +70,18 @@
   // border: 1px solid green;
 
   .MPEILogo {
+    position: relative;
+    left: 20%;
     background-image: url('../../Assets/img/AboutMePageImages/MPEI.png');
-    width: 70%;
+    width: 80%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .MPEILogo2 {
+    left: 20%;
+    position: relative;
     // border: 1px solid blue;
     width: 100%;
     background-position: center;
@@ -86,6 +91,8 @@
   }
 
   .MSULogo {
+    left: 20%;
+    position: relative;
     min-height: 7rem;
     // border: 1px solid green;
     width: 100%;
@@ -93,5 +100,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url('../../Assets/img/AboutMePageImages/msu.png');
+  }
+
+  .UdemyLogo {
+    position: relative;
+    left: 20%;
+    top: 5%;
   }
 }
