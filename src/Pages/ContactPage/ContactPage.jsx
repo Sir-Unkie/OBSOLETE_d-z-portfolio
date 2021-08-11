@@ -24,15 +24,19 @@ const ContactPage = () => {
             </p>
             <form className={styles.contactForm}>
               <div className={styles.formGroup}>
-                <label htmlFor='email'>Your email</label>
+                <label className={styles.labelEmail} htmlFor='email'>
+                  Your email
+                </label>
                 <input type='email' id='email' required />
               </div>
               <div className={styles.formGroup}>
-                <label htmlFor='message'>Your message...</label>
+                <label htmlFor='message' className={styles.labelEmail}>
+                  Your message...
+                </label>
                 <textarea id='message'></textarea>
               </div>
               <div className={styles.formGroup}>
-                <button>Send</button>
+                <button className={styles.btn}>Send</button>
               </div>
             </form>
           </div>
