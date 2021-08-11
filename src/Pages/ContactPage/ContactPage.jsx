@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './ContactPage.module.scss';
 import MyHeading from '../../Components/MyHeading/MyHeading';
 import ContactButton from '../../Components/ContactButton/ContactButton';
+import CustomForm from '../../Components/CustomForm/CustomForm';
 
 const ContactPage = () => {
   return (
@@ -18,27 +19,10 @@ const ContactPage = () => {
                 href='mailto:zhidovlenkovDI@gmail.com'
                 className={styles.colored}
               >
-                {' '}
                 ZhidovlenkovDI@gmail.com
               </a>
             </p>
-            <form className={styles.contactForm}>
-              <div className={styles.formGroup}>
-                <label className={styles.labelEmail} htmlFor='email'>
-                  Your email
-                </label>
-                <input type='email' id='email' required />
-              </div>
-              <div className={styles.formGroup}>
-                <label htmlFor='message' className={styles.labelEmail}>
-                  Your message...
-                </label>
-                <textarea id='message'></textarea>
-              </div>
-              <div className={styles.formGroup}>
-                <button className={styles.btn}>Send</button>
-              </div>
-            </form>
+            <CustomForm></CustomForm>
           </div>
           <div className={styles.rightArea}>
             <div className={styles.github}>

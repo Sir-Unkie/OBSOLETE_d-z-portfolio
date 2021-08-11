@@ -1,0 +1,87 @@
+@mixin shrinkLabel {
+  font-size: 1.6rem;
+  transform: translateY(-190%);
+}
+
+.contactForm {
+  width: 70%;
+  padding: 4rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(212, 212, 212);
+
+  .formContainer {
+    width: 100%;
+    margin: auto;
+  }
+
+  .formGroup {
+    position: relative;
+    // border: 1px solid red;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    &:last-child {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+
+  input {
+    width: 100%;
+    color: var(--color-light-text);
+    font-weight: 300;
+    font-family: inherit;
+    padding: 0.6rem;
+    font-size: 1.6rem;
+    border-radius: 0.7rem;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+    &:focus ~ .labelEmail {
+      @include shrinkLabel;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    color: var(--color-light-text);
+    font-weight: 300;
+    font-family: inherit;
+    padding: 0.6rem;
+    font-size: 1.6rem;
+    border-radius: 0.7rem;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .labelEmail {
+    transition: all 0.2s;
+    font-size: 2rem;
+    color: var(--color-light-text);
+    font-weight: 300;
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+
+    &.shrinked {
+      @include shrinkLabel;
+    }
+  }
+
+  .btn {
+    font-family: inherit;
+    border: none;
+    padding: 1rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

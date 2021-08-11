@@ -1,3 +1,8 @@
+@mixin shrinkLabel {
+  font-size: 1.6rem;
+  transform: translateY(-190%);
+}
+
 .contactPage {
   width: 90%;
   right: -10%;
@@ -33,54 +38,6 @@
     color: var(--color-accent-1);
     font-weight: bold;
     text-decoration: none;
-  }
-
-  .contactForm {
-    width: 70%;
-    padding: 2rem;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(212, 212, 212);
-
-    .formGroup:not(:last-child) {
-      margin-bottom: 2rem;
-    }
-
-    input {
-      font-family: inherit;
-      padding: 1rem;
-      font-size: 2rem;
-      border-radius: 0.7rem;
-      border: none;
-      &:focus {
-        outline: none;
-      }
-    }
-
-    textarea {
-      font-family: inherit;
-      padding: 1rem;
-      font-size: 2rem;
-      border-radius: 0.7rem;
-      border: none;
-      &:focus {
-        outline: none;
-      }
-    }
-
-    .labelEmail {
-    }
-
-    .btn {
-      font-family: inherit;
-      border: none;
-      padding: 1rem;
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
   }
 }
 
