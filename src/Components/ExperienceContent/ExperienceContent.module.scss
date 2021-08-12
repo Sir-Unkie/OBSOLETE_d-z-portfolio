@@ -12,6 +12,10 @@
     margin-bottom: 1.2rem;
     transform: translateX(-1.9rem);
   }
+
+  h3:not(:first-child) {
+    margin-top: 1rem;
+  }
 }
 
 .section {
@@ -29,19 +33,58 @@
 }
 
 .row {
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: row;
   gap: 1rem;
   justify-content: space-between;
 
+  .rowText {
+    width: 80%;
+    // border: 1px solid red;
+  }
+
   .list {
-    width: 76%;
+    width: 100%;
+    // border: 1px solid red;
   }
 
   .icons {
-    background-image: url('../../Assets/img/AboutMePageImages/TEL.png');
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // border: 1px solid blue;
+  }
+
+  .TELLogo {
+    left: 20%;
+    position: relative;
+    // border: 1px solid blue;
+    width: 100%;
+    background-position: center;
     background-repeat: no-repeat;
+    background-image: url('../../Assets/img/AboutMePageImages/TELLogo.jpg');
+    background-size: contain;
+  }
+
+  .oboronEnergoLogo {
+    left: 20%;
+    position: relative;
+    // border: 1px solid blue;
+    width: 100%;
+    fill: white;
+  }
+
+  .MOESKLogo {
+    left: 20%;
+    position: relative;
+    // border: 1px solid blue;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../Assets/img/AboutMePageImages/Moesk2.jpg');
     background-size: contain;
   }
 }
