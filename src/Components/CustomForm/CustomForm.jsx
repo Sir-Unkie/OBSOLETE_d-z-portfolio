@@ -24,6 +24,8 @@ const CustomForm = () => {
         templateParams,
         userID
       );
+      setEmail('');
+      setMessage('');
       console.log('SUCCESS!', response.status, response.text);
     } catch (error) {
       console.log('FAILED...', error);

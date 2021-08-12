@@ -24,6 +24,7 @@ import ContactPage from './Pages/ContactPage/ContactPage';
 // finish the contact form visuals
 // add lazy loading for components
 // probably later i will need some kind of spinner for data fetching
+// add an error and a success window on sending the contact information
 
 function App() {
   return (
