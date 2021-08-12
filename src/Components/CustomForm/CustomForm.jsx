@@ -6,6 +6,10 @@ const CustomForm = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
+  const submitHandler = e => {
+    e.preventDefault();
+  };
+
   const emailChangeHandler = e => {
     setEmail(e.target.value);
   };
@@ -53,7 +57,9 @@ const CustomForm = () => {
           </label>
         </div>
         <div className={styles.formGroup}>
-          <button className={styles.btn}>Send</button>
+          <button onClick={submitHandler} className={styles.btn}>
+            Send
+          </button>
         </div>
       </div>
     </form>
