@@ -58,3 +58,32 @@
     transition: all 0.3s;
   }
 }
+
+.LinkedIn {
+  position: relative;
+  &:hover {
+    &:hover::after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &::after {
+    font-size: 1.6rem;
+    visibility: hidden;
+    text-align: center;
+    padding: 1rem;
+    content: 'VPN is required in Russia';
+    width: 20rem;
+    height: 3.6rem;
+    position: absolute;
+    inset: 0;
+    top: -25%;
+    left: 95%;
+    opacity: 0;
+    border-radius: 1rem;
+    color: hsl(0, 0%, 95%);
+    background-color: var(--color-light-text);
+    box-shadow: 0 0.1rem 5rem hsla(0, 0%, 0%, 0.246);
+  }
+}

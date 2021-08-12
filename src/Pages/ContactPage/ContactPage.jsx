@@ -26,19 +26,34 @@ const ContactPage = () => {
           </div>
           <div className={styles.rightArea}>
             <div className={styles.github}>
-              <ContactButton icon='GitHub'></ContactButton>
+              <ContactButton
+                goToLink='https://github.com/Sir-Unkie'
+                icon='GitHub'
+              ></ContactButton>
             </div>
             <div className={styles.mail}>
-              <ContactButton icon='Mail'></ContactButton>
+              <ContactButton
+                goToLink='mailto:zhidovlenkovDI@gmail.com'
+                icon='Mail'
+              ></ContactButton>
             </div>
             <div className={styles.whatsapp}>
-              <ContactButton icon='WhatsApp'></ContactButton>
+              <ContactButton
+                goToLink='https://wa.me/79197255841'
+                icon='WhatsApp'
+              ></ContactButton>
             </div>
             <div className={styles.telegram}>
-              <ContactButton icon='Telegram'></ContactButton>
+              <ContactButton
+                goToLink='https://telegram.me/Sir_Unkie'
+                icon='Telegram'
+              ></ContactButton>
             </div>
             <div className={styles.linkedIn}>
-              <ContactButton icon='LinkedIn'></ContactButton>
+              <ContactButton
+                goToLink='https://www.linkedin.com/in/dmitry-zhidovlenkov'
+                icon='LinkedIn'
+              ></ContactButton>
             </div>
           </div>
         </div>

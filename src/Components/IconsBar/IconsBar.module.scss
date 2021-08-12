@@ -17,6 +17,16 @@
       fill: var(--color-accent-1);
     }
   }
+
+  &.mail {
+    & path {
+      fill-opacity: 1;
+    }
+    & circle {
+      fill-opacity: 0;
+      fill: var(--color-light-text);
+    }
+  }
 }
 
 // this is needed just to add a tooltip so user knows that VPN is needed for Linked in

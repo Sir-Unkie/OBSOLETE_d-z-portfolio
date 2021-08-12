@@ -6,9 +6,18 @@ import { ReactComponent as WhatsApp } from '../../Assets/cib_whatsapp.svg';
 import { ReactComponent as Telegram } from '../../Assets/fa-brands_telegram.svg';
 import { ReactComponent as Mail } from '../../Assets/carbon_email.svg';
 
-const ContactButton = ({ icon }) => {
+const ContactButton = ({ icon, goToLink }) => {
   return (
-    <div className={styles.bigOuterCircle}>
+    <a
+      href={goToLink}
+      target={icon === 'Mail' ? null : '_blank'}
+      rel='noreferrer'
+      className={
+        icon !== 'LinkedIn'
+          ? `${styles.bigOuterCircle}`
+          : `${styles.LinkedIn} ${styles.bigOuterCircle}`
+      }
+    >
       <div className={styles.smallOuterCircle}>
         <div className={styles.innerCircle}>
           {icon === 'LinkedIn' && <LinkedIn></LinkedIn>}
@@ -18,7 +27,7 @@ const ContactButton = ({ icon }) => {
           {icon === 'Mail' && <Mail></Mail>}
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 
