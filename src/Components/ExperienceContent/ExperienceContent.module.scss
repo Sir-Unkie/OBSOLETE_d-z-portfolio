@@ -29,6 +29,11 @@
     h2 {
       color: var(--color-white-1);
     }
+    .award:visited,
+    .award:link {
+      color: black;
+      font-weight: bold;
+    }
   }
 }
 

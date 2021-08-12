@@ -57,7 +57,16 @@ const ExperienceContent = () => {
           <div className={styles.rowText}>
             <h2>
               2016-2017: Oboronenergo (electric utility company) <br></br> -
-              Leading specialist:
+              Leading specialist{' '}
+              <a
+                className={styles.award}
+                href='https://ibb.co/JKY7dy3'
+                target='_blank'
+                rel='noreferrer'
+              >
+                (award received)
+              </a>
+              :
             </h2>
             <div className={styles.list}>
               <ul>
@@ -82,7 +91,9 @@ const ExperienceContent = () => {
             </div>
           </div>
           <div className={styles.icons}>
-            <OboronEnergoLogo className={styles.oboronEnergoLogo}></OboronEnergoLogo>
+            <OboronEnergoLogo
+              className={styles.oboronEnergoLogo}
+            ></OboronEnergoLogo>
           </div>
         </div>
       </section>
