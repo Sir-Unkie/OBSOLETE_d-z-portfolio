@@ -84,3 +84,8 @@ html.dark {
   background-color: black;
   color: white;
 } */
+
+#modal-root {
+  position: absolute;
+  z-index: 100;
+}

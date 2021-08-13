@@ -1,0 +1,31 @@
+.alert {
+  position: absolute;
+  width: 100vw;
+  height: 7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.success {
+  background-color: rgb(71, 221, 71);
+  color: white;
+  font-weight: bold;
+}
+
+.loading {
+  background-color: rgb(90, 90, 221);
+  color: white;
+  font-weight: bold;
+}
+
+.error {
+  background-color: rgb(216, 32, 32);
+  color: white;
+  font-weight: bold;
+}
+
+.message {
+  font-size: 2.4rem;
+}
