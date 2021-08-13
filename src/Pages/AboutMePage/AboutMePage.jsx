@@ -6,6 +6,7 @@ import ExperienceContent from '../../Components/ExperienceContent/ExperienceCont
 import EducationContent from '../../Components/EducationContent/EducationContent';
 import MyHeading from '../../Components/MyHeading/MyHeading';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const AboutMePage = () => {
   const initialState = {
@@ -22,7 +23,12 @@ const AboutMePage = () => {
   };
 
   return (
-    <div className={styles.bg}>
+    <motion.div
+      initial={{ opacity: 0, x: 900 }}
+      animate={{ opacity: 1, x: 0 }}
+      layout
+      className={styles.bg}
+    >
       <div className={styles.aboutMe}>
         <MyHeading>About me</MyHeading>
         <div className={styles.optionsContainer}>
@@ -67,7 +73,7 @@ const AboutMePage = () => {
           ) : null}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

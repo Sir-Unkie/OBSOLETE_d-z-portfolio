@@ -2,10 +2,25 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './HomePage.module.scss';
 import IconsBar from '../../Components/IconsBar/IconsBar';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const HomePage = () => {
+  const variants = {
+    hidden: { opacity: 0, x: 900 },
+    visible: { opacity: 1, x: 0 },
+  };
+
   return (
-    <div className={styles.bg}>
+    <motion.div
+      key='someUniqueID'
+      initial={{ opacity: 0, x: 900 }}
+      animate={{ opacity: 1, x: 0 }}
+      // variants={variants}
+      exit={{ opacity: 0, x: 900 }}
+      transition={{ type: 'spring', stiffness: 100 }}
+      layout
+      className={styles.bg}
+    >
       <div className={styles.homepage}>
         <main>
           <h1 className={styles.primaryHeading}>
@@ -27,7 +42,7 @@ const HomePage = () => {
           <IconsBar></IconsBar>
         </main>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
