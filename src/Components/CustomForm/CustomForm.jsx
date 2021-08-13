@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './CustomForm.module.scss';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import Portal from '../Alert/Portal';
 import Alert from '../Alert/Alert';
@@ -9,10 +9,28 @@ const CustomForm = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [emailTouched, setEmailIsTouched] = useState(false);
+  const [messageTouched, setMessageTouched] = useState(false);
   const [status, setStatus] = useState('initial');
   const [alertMessage, setAlertMessage] = useState('');
+  const [emailValid, setEmailValid] = useState(false);
+  const [messageValid, setMessageValid] = useState(false);
 
   const submitHandler = async e => {
+    e.preventDefault();
+    if (!emailValid || !messageValid) {
+      // make an alert
+      setStatus('error');
+      setAlertMessage('Please, fill all the form fields.');
+      setEmailIsTouched(true);
+      setMessageTouched(true);
+      setTimeout(() => {
+        setStatus('initial');
+        setAlertMessage('');
+      }, 3000);
+
+      return;
+    }
+
     setStatus('loading');
     const templateParams = {
       from_name: email,
@@ -21,25 +39,29 @@ const CustomForm = () => {
     const serviceID = 'service_8jxn9mf';
     const templateID = 'template_6zdaxl9';
     const userID = 'user_tDawHOAXBaCAXatImtJRc';
-    e.preventDefault();
 
     try {
       setStatus('loading');
-      setAlertMessage('Sending the message');
+      setAlertMessage('Sending your message... ');
       await emailjs.send(serviceID, templateID, templateParams, userID);
+
       // clear the fields
       setEmail('');
       setMessage('');
+      setEmailIsTouched(false);
+      setMessageTouched(false);
+
       // display the success info
       setStatus('success');
-      setAlertMessage('Message successfuly sent');
+      setAlertMessage('Message sent successfully');
+
       // clear the message
       setTimeout(() => {
         setStatus('initial');
       }, 2000);
     } catch (error) {
       setStatus('error');
-      setAlertMessage('Something went wrong, the message was not sent');
+      setAlertMessage('Something went wrong, the message was not sent!');
       setTimeout(() => {
         setStatus('initial');
       }, 2000);
@@ -52,31 +74,39 @@ const CustomForm = () => {
   const messageChangeHandler = e => {
     setMessage(e.target.value);
   };
-  const focusHandler = () => {
-    setEmailIsTouched(true);
+  const blurHandler = e => {
+    e.target.tagName === 'INPUT' && setEmailIsTouched(true);
+    e.target.tagName === 'TEXTAREA' && setMessageTouched(true);
   };
+
+  useEffect(() => {
+    email.includes('@') && email.includes('.')
+      ? setEmailValid(true)
+      : setEmailValid(false);
+
+    message.length > 0 ? setMessageValid(true) : setMessageValid(false);
+  }, [email, message]);
 
   return (
     <React.Fragment>
       <Portal>
         <Alert message={alertMessage} messageType={status}></Alert>
       </Portal>
-
-      {/* {status !== 'initial' ? (
-        <Portal>
-          <Alert message={alertMessage} messageType={status}></Alert>
-        </Portal>
-      ) : null} */}
-
       <form className={styles.contactForm}>
         <div className={styles.formContainer}>
           <div className={styles.formGroup}>
             <input
+              // className={styles.notValid}
+              className={
+                emailValid === false && emailTouched === true
+                  ? `${styles.notValid}`
+                  : null
+              }
               value={email}
               type='email'
               id='email'
               onChange={emailChangeHandler}
-              onFocus={focusHandler}
+              onBlur={blurHandler}
               required
             />
             <label
@@ -92,9 +122,15 @@ const CustomForm = () => {
           </div>
           <div className={styles.formGroup}>
             <textarea
+              className={
+                messageValid === false && messageTouched === true
+                  ? `${styles.notValid}`
+                  : null
+              }
               id='message'
               onChange={messageChangeHandler}
               value={message}
+              onBlur={blurHandler}
             ></textarea>
             <label
               htmlFor='message'

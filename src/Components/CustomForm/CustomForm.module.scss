@@ -1,11 +1,13 @@
 @mixin shrinkLabel {
   font-size: 1.6rem;
-  transform: translateY(-230%);
+  top: -40%;
+  left: 1rem;
 }
 
 @mixin shrinkLabelMessage {
   font-size: 1.6rem;
-  transform: translate(-378%, -1350%);
+  bottom: 99%;
+  left: 1rem;
 }
 
 .contactForm {
@@ -37,6 +39,7 @@
   }
 
   input {
+    position: relative;
     width: 100%;
     color: var(--color-light-text);
     font-weight: 300;
@@ -44,12 +47,16 @@
     padding: 1rem;
     font-size: 1.6rem;
     border-radius: 0.7rem;
-    border: none;
+    border: 2px solid transparent;
     &:focus {
       outline: none;
     }
     &:focus ~ .labelEmail {
       @include shrinkLabel;
+    }
+
+    &.notValid {
+      border: 2px solid red;
     }
   }
 
@@ -63,13 +70,16 @@
     padding: 0.6rem;
     font-size: 1.6rem;
     border-radius: 0.7rem;
-    border: none;
+    border: 2px solid transparent;
     &:focus {
       outline: none;
     }
 
     &:focus ~ .labelTextArea {
       @include shrinkLabelMessage;
+    }
+    &.notValid {
+      border: 2px solid red;
     }
   }
 
@@ -80,7 +90,7 @@
     font-weight: 300;
     position: absolute;
     bottom: 0%;
-    right: 5%;
+    left: 72%;
     transform: translateY(-50%);
 
     &.shrinked {
