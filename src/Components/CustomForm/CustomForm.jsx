@@ -58,11 +58,15 @@ const CustomForm = () => {
 
   return (
     <React.Fragment>
-      {status !== 'initial' ? (
+      <Portal>
+        <Alert message={alertMessage} messageType={status}></Alert>
+      </Portal>
+
+      {/* {status !== 'initial' ? (
         <Portal>
           <Alert message={alertMessage} messageType={status}></Alert>
         </Portal>
-      ) : null}
+      ) : null} */}
 
       <form className={styles.contactForm}>
         <div className={styles.formContainer}>

@@ -20,10 +20,7 @@ import ContactPage from './Pages/ContactPage/ContactPage';
 // in future i can add google stats
 // the theme and probably an about me choice should be stored somewhere (for example redux store or local storage so the theme is not switched on page reload) - you can do it with a useEffect hook on a top level
 // https://gooey-react.netlify.app  gooey effect on some elements?
-// finish the contact form visuals
 // add lazy loading for components
-// probably later i will need some kind of spinner for data fetching
-// add an error and a success window on sending the contact information
 // add validation
 
 function App() {
