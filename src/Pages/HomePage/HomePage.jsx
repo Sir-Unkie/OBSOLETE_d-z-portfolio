@@ -3,10 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './HomePage.module.scss';
 import IconsBar from '../../Components/IconsBar/IconsBar';
 import { motion } from 'framer-motion';
-import {
-  homePageVariants,
-  defaultSlide,
-} from '../../FramerMotion/framerMotion.configs';
+import { defaultSlide } from '../../FramerMotion/framerMotion.configs';
 
 const HomePage = () => {
   return (
