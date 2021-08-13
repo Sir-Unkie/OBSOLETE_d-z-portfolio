@@ -1,16 +1,21 @@
 import React from 'react';
 import styles from './AboutMeButton.module.scss';
+import { motion } from 'framer-motion';
+
 const AboutMeButton = ({ children, selected, clickHandler, option }) => {
   const handleClick = e => {
-    e.target.classList.toggle(styles.animation);
-    setTimeout(() => {
-      clickHandler.bind(null, option)();
-      e.target.classList.toggle(styles.animation);
-    }, 0);
+    // e.target.classList.toggle(styles.animation);
+    clickHandler.bind(null, option)();
+    // setTimeout(() => {
+    // clickHandler.bind(null, option)();
+    // e.target.classList.toggle(styles.animation);
+    // }, 0);
   };
   return (
-    <div
-      id='option'
+    <motion.div
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 1.7, transition: { duration: 0.1 } }}
+      // id='option'
       onClick={handleClick}
       className={
         selected
@@ -19,7 +24,7 @@ const AboutMeButton = ({ children, selected, clickHandler, option }) => {
       }
     >
       {children}
-    </div>
+    </motion.div>
   );
 };
 

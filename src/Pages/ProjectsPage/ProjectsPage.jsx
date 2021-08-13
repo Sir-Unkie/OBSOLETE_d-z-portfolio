@@ -3,7 +3,7 @@ import styles from './ProjectsPage.module.scss';
 import ProjectCard from '../../Components/ProjectCard/ProjectCard';
 import MyHeading from '../../Components/MyHeading/MyHeading';
 import ProjectsData from '../../Assets/Projects Data/ProjectsData.js';
-import { defaultSlide } from '../../FramerMotion/framerMotion.configs';
+import { defaultSlide } from '../../FramerMotion/framerMotion.pages.configs';
 import { motion } from 'framer-motion';
 
 const ProjectsPage = () => {

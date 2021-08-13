@@ -3,16 +3,16 @@ export const defaultSlide = {
   visible: {
     opacity: 1,
     transition: {
-      type: 'twin',
-      duration: 0.5,
+      type: 'Tween',
+      duration: 0.3,
     },
   },
 
   exit: {
     opacity: 0,
     transition: {
-      type: 'twin',
-      duration: 0.5,
+      type: 'Tween',
+      duration: 0.3,
     },
   },
 };

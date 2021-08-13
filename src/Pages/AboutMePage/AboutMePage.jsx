@@ -7,7 +7,7 @@ import EducationContent from '../../Components/EducationContent/EducationContent
 import MyHeading from '../../Components/MyHeading/MyHeading';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { defaultSlide } from '../../FramerMotion/framerMotion.configs';
+import { defaultSlide } from '../../FramerMotion/framerMotion.pages.configs';
 
 const AboutMePage = () => {
   const initialState = {

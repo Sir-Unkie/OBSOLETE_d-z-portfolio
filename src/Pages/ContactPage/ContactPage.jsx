@@ -3,7 +3,7 @@ import styles from './ContactPage.module.scss';
 import MyHeading from '../../Components/MyHeading/MyHeading';
 import ContactButton from '../../Components/ContactButton/ContactButton';
 import CustomForm from '../../Components/CustomForm/CustomForm';
-import { defaultSlide } from '../../FramerMotion/framerMotion.configs';
+import { defaultSlide } from '../../FramerMotion/framerMotion.pages.configs';
 import { motion } from 'framer-motion';
 
 const ContactPage = () => {
