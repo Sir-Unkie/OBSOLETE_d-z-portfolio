@@ -17,21 +17,6 @@ const CustomForm = () => {
 
   const submitHandler = async e => {
     e.preventDefault();
-    if (!emailValid || !messageValid) {
-      // make an alert
-      setStatus('error');
-      setAlertMessage('Please, fill all the form fields.');
-      setEmailIsTouched(true);
-      setMessageTouched(true);
-      setTimeout(() => {
-        setStatus('initial');
-        setAlertMessage('');
-      }, 3000);
-
-      return;
-    }
-
-    setStatus('loading');
     const templateParams = {
       from_name: email,
       message: message,
@@ -40,6 +25,19 @@ const CustomForm = () => {
     const templateID = 'template_6zdaxl9';
     const userID = 'user_tDawHOAXBaCAXatImtJRc';
 
+    // make an alert if smth is not filled
+    if (!emailValid || !messageValid) {
+      setStatus('error');
+      setAlertMessage('Please, fill all the form fields.');
+      setEmailIsTouched(true);
+      setMessageTouched(true);
+      setTimeout(() => {
+        setStatus('initial');
+        setAlertMessage('');
+      }, 3000);
+      return;
+    }
+    setStatus('loading');
     try {
       setStatus('loading');
       setAlertMessage('Sending your message... ');
@@ -53,7 +51,7 @@ const CustomForm = () => {
 
       // display the success info
       setStatus('success');
-      setAlertMessage('Message sent successfully');
+      setAlertMessage('Message sent successfully.');
 
       // clear the message
       setTimeout(() => {
@@ -80,7 +78,7 @@ const CustomForm = () => {
   };
 
   useEffect(() => {
-    email.includes('@') && email.includes('.')
+    email.includes('@') && email.includes('.') && !email.includes(' ')
       ? setEmailValid(true)
       : setEmailValid(false);
 

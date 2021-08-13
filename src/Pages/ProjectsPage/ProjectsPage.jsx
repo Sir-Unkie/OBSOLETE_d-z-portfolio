@@ -3,10 +3,18 @@ import styles from './ProjectsPage.module.scss';
 import ProjectCard from '../../Components/ProjectCard/ProjectCard';
 import MyHeading from '../../Components/MyHeading/MyHeading';
 import ProjectsData from '../../Assets/Projects Data/ProjectsData.js';
+import { defaultSlide } from '../../FramerMotion/framerMotion.configs';
+import { motion } from 'framer-motion';
 
 const ProjectsPage = () => {
   return (
-    <main className={styles.projectsPage}>
+    <motion.main
+      variants={defaultSlide}
+      initial='hidden'
+      animate='visible'
+      exit='exit'
+      className={styles.projectsPage}
+    >
       <MyHeading>My projects</MyHeading>
       <div className={styles.projectsContainer}>
         {ProjectsData.map((project, index) => {
@@ -24,7 +32,7 @@ const ProjectsPage = () => {
           );
         })}
       </div>
-    </main>
+    </motion.main>
   );
 };
 

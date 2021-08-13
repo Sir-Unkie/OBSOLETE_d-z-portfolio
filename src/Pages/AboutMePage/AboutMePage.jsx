@@ -7,6 +7,7 @@ import EducationContent from '../../Components/EducationContent/EducationContent
 import MyHeading from '../../Components/MyHeading/MyHeading';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { defaultSlide } from '../../FramerMotion/framerMotion.configs';
 
 const AboutMePage = () => {
   const initialState = {
@@ -24,9 +25,10 @@ const AboutMePage = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, x: 900 }}
-      animate={{ opacity: 1, x: 0 }}
-      layout
+      variants={defaultSlide}
+      initial='hidden'
+      animate='visible'
+      exit='exit'
       className={styles.bg}
     >
       <div className={styles.aboutMe}>

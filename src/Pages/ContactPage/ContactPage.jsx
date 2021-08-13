@@ -3,10 +3,18 @@ import styles from './ContactPage.module.scss';
 import MyHeading from '../../Components/MyHeading/MyHeading';
 import ContactButton from '../../Components/ContactButton/ContactButton';
 import CustomForm from '../../Components/CustomForm/CustomForm';
+import { defaultSlide } from '../../FramerMotion/framerMotion.configs';
+import { motion } from 'framer-motion';
 
 const ContactPage = () => {
   return (
-    <div className={styles.bg}>
+    <motion.div
+      variants={defaultSlide}
+      initial='hidden'
+      animate='visible'
+      exit='exit'
+      className={styles.bg}
+    >
       <div className={styles.contactPage}>
         <MyHeading>Contact me</MyHeading>
         <div className={styles.contactMeContainer}>
@@ -58,7 +66,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

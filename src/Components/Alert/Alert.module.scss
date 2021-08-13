@@ -8,6 +8,11 @@
   justify-content: center;
   top: -10rem;
   transition: all 0.3s;
+  font-style: inherit;
+
+  & > * {
+    font-style: inherit;
+  }
 }
 .initial {
   pointer-events: none;
