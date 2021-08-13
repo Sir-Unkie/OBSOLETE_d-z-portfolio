@@ -1,10 +1,18 @@
 import React from 'react';
 import styles from './EducationContent.module.scss';
 import { ReactComponent as UdemyLogo } from '../../Assets/icons/Education Icons/logos_udemy.svg';
+import { motion } from 'framer-motion';
+import { cardVariants } from '../../FramerMotion/aboutMeCards.config';
 
 const EducationContent = () => {
   return (
-    <div className={styles.educationContainer}>
+    <motion.div
+      variants={cardVariants}
+      initial='hidden'
+      animate='visible'
+      exit='exit'
+      className={styles.educationContainer}
+    >
       <section className={`${styles.section}`}>
         <div className={styles.row}>
           <div className={styles.rowText}>
@@ -121,7 +129,7 @@ const EducationContent = () => {
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 

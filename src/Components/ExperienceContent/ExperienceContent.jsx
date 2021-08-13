@@ -1,10 +1,18 @@
 import React from 'react';
 import styles from './ExperienceContent.module.scss';
 import { ReactComponent as OboronEnergoLogo } from '../../Assets/icons/Experience Icons/OboronEnergo.svg';
+import { motion } from 'framer-motion';
+import { cardVariants } from '../../FramerMotion/aboutMeCards.config';
 
 const ExperienceContent = () => {
   return (
-    <div className={styles.experienceContainer}>
+    <motion.div
+      variants={cardVariants}
+      initial='hidden'
+      animate='visible'
+      exit='exit'
+      className={styles.experienceContainer}
+    >
       <section className={`${styles.section}`}>
         <div className={styles.row}>
           <div className={styles.rowText}>
@@ -120,7 +128,7 @@ const ExperienceContent = () => {
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 

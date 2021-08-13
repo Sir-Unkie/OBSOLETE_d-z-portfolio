@@ -3,10 +3,18 @@ import styles from './TechStackContent.module.scss';
 import FrameworksIcons from '../FrameworksIcons/FrameworksIcons';
 import DesignIcons from '../DesignIcons/DesignIcons';
 import LanguagesIcons from '../LanguagesIcons/LanguagesIcons';
+import { motion } from 'framer-motion';
+import { cardVariants } from '../../FramerMotion/aboutMeCards.config';
 
 const TechStackContent = () => {
   return (
-    <div className={styles.techContainer}>
+    <motion.div
+      variants={cardVariants}
+      initial='hidden'
+      animate='visible'
+      exit='exit'
+      className={styles.techContainer}
+    >
       <section className={`${styles.section}`}>
         <div className={styles.row}>
           <div className={styles.rowText}>
@@ -63,7 +71,7 @@ const TechStackContent = () => {
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 

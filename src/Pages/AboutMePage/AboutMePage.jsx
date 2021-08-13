@@ -6,7 +6,7 @@ import ExperienceContent from '../../Components/ExperienceContent/ExperienceCont
 import EducationContent from '../../Components/EducationContent/EducationContent';
 import MyHeading from '../../Components/MyHeading/MyHeading';
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { defaultSlide } from '../../FramerMotion/framerMotion.pages.configs';
 
 const AboutMePage = () => {
@@ -63,16 +63,18 @@ const AboutMePage = () => {
           </div>
         </div>
         <div className={styles.textArea}>
-          {/* <TechStackContent></TechStackContent> */}
-          {visibleOption.tech === true ? (
-            <TechStackContent></TechStackContent>
-          ) : null}
-          {visibleOption.exp === true ? (
-            <ExperienceContent></ExperienceContent>
-          ) : null}
-          {visibleOption.education === true ? (
-            <EducationContent></EducationContent>
-          ) : null}
+          <AnimatePresence exitBeforeEnter>
+            {/* <TechStackContent></TechStackContent> */}
+            {visibleOption.tech === true ? (
+              <TechStackContent key='1'></TechStackContent>
+            ) : null}
+            {visibleOption.exp === true ? (
+              <ExperienceContent key='2'></ExperienceContent>
+            ) : null}
+            {visibleOption.education === true ? (
+              <EducationContent key='3'></EducationContent>
+            ) : null}
+          </AnimatePresence>
         </div>
       </div>
     </motion.div>
