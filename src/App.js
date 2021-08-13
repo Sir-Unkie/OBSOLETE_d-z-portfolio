@@ -4,7 +4,7 @@ import React from 'react';
 import Header from './Components/Header/Header.jsx';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Suspense } from 'react';
-import Spinner from './Components/Spinner/Spinner';
+import SuspenseSpinner from './Components/SuspenseSpinner/SuspenseSpinner';
 // import HomePage from './Pages/HomePage/HomePage';
 // import ProjectsPage from './Pages/ProjectsPage/ProjectsPage';
 // import AboutMePage from './Pages/AboutMePage/AboutMePage';
@@ -38,22 +38,22 @@ function App() {
       <Header></Header>
       <Switch>
         <Route path='/contact'>
-          <Suspense fallback={<Spinner />}>
+          <Suspense fallback={<SuspenseSpinner />}>
             <ContactPage></ContactPage>
           </Suspense>
         </Route>
         <Route path='/about'>
-          <Suspense fallback={<Spinner />}>
+          <Suspense fallback={<SuspenseSpinner />}>
             <AboutMePage></AboutMePage>
           </Suspense>
         </Route>
         <Route path='/projects'>
-          <Suspense fallback={<Spinner />}>
+          <Suspense fallback={<SuspenseSpinner />}>
             <ProjectsPage></ProjectsPage>
           </Suspense>
         </Route>
         <Route path='/' exact>
-          <Suspense fallback={<Spinner />}>
+          <Suspense fallback={<SuspenseSpinner />}>
             <HomePage></HomePage>
           </Suspense>
         </Route>
