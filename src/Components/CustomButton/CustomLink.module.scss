@@ -14,7 +14,6 @@ customLink:visited {
 
   &:hover {
     background-color: hsl(0, 0%, 100%);
-    // color: var(--color-prCard-dark-text);
     color: var(--color-prCard-text-hover);
     border: 2px solid black;
     transform: translateY(-0.4rem);
@@ -28,7 +27,6 @@ customLink:visited {
   border: 2px solid transparent;
   &:hover {
     background-color: hsl(0, 0%, 100%);
-    // color: var(--color-prCard-dark-text);
     color: var(--color-prCard-text-hover);
     border: 2px solid black;
   }
@@ -39,7 +37,6 @@ customLink:visited {
   border: 2px solid transparent;
   &:hover {
     background-color: rgb(255, 255, 255);
-    color: var(--color-prCard-dark-text);
     color: var(--color-prCard-text-hover);
     border: 2px solid black;
     // border: 2px solid transparent;
@@ -50,7 +47,6 @@ customLink:visited {
   color: var(--color-customLink-text);
   &:hover {
     background-color: hsl(0, 0%, 100%);
-    color: var(--color-prCard-dark-text);
     color: var(--color-prCard-text-hover);
     border: 2px solid black;
     // border: 2px solid transparent;

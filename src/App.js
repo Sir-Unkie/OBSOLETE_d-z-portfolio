@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.scss';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './Components/Header/Header.jsx';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import { Suspense } from 'react';
@@ -22,7 +22,6 @@ const ContactPage = React.lazy(() => import('./Pages/ContactPage/ContactPage'));
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // Make a Logo
-// implement a full dark theme
 // Add on h1 homepage a shine effect
 // Update Hero image
 // Optimize the image for different screens
@@ -36,6 +35,14 @@ const ContactPage = React.lazy(() => import('./Pages/ContactPage/ContactPage'));
 
 function App() {
   const location = useLocation();
+  // useEffect(() => {
+  //   const themeLocalStorage = localStorage.getItem('theme');
+  //   if (themeLocalStorage === 'null') {
+  //     alert('no local storage data');
+  //     localStorage.setItem('theme', 'light');
+  //   }
+  // }, []);
+
   return (
     <React.Fragment>
       <Header></Header>

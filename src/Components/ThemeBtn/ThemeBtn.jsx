@@ -1,20 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './ThemeBtn.module.scss';
+import { motion } from 'framer-motion';
 
 const ThemeBtn = () => {
-  const [theme, setTheme] = useState('light');
+  const themeLocalStorage = localStorage.getItem('theme');
+  let initialTheme;
+  if (themeLocalStorage === null) {
+    initialTheme = 'light';
+  } else {
+    initialTheme = themeLocalStorage;
+  }
+  const [theme, setTheme] = useState(initialTheme);
+  const htmlEl = document.querySelector('html');
   const clickHandler = () => {
-    const htmlEl = document.querySelector('html');
     if (theme === 'light') {
       setTheme('dark');
     } else {
       setTheme('light');
     }
-    htmlEl.classList.toggle('dark');
   };
 
+  useEffect(() => {
+    if (theme === 'light') {
+      htmlEl.classList.remove('dark');
+      localStorage.setItem('theme', theme);
+    } else {
+      htmlEl.classList.add('dark');
+      localStorage.setItem('theme', theme);
+    }
+  }, [theme, htmlEl.classList, themeLocalStorage]);
+
   return (
-    <div
+    <motion.div
+      whileHover={{}}
       className={
         theme === 'light'
           ? `${styles.outerCircle}`
@@ -23,7 +41,7 @@ const ThemeBtn = () => {
       onClick={clickHandler}
     >
       <div className={styles.innerCircle}></div>
-    </div>
+    </motion.div>
   );
 };
 
