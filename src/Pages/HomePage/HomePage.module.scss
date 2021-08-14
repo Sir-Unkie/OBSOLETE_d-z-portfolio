@@ -24,6 +24,38 @@
   line-height: 103%;
   padding-top: 20rem;
   margin-bottom: 3rem;
+
+  // lets add a shine effect
+  background-color: var(--color-H1);
+  background-size: 200%, 100%;
+  background-image: linear-gradient(
+    -75deg,
+    transparent 0,
+    transparent 5%,
+    rgba(255, 255, 255, 0.85) 5%,
+    rgba(255, 255, 255, 0.85) 6%,
+    transparent 6%,
+    transparent 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 2.3s;
+  animation: shining 13s ease-in-out infinite;
+  @keyframes shining {
+    0% {
+      background-position: 0 0;
+    }
+    10% {
+      background-position: 0 0;
+    }
+    22% {
+      background-position: -120% 0;
+    }
+
+    100% {
+      background-position: -120% 0;
+    }
+  }
 }
 
 .paragraph {

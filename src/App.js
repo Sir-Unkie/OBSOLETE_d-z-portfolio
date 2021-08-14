@@ -28,6 +28,7 @@ const ContactPage = React.lazy(() => import('./Pages/ContactPage/ContactPage'));
 // add a night icon on the toggle theme btn
 // burger navigation
 // cleane up the index css colors
+// probably can add router redirect to 404page
 
 // also i can add elstic dragable circles
 // in future i can add google stats
