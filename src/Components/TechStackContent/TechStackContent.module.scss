@@ -1,13 +1,13 @@
 .techContainer {
-  background-color: var(--color-prCard-light);
+  background-color: var(--color-aboutCard-light);
   box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.267);
   border-radius: 3rem;
   padding: 2rem 0rem;
-  color: var(--color-light-text);
+  color: var(--color-aboutCard-light-text);
   font-size: 1.6rem;
 
   h2 {
-    color: var(--color-light-text);
+    color: var(--color-aboutCard-light-text);
     font-size: 2rem;
     margin-bottom: 1.2rem;
     transform: translateX(-1.9rem);
@@ -21,10 +21,14 @@
   width: 100%;
 
   &.sectionDark {
-    background-color: var(--color-light-text);
+    background-color: var(--color-aboutCard-dark);
     color: var(--color-white-1);
     h2 {
       color: var(--color-white-1);
+    }
+    .icons {
+      // this one is to push the icons to the right to compensate the listed items offset
+      width: 20%;
     }
   }
 }

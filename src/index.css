@@ -24,9 +24,10 @@ html {
   /* Here go my colours */
   /* color for h1, nav items and icons header border (slightly lighter grey) */
   --color-light-text: hsl(0, 0%, 46%);
-
-  /* text color on dark BG */
-  --color-whitish-text: hsl(0, 0%, 95%);
+  --color-H1: hsl(0, 0%, 46%);
+  --color-nav-items: hsl(0, 0%, 46%);
+  --color-icons1: hsl(0, 0%, 46%);
+  --color-icon-popup-text: hsl(0, 0%, 95%);
 
   /* this is the color for paragraphs (black one)  */
   --color-dark-text: hsl(0, 0%, 0%);
@@ -39,32 +40,53 @@ html {
   /* colour for project card light version */
   --color-prCard-light: hsl(0, 0%, 93%);
   --color-prCard-dark: hsl(0, 0%, 43%);
+  --color-prCard-light-text: hsl(0, 0%, 46%);
+  --color-prCard-dark-text: hsl(0, 0%, 95%);
+
+  /* CustomLink colors */
+  --color-customLink-default: hsl(0, 0%, 41%);
+  --color-customLink-dark: hsl(0, 0%, 15%);
+  --color-customLink-light: hsl(0, 0%, 63%);
+  --color-customLink-dark-text: hsl(0, 0%, 95%);
+  --color-customLink-text: hsl(0, 0%, 95%);
 
   /* color for circle options on about me page */
   --color-about-option: hsla(0, 0%, 46%, 0.548);
   /* --color-about-option-selected: hsla(32, 55%, 52%, 0.904); */
   --color-about-option-selected: rgba(159, 127, 43, 0.59);
 
+  --color-aboutCard-light: hsl(0, 0%, 93%);
+  --color-aboutCard-light-text: hsl(0, 0%, 46%);
+  --color-aboutCard-dark: hsl(0, 0%, 46%);
+
+  --color-form: hsl(0, 0%, 93%);
+  --color-form-input-bg: white;
+  --color-form-label: hsl(0, 0%, 46%);
+  --color-form-text: hsl(0, 0%, 46%);
+
   /* colors for bg gradient in the light mode */
   --color-bg-1: white;
   --color-bg-2: hsl(0, 0%, 85%);
 
-  /* CustomLink colors */
-  --color-customLink-default: hsl(0, 0%, 41%);
-  --color-customLink-dark: hsl(0, 0%, 15%);
-  --color-customLink-light: hsl(0, 0%, 93%);
-  --color-customLink-light: hsl(0, 0%, 63%);
-
   /* colors for contact buttons */
   --color-outer-circle: hsl(0, 0%, 86%);
   --color-small-outer-circle: hsl(0, 0%, 72%);
+  --color-icon-hover: hsl(0, 0%, 46%);
+  --color-inner-circle: white;
+  --color-icon: hsl(0, 0%, 60%);
 }
 
 html.dark {
   /* Here go my colours for dark mode */
 
+  /* Here go my colours */
   /* color for h1, nav items and icons header border (slightly lighter grey) */
-  --color-light-text: hsl(0, 0%, 75%);
+  --color-light-text: hsl(0, 0%, 90%);
+  --color-H1: hsl(0, 0%, 80%);
+  --color-nav-items: hsl(0, 0%, 90%);
+  --color-icons1: hsl(0, 0%, 90%);
+  --color-icon-popup-text: hsl(0, 0%, 12%);
+  /* text color on dark BG */
 
   /* this is the color for paragraphs (black one)  */
   --color-dark-text: hsl(0, 0%, 89%);
@@ -74,9 +96,43 @@ html.dark {
 
   --color-white-1: hsl(0, 0%, 100%);
 
+  /* colour for project card light version */
+  --color-prCard-light: hsl(0, 0%, 32%);
+  --color-prCard-dark: hsl(0, 2%, 93%);
+  --color-prCard-light-text: hsl(0, 0%, 87%);
+  --color-prCard-dark-text: hsl(0, 0%, 0%);
+
+  /* CustomLink colors */
+  --color-customLink-default: hsl(0, 0%, 41%);
+  --color-customLink-dark: hsl(0, 0%, 15%);
+  --color-customLink-light: hsl(0, 0%, 63%);
+  --color-customlink-dark-text: hsl(0, 0%, 95%);
+  --color-customLink-text: hsl(0, 0%, 95%);
+
+  /* color for circle options on about me page */
+  --color-about-option: hsla(0, 0%, 46%, 0.548);
+  /* --color-about-option-selected: hsla(32, 55%, 52%, 0.904); */
+  --color-about-option-selected: rgba(159, 127, 43, 0.59);
+
+  --color-aboutCard-light: hsl(0, 0%, 73%);
+  --color-aboutCard-light-text: hsl(0, 0%, 16%);
+  --color-aboutCard-dark: hsl(0, 0%, 26%);
+
+  --color-form: hsl(0, 0%, 26%);
+  --color-form-label: hsl(0, 0%, 87%);
+  --color-form-text: hsl(0, 0%, 87%);
+  --color-form-input-bg: hsl(0, 0%, 16%);
+
   /* colors for bg gradient in the light mode */
-  --color-bg-1: hsl(0, 0%, 46%);
-  --color-bg-2: hsl(0, 0%, 20%);
+  --color-bg-1: hsl(0, 0%, 25%);
+  --color-bg-2: hsl(0, 0%, 13%);
+
+  /* colors for contact buttons */
+  --color-outer-circle: hsl(0, 0%, 16%);
+  --color-small-outer-circle: hsl(0, 0%, 100%);
+  --color-icon-hover: hsl(0, 0%, 100%);
+  --color-inner-circle: rgb(75, 75, 75);
+  --color-icon: hsl(0, 0%, 70%);
 }
 
 /* for future */

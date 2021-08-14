@@ -8,7 +8,7 @@
 
 .icon {
   & path {
-    fill: var(--color-light-text);
+    fill: var(--color-icons1);
     transition: all 0.2s;
   }
   &:hover {
@@ -24,7 +24,7 @@
     }
     & circle {
       fill-opacity: 0;
-      fill: var(--color-light-text);
+      fill: var(--color-icons1);
     }
   }
 }
@@ -35,7 +35,7 @@
 .iconLinked {
   position: relative;
   & path {
-    fill: var(--color-light-text);
+    fill: var(--color-icons1);
     transition: all 0.2s;
   }
   &:hover {
@@ -63,7 +63,7 @@
     left: 0;
     opacity: 0;
     border-radius: 1rem;
-    color: hsl(0, 0%, 95%);
+    color: var(--color-icon-popup-text);
     background-color: var(--color-light-text);
     box-shadow: 0 0.1rem 5rem hsla(0, 0%, 0%, 0.246);
   }

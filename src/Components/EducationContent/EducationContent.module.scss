@@ -1,15 +1,15 @@
 .educationContainer {
   width: 100%;
-  background-color: var(--color-prCard-light);
+  background-color: var(--color-aboutCard-light);
   box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.267);
   border-radius: 3rem;
   padding: 2rem 0rem;
-  color: var(--color-light-text);
+  color: var(--color-aboutCard-light-text);
   font-size: 1.6rem;
   // border: 1px solid red;
 
   h2 {
-    color: var(--color-light-text);
+    color: var(--color-aboutCard-light-text);
     font-size: 2rem;
     margin-bottom: 1.2rem;
     transform: translateX(-1.9rem);
@@ -27,11 +27,11 @@
   a:active {
     font-weight: bold;
     text-decoration: none;
-    color: var(--color-light-text);
+    color: var(--color-aboutCard-light-text);
   }
 
   &.sectionDark {
-    background-color: var(--color-light-text);
+    background-color: var(--color-aboutCard-dark);
     color: var(--color-white-1);
 
     h2 {

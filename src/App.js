@@ -24,7 +24,6 @@ const ContactPage = React.lazy(() => import('./Pages/ContactPage/ContactPage'));
 // Make a Logo
 // implement a full dark theme
 // Add on h1 homepage a shine effect
-// Add start animation on homepage
 // Update Hero image
 // Optimize the image for different screens
 // add a night icon on the toggle theme btn
@@ -32,8 +31,6 @@ const ContactPage = React.lazy(() => import('./Pages/ContactPage/ContactPage'));
 // in future i can add google stats
 // the theme and probably an about me choice should be stored somewhere (for example redux store or local storage so the theme is not switched on page reload) - you can do it with a useEffect hook on a top level
 // https://gooey-react.netlify.app  gooey effect on some elements?
-// make motion transitions (routs and about me cards)
-
 // change the Spinner(animate it with framer motion https://www.framer.com/docs/examples/)
 // also i can add elstic dragable circles
 

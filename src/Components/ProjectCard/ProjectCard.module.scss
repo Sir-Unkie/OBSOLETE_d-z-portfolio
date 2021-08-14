@@ -63,7 +63,7 @@
   font-weight: 300;
   font-size: 2rem;
   line-height: 2.5rem;
-  color: var(--color-light-text);
+  color: var(--color-prCard-light-text);
 }
 
 .list {
@@ -84,6 +84,6 @@
   .projectName,
   .technologyStack,
   .mainFeatures {
-    color: var(--color-whitish-text);
+    color: var(--color-prCard-dark-text);
   }
 }

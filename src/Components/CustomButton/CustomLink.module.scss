@@ -2,7 +2,7 @@
 customLink:link,
 customLink:visited {
   font-family: inherit;
-  color: var(--color-whitish-text);
+  color: var(--color-customLink-text);
   font-size: 2rem;
   font-weight: 300;
   text-decoration: none;
@@ -14,7 +14,7 @@ customLink:visited {
 
   &:hover {
     background-color: hsl(0, 0%, 100%);
-    color: black;
+    color: var(--color-prCard-dark-text);
     border: 2px solid black;
     transform: translateY(-0.4rem);
     box-shadow: 0 0.4rem 1.4rem rgba(0, 0, 0, 0.308);
@@ -23,31 +23,31 @@ customLink:visited {
 
 .customLink.dark {
   background-color: var(--color-customLink-dark);
-  color: var(--color-whitish-text);
+  color: var(--color-customLink-text);
   border: 2px solid transparent;
   &:hover {
     background-color: hsl(0, 0%, 100%);
-    color: var(--color-dark-text);
+    color: var(--color-prCard-dark-text);
     border: 2px solid black;
   }
 }
 .customLink.darkBG {
   background-color: var(--color-customLink-light);
-  color: var(--color-whitish-text);
+  color: var(--color-customLink-text);
   border: 2px solid transparent;
   &:hover {
     background-color: rgb(255, 255, 255);
-    color: var(--color-dark-text);
+    color: var(--color-prCard-dark-text);
     border: 2px solid black;
     // border: 2px solid transparent;
   }
 }
 .customLink.darkBG.dark {
   background-color: var(--color-customLink-dark);
-  color: var(--color-whitish-text);
+  color: var(--color-customLink-text);
   &:hover {
     background-color: hsl(0, 0%, 100%);
-    color: var(----color-dark-text);
+    color: var(--color-prCard-dark-text);
     border: 2px solid black;
     // border: 2px solid transparent;
   }

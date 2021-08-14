@@ -3,6 +3,9 @@
   top: -40%;
   left: 1rem;
 }
+@mixin invalid {
+  border: 2px solid hsl(0, 70%, 70%);
+}
 
 @mixin shrinkLabelMessage {
   font-size: 1.6rem;
@@ -16,7 +19,7 @@
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-prCard-light);
+  background-color: var(--color-form);
   //   box-shadow: 0.2rem 1rem 1rem hsla(0, 0%, 0%, 0.26);
   box-shadow: 0 0.3rem 2rem hsla(0, 0%, 0%, 0.253);
 
@@ -41,9 +44,10 @@
   input {
     position: relative;
     width: 100%;
-    color: var(--color-light-text);
+    color: var(--color-form-text);
     font-weight: 300;
     font-family: inherit;
+    background-color: var(--color-form-input-bg);
     padding: 1rem;
     font-size: 1.6rem;
     border-radius: 0.7rem;
@@ -56,7 +60,7 @@
     }
 
     &.notValid {
-      border: 2px solid red;
+      @include invalid;
     }
   }
 
@@ -64,9 +68,10 @@
     resize: none;
     min-height: 25rem;
     width: 100%;
-    color: var(--color-light-text);
+    color: var(--color-form-text);
     font-weight: 300;
     font-family: inherit;
+    background-color: var(--color-form-input-bg);
     padding: 0.6rem;
     font-size: 1.6rem;
     border-radius: 0.7rem;
@@ -79,14 +84,14 @@
       @include shrinkLabelMessage;
     }
     &.notValid {
-      border: 2px solid red;
+      @include invalid;
     }
   }
 
   .labelTextArea {
     transition: all 0.2s;
     font-size: 2rem;
-    color: var(--color-light-text);
+    color: var(--color-form-label);
     font-weight: 300;
     position: absolute;
     bottom: 0%;
@@ -101,7 +106,7 @@
   .labelEmail {
     transition: all 0.2s;
     font-size: 2rem;
-    color: var(--color-light-text);
+    color: var(--color-form-label);
     font-weight: 300;
     position: absolute;
     top: 50%;
@@ -125,7 +130,7 @@
     color: white;
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.212);
-    transition: all 0.2s;
+    transition: all 0.2s ease-out;
 
     &:hover {
       cursor: pointer;
