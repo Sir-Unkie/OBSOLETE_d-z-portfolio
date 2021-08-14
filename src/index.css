@@ -42,6 +42,7 @@ html {
   --color-prCard-dark: hsl(0, 0%, 43%);
   --color-prCard-light-text: hsl(0, 0%, 46%);
   --color-prCard-dark-text: hsl(0, 0%, 95%);
+  --color-prCard-text-hover: black;
 
   /* CustomLink colors */
   --color-customLink-default: hsl(0, 0%, 41%);
