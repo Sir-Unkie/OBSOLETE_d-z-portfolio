@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.scss';
-import React, { useEffect } from 'react';
+import React from 'react';
 import Header from './Components/Header/Header.jsx';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import { Suspense } from 'react';
@@ -27,21 +27,14 @@ const ContactPage = React.lazy(() => import('./Pages/ContactPage/ContactPage'));
 // Optimize the image for different screens
 // add a night icon on the toggle theme btn
 // burger navigation
-// in future i can add google stats
-// the theme and probably an about me choice should be stored somewhere (for example redux store or local storage so the theme is not switched on page reload) - you can do it with a useEffect hook on a top level
-// https://gooey-react.netlify.app  gooey effect on some elements?
-// change the Spinner(animate it with framer motion https://www.framer.com/docs/examples/)
+// cleane up the index css colors
+
 // also i can add elstic dragable circles
+// in future i can add google stats
+// https://gooey-react.netlify.app  gooey effect on some elements?
 
 function App() {
   const location = useLocation();
-  // useEffect(() => {
-  //   const themeLocalStorage = localStorage.getItem('theme');
-  //   if (themeLocalStorage === 'null') {
-  //     alert('no local storage data');
-  //     localStorage.setItem('theme', 'light');
-  //   }
-  // }, []);
 
   return (
     <React.Fragment>

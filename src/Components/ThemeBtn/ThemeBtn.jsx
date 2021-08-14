@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import styles from './ThemeBtn.module.scss';
-import { motion } from 'framer-motion';
 
 const ThemeBtn = () => {
   const themeLocalStorage = localStorage.getItem('theme');
@@ -31,8 +30,7 @@ const ThemeBtn = () => {
   }, [theme, htmlEl.classList, themeLocalStorage]);
 
   return (
-    <motion.div
-      whileHover={{}}
+    <div
       className={
         theme === 'light'
           ? `${styles.outerCircle}`
@@ -41,7 +39,7 @@ const ThemeBtn = () => {
       onClick={clickHandler}
     >
       <div className={styles.innerCircle}></div>
-    </motion.div>
+    </div>
   );
 };
 

@@ -29,7 +29,7 @@ html {
   --color-icons1: hsl(0, 0%, 46%);
   --color-icon-popup-text: hsl(0, 0%, 95%);
 
-  /* this is the color for paragraphs (black one)  */
+  /* this is the color for paragraphs (black one) homepage and contact page  */
   --color-dark-text: hsl(0, 0%, 0%);
 
   /* this is the main accent colour */
@@ -80,7 +80,6 @@ html {
 html.dark {
   /* Here go my colours for dark mode */
 
-  /* Here go my colours */
   /* color for h1, nav items and icons header border (slightly lighter grey) */
   --color-light-text: hsl(0, 0%, 90%);
   --color-H1: hsl(0, 0%, 80%);
@@ -89,7 +88,7 @@ html.dark {
   --color-icon-popup-text: hsl(0, 0%, 12%);
   /* text color on dark BG */
 
-  /* this is the color for paragraphs (black one)  */
+  /* this is the color for paragraphs (black one) homepage and contact page  */
   --color-dark-text: hsl(0, 0%, 89%);
 
   /* this is the main accent colour */
