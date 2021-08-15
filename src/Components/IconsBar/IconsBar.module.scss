@@ -24,8 +24,18 @@
     padding-bottom: 9rem;
   }
 
-  @media (min-width: 1350px) and (max-width: 1901px) {
+  @media (min-width: 1600px) and (max-width: 1901px) {
+    transform: scale(0.95);
+    transform-origin: left;
+  }
+
+  @media (min-width: 1350px) and (max-width: 1601px) {
     transform: scale(0.87);
+    transform-origin: left;
+  }
+
+  @media (min-width: 1000px) and (max-width: 1351px) {
+    transform: scale(0.65);
     transform-origin: left;
   }
 }

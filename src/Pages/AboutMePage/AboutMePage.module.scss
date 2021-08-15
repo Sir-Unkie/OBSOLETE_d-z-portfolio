@@ -31,6 +31,11 @@
     top: 5%;
     left: 5%;
   }
+
+  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1000px) {
+    top: 10%;
+    left: 20%;
+  }
 }
 
 .experience {
@@ -40,6 +45,10 @@
     top: 32%;
     left: 32%;
   }
+  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1000px) {
+    top: 35%;
+    left: 40%;
+  }
 }
 
 .Education {
@@ -48,6 +57,10 @@
   @media (min-width: 1900px) and (max-width: 1921px) {
     top: 68%;
     left: 41%;
+  }
+  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1000px) {
+    top: 67%;
+    left: 48%;
   }
 }
 

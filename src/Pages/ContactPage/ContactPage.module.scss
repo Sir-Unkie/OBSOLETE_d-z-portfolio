@@ -25,7 +25,11 @@
   padding-top: 5rem;
   padding-bottom: 5rem;
   // border: 1px solid blue;
-  @media (min-width: 1350px) and (max-width: 1901px) {
+  @media (min-width: 1600px) and (max-width: 1901px) {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+  }
+  @media (min-width: 1350px) and (max-width: 1601px) {
     padding-bottom: 2rem;
     padding-top: 3rem;
   }
