@@ -22,13 +22,12 @@ const ContactPage = React.lazy(() => import('./Pages/ContactPage/ContactPage'));
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // Make a Logo
-// Add on h1 homepage a shine effect
 // Update Hero image
 // Optimize the image for different screens
 // add a night icon on the toggle theme btn
 // burger navigation
 // cleane up the index css colors
-// probably can add router redirect to 404page
+// probably can add router redirect to 404page just in SWITCH add the last * route with 404 data
 
 // also i can add elstic dragable circles
 // in future i can add google stats

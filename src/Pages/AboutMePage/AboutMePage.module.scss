@@ -4,6 +4,7 @@
   min-height: calc(100vh - 6rem);
   position: relative;
   padding-top: 5rem;
+  border: 1px solid red;
 }
 
 .optionsContainer {
@@ -41,6 +42,7 @@
 }
 
 .bg {
+  border: 1px solid blue;
   background-position: left;
   width: 100%;
   min-height: calc(100vh - 6rem);

@@ -7,14 +7,23 @@
 
 .bg {
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 100% 100%;
   background-size: cover;
   z-index: -1;
   width: 100%;
   min-height: calc(100vh - 6rem);
   // height: 100vh;
-  background-image: url('../../Assets/img/HomePageImage\ compressed.png');
+  background-image: url('../../Assets/img/HomePage/HomePageImage2000px.png');
   // border: 0px solid transparent;
+
+  @media (min-resolution: 192dpi) and (min-width: 2000px) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(15, 12, 12, 0.678),
+        rgba(230, 4, 4, 0.459)
+      ),
+      url('../../Assets/img/HomePage/HomePageImage4000px.png');
+  }
 }
 
 .primaryHeading {

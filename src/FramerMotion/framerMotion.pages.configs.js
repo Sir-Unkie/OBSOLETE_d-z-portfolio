@@ -1,5 +1,5 @@
 export const defaultSlide = {
-  hidden: { opacity: 0, x: '80vw' },
+  hidden: { opacity: 0, x: '10vw' },
   visible: {
     opacity: 1,
     x: 0,
@@ -11,7 +11,7 @@ export const defaultSlide = {
 
   exit: {
     opacity: 0,
-    x: '-80vw',
+    x: '-10vw',
     transition: {
       type: 'Tween',
       duration: 0.5,
