@@ -6,39 +6,21 @@
 .bg {
   position: relative;
   overflow: hidden;
-  &::after {
-    z-index: -1;
-    bottom: -40%;
-    right: -20%;
-    content: '';
-    position: absolute;
-    background-color: hsla(0, 0%, 0%, 0.767);
-    width: 130rem;
-    height: 130rem;
-    border-radius: 50%;
-  }
 }
 
 .contactPage {
-  width: 90%;
-  right: -10%;
-  // border: 1px solid red;
+  width: 80%;
+  margin: auto;
   min-height: calc(100vh - 6rem);
-  position: relative;
   padding-top: 5rem;
-}
-
-.contactMeContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .leftArea {
   // border: 1px solid red;
-  width: 100%;
+  width: 70%;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  // border: 1px solid blue;
 
   h2 {
     font-size: 2.4rem;
@@ -61,35 +43,63 @@
   }
 }
 
+.rightOverflow {
+  min-height: calc(100vh - 6rem);
+  position: relative;
+  top: 0%;
+  left: 0%;
+  // border: 1px solid blue;
+  width: 100%;
+  overflow: hidden;
+  // border: 1px solid red;
+}
+
 .rightArea {
   width: 100%;
   // border: 1px solid red;
-  min-height: calc(100vh - 6rem - 7.5rem - 5rem);
-  position: relative;
+  height: 140vh;
+  width: 140vh;
+  position: absolute;
+  right: -25%;
+  top: 6%;
+  border-radius: 50%;
+  // border: 1px solid red;
+  &::after {
+    z-index: -1;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -52%);
+    position: absolute;
+    background-color: hsla(0, 0%, 0%, 0.767);
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+  }
 
   .github {
     position: absolute;
-    top: 0;
-    left: 60%;
+    top: 3%;
+    left: 40%;
   }
   .mail {
     position: absolute;
-    top: 15%;
-    left: 25%;
+    top: 9%;
+    left: 23%;
   }
   .whatsapp {
     position: absolute;
-    top: 30%;
-    left: 10%;
+    top: 21%;
+    left: 10.8%;
   }
   .telegram {
     position: absolute;
-    top: 50%;
-    left: 3%;
+    top: 36%;
+    left: 4.7%;
   }
   .linkedIn {
     position: absolute;
-    top: 70%;
-    left: 1%;
+    top: 51%;
+    left: 4%;
   }
 }

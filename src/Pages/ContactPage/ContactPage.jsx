@@ -15,9 +15,9 @@ const ContactPage = () => {
       exit='exit'
       className={styles.bg}
     >
-      <div className={styles.contactPage}>
-        <MyHeading>Contact me</MyHeading>
-        <div className={styles.contactMeContainer}>
+      <div className={styles.rightOverflow}>
+        <div className={styles.contactPage}>
+          <MyHeading>Contact me</MyHeading>
           <div className={styles.leftArea}>
             <h2>Have any questions or an interesting project towork on?</h2>
             <p className={styles.paragraph}>
@@ -32,37 +32,37 @@ const ContactPage = () => {
             </p>
             <CustomForm></CustomForm>
           </div>
-          <div className={styles.rightArea}>
-            <div className={styles.github}>
-              <ContactButton
-                goToLink='https://github.com/Sir-Unkie'
-                icon='GitHub'
-              ></ContactButton>
-            </div>
-            <div className={styles.mail}>
-              <ContactButton
-                goToLink='mailto:zhidovlenkovDI@gmail.com'
-                icon='Mail'
-              ></ContactButton>
-            </div>
-            <div className={styles.whatsapp}>
-              <ContactButton
-                goToLink='https://wa.me/79197255841'
-                icon='WhatsApp'
-              ></ContactButton>
-            </div>
-            <div className={styles.telegram}>
-              <ContactButton
-                goToLink='https://telegram.me/Sir_Unkie'
-                icon='Telegram'
-              ></ContactButton>
-            </div>
-            <div className={styles.linkedIn}>
-              <ContactButton
-                goToLink='https://www.linkedin.com/in/dmitry-zhidovlenkov'
-                icon='LinkedIn'
-              ></ContactButton>
-            </div>
+        </div>
+        <div className={styles.rightArea}>
+          <div className={styles.github}>
+            <ContactButton
+              goToLink='https://github.com/Sir-Unkie'
+              icon='GitHub'
+            ></ContactButton>
+          </div>
+          <div className={styles.mail}>
+            <ContactButton
+              goToLink='mailto:zhidovlenkovDI@gmail.com'
+              icon='Mail'
+            ></ContactButton>
+          </div>
+          <div className={styles.whatsapp}>
+            <ContactButton
+              goToLink='https://wa.me/79197255841'
+              icon='WhatsApp'
+            ></ContactButton>
+          </div>
+          <div className={styles.telegram}>
+            <ContactButton
+              goToLink='https://telegram.me/Sir_Unkie'
+              icon='Telegram'
+            ></ContactButton>
+          </div>
+          <div className={styles.linkedIn}>
+            <ContactButton
+              goToLink='https://www.linkedin.com/in/dmitry-zhidovlenkov'
+              icon='LinkedIn'
+            ></ContactButton>
           </div>
         </div>
       </div>

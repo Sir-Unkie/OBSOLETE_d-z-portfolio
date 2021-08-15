@@ -4,7 +4,6 @@
   min-height: calc(100vh - 6rem);
   position: relative;
   padding-top: 5rem;
-  border: 1px solid red;
 }
 
 .optionsContainer {
@@ -38,15 +37,13 @@
 
 .relative {
   position: relative;
-  border: 1px solid red;
 }
 
 .bg {
-  border: 1px solid blue;
   background-position: left;
   width: 100%;
   min-height: calc(100vh - 6rem);
-  background-image: url('../../Assets/img/aboutMePage\ compressed.png');
+  background-image: url('../../Assets/img/AboutMePageImages/aboutMePage.png');
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
