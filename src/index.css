@@ -21,6 +21,7 @@ html {
   /* to set 1rem=10px */
   font-size: 62.5%;
 
+  overflow-x: hidden;
   /* Here go my colours */
   /* color for h1, nav items and icons header border (slightly lighter grey) */
   --color-light-text: hsl(0, 0%, 46%);
@@ -75,6 +76,12 @@ html {
   --color-icon-hover: hsl(0, 0%, 46%);
   --color-inner-circle: white;
   --color-icon: hsl(0, 0%, 60%);
+}
+
+@media (min-width: 1900px) and (max-width: 1921px) {
+  html {
+    font-size: 60%;
+  }
 }
 
 html.dark {

@@ -3,7 +3,18 @@
   width: 80%;
   margin: 0 auto;
   min-height: calc(100vh - 6rem);
+  // border: 1px solid red;
+  // display: flex;
+  // align-items: center;
 }
+
+// .textContentContainer {
+//   border: 1px solid blue;
+//   margin: 0;
+//   padding: 0;
+//   display: flex;
+//   flex-direction: column;
+// }
 
 .bg {
   background-repeat: no-repeat;
@@ -16,13 +27,16 @@
   background-image: url('../../Assets/img/HomePage/HomePageImage2000px.png');
   // border: 0px solid transparent;
 
-  @media (min-resolution: 192dpi) and (min-width: 2000px) {
+  @media (min-resolution: 192dpi) and (min-width: 1921px) {
     background-image: linear-gradient(
         to right bottom,
         rgba(15, 12, 12, 0.678),
         rgba(230, 4, 4, 0.459)
       ),
       url('../../Assets/img/HomePage/HomePageImage4000px.png');
+  }
+
+  @media (min-width: 1900px) and (max-width: 1921) {
   }
 }
 
@@ -33,6 +47,10 @@
   line-height: 103%;
   padding-top: 20rem;
   margin-bottom: 3rem;
+
+  @media (min-width: 1900px) and (max-width: 1921px) {
+    padding-top: 17rem;
+  }
 
   // lets add a shine effect
   background-color: var(--color-H1);
@@ -49,7 +67,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 2.3s;
-  animation: shining 13s ease-in-out infinite;
+  animation: shining 9s ease-in-out infinite;
   @keyframes shining {
     0% {
       background-position: 0 0;
@@ -57,7 +75,7 @@
     10% {
       background-position: 0 0;
     }
-    22% {
+    26% {
       background-position: -120% 0;
     }
 

@@ -28,6 +28,11 @@ const ContactPage = React.lazy(() => import('./Pages/ContactPage/ContactPage'));
 // burger navigation
 // cleane up the index css colors
 // probably can add router redirect to 404page just in SWITCH add the last * route with 404 data
+// cleanup the contact page
+// make email notifications to be fixed on the screen
+// fix the layout issue with the mobile view
+// add page tab logo icon
+// probablu custom scrollbar
 
 // also i can add elstic dragable circles
 // in future i can add google stats

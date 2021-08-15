@@ -23,16 +23,28 @@
 .techStack {
   top: 5%;
   left: 5%;
+  @media (min-width: 1900px) and (max-width: 1921px) {
+    top: 5%;
+    left: 5%;
+  }
 }
 
 .experience {
   top: 32%;
   left: 34%;
+  @media (min-width: 1900px) and (max-width: 1921px) {
+    top: 32%;
+    left: 32%;
+  }
 }
 
 .Education {
   top: 70%;
   left: 45%;
+  @media (min-width: 1900px) and (max-width: 1921px) {
+    top: 68%;
+    left: 41%;
+  }
 }
 
 .relative {
@@ -52,6 +64,9 @@
 .textArea {
   position: relative;
   right: -58%;
-
   max-width: 50%;
+  @media (min-width: 1900px) and (max-width: 1921px) {
+    max-width: 60%;
+    right: -50%;
+  }
 }
