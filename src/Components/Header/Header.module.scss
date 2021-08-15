@@ -12,6 +12,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: 1350px) and (max-width: 1901px) {
+    width: 90%;
+  }
 }
 
 .leftSide {

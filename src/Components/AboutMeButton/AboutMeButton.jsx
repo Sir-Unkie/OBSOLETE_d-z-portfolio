@@ -4,17 +4,16 @@ import { motion } from 'framer-motion';
 
 const AboutMeButton = ({ children, selected, clickHandler, option }) => {
   const handleClick = e => {
-    // e.target.classList.toggle(styles.animation);
+    e.target.classList.toggle(styles.animation);
     clickHandler.bind(null, option)();
-    // setTimeout(() => {
-    // clickHandler.bind(null, option)();
-    // e.target.classList.toggle(styles.animation);
-    // }, 0);
+    setTimeout(() => {
+      clickHandler.bind(null, option)();
+      e.target.classList.toggle(styles.animation);
+    }, 0);
   };
   return (
     <motion.div
       whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 1.7, transition: { duration: 0.1 } }}
       // id='option'
       onClick={handleClick}
       className={

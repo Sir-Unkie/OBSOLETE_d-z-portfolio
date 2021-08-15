@@ -84,6 +84,12 @@ html {
   }
 }
 
+@media (min-width: 1350px) and (max-width: 1901px) {
+  html {
+    font-size: 50%;
+  }
+}
+
 html.dark {
   /* Here go my colours for dark mode */
   /* color for h1, nav items and icons header border (slightly lighter grey) */
@@ -152,12 +158,13 @@ html.dark {
 
 /* 1. DESKTOP width: 2100 - ,  height:1440 goes to 1096 */
 /* 2. DESKTOP width: 1920 - 2100,  height:1080 goes to 969 */
-/* 3. DESKTOP width: 1200 - 1920, probably: height:800 goes to 717 */
+
+/* 3. DESKTOP width: 1350 - 1920, probably: height:768 goes to 689 */
 /* 4. TABLET LAND width: 1000 - 1200, probably: height:768 goes to 689 */
 /* 5. TABLET PORT width: 760 - 1000, probably: height:1024 goes to 918 */
 /* 6. Phone width: 320 - 760, probably: height:480 goes to 430 */
 
 #modal-root {
-  position: absolute;
+  position: fixed;
   z-index: 100;
 }

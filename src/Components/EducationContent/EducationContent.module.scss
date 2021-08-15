@@ -49,9 +49,16 @@
   justify-content: space-between;
   // border: 2px solid blue;
 
+  @media (min-width: 1350px) and (max-width: 1901px) {
+    gap: 0.2rem;
+  }
+
   .rowText {
     width: 70%;
     // border: 1px solid red;
+    @media (min-width: 1350px) and (max-width: 1901px) {
+      width: 85%;
+    }
   }
 }
 

@@ -16,22 +16,26 @@ const HomePage = () => {
     >
       <div className={styles.homepage}>
         <main className={styles.textContentContainer}>
-          <h1 className={styles.primaryHeading}>
-            FRONT-END
-            <br />
-            WEB DEVELOPER
-          </h1>
-          <p className={styles.paragraph}>
-            I am focused on creating web applications with:
-          </p>
-          <ul className={styles.featuresList}>
-            <li className={styles.feature}>Optimized performance</li>
-            <li className={styles.feature}>Responsive layouts</li>
-            <li className={styles.feature}>Intuitive UX/UI design</li>
-          </ul>
-          <Link to='/projects' className={styles.projectsBtn}>
-            See my projects
-          </Link>
+          <div>
+            <h1 className={styles.primaryHeading}>
+              FRONT-END
+              <br />
+              WEB DEVELOPER
+            </h1>
+            <div>
+              <p className={styles.paragraph}>
+                I am focused on creating web applications with:
+              </p>
+              <ul className={styles.featuresList}>
+                <li className={styles.feature}>Optimized performance</li>
+                <li className={styles.feature}>Responsive layouts</li>
+                <li className={styles.feature}>Intuitive UX/UI design</li>
+              </ul>
+            </div>
+            <Link to='/projects' className={styles.projectsBtn}>
+              See my projects
+            </Link>
+          </div>
           <IconsBar></IconsBar>
         </main>
       </div>
