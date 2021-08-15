@@ -5,6 +5,11 @@
   padding: 2rem 0rem;
   color: var(--color-aboutCard-light-text);
   font-size: 1.6rem;
+  @media (min-width: 1350px) and (max-width: 1901px) {
+    width: 80%;
+    position: relative;
+    right: -20%;
+  }
 
   h2 {
     color: var(--color-aboutCard-light-text);
