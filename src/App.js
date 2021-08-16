@@ -32,6 +32,7 @@ const ContactPage = React.lazy(() => import('./Pages/ContactPage/ContactPage'));
 // fix the layout issue with the mobile view
 // add page tab logo icon
 // probablu custom scrollbar
+// add telephone number
 
 // also i can add elstic dragable circles
 // in future i can add google stats
