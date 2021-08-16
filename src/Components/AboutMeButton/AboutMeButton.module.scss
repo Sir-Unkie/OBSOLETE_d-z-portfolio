@@ -14,27 +14,36 @@
   color: white;
   transition: all 0.3s;
 
-  @media (min-width: 1350px) and (max-width: 1901px) {
-    width: 16rem;
-    height: 16rem;
+  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 2000px) {
+    width: 20rem;
+    height: 20rem;
   }
 
-  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1000px) {
-    width: 22rem;
-    height: 22rem;
+  @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 700px) and (max-height: 2000px) {
+    width: 21rem;
+    height: 21rem;
+  }
+
+  @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 500px) and (max-height: 701px) {
+    width: 16rem;
+    height: 16rem;
   }
 
   &:hover {
     cursor: pointer;
     background-color: var(--color-about-option-selected);
+    transform: scale(1.08);
   }
 
+  &.animation {
+    animation: bump 0.5s ease-in-out backwards;
+  }
   &.selected {
     background-color: var(--color-about-option-selected);
     transform: scale(1.1);
-  }
-  &.animation {
-    animation: bump 0.5s ease-in-out backwards;
+    &:hover {
+      transform: scale(1.13);
+    }
   }
 }
 

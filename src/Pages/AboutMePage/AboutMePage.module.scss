@@ -4,6 +4,7 @@
   min-height: calc(100vh - 6rem);
   position: relative;
   padding-top: 5rem;
+  border: 1px solid green;
 
   @media (min-width: 1350px) and (max-width: 1901px) {
     width: 90%;
@@ -11,13 +12,39 @@
 }
 
 .optionsContainer {
-  top: 15%;
-  left: 16%;
-  height: 84%;
-  width: 40%;
+  bottom: 0%;
+  left: 0%;
+  // height: 86vw;
+  // width: 91vw;
+  z-index: 9;
+  height: 166vh;
+  width: 170vh;
   position: absolute;
+  top: -3%;
+  left: -33%;
   overflow: hidden;
+  border: 1px solid red;
+  border-radius: 50%;
+  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 2000px) {
+    top: -3%;
+    left: -42%;
+  }
+  @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 700px) and (max-height: 2000px) {
+    top: -3%;
+    left: -60%;
+  }
 
+  &::after {
+    content: '';
+    width: 60%;
+    height: 65%;
+    background-color: rgba(0, 0, 0, 0.83);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   & > * {
     position: absolute;
     z-index: 10;
@@ -25,43 +52,43 @@
 }
 
 .techStack {
-  top: 5%;
-  left: 5%;
-  @media (min-width: 1900px) and (max-width: 1921px) {
-    top: 5%;
-    left: 5%;
-  }
+  top: 15%;
+  left: 65%;
+  // @media (min-width: 1900px) and (max-width: 1921px) {
+  //   top: 5%;
+  //   left: 5%;
+  // }
 
-  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1000px) {
-    top: 10%;
-    left: 20%;
-  }
+  // @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1000px) {
+  //   top: 10%;
+  //   left: 20%;
+  // }
 }
 
 .experience {
-  top: 32%;
-  left: 34%;
-  @media (min-width: 1900px) and (max-width: 1921px) {
-    top: 32%;
-    left: 32%;
-  }
-  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1000px) {
-    top: 35%;
-    left: 40%;
-  }
+  top: 28%;
+  left: 75%;
+  // @media (min-width: 1900px) and (max-width: 1921px) {
+  //   top: 32%;
+  //   left: 32%;
+  // }
+  // @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1000px) {
+  //   top: 35%;
+  //   left: 40%;
+  // }
 }
 
 .Education {
-  top: 70%;
-  left: 45%;
-  @media (min-width: 1900px) and (max-width: 1921px) {
-    top: 68%;
-    left: 41%;
-  }
-  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1000px) {
-    top: 67%;
-    left: 48%;
-  }
+  top: 44%;
+  left: 78%;
+  // @media (min-width: 1900px) and (max-width: 1921px) {
+  //   top: 68%;
+  //   left: 41%;
+  // }
+  // @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1000px) {
+  //   top: 67%;
+  //   left: 48%;
+  // }
 }
 
 .relative {
@@ -69,25 +96,32 @@
 }
 
 .bg {
-  background-position: left;
-  width: 100%;
+  // background-position: left;
+  // width: 100%;
   min-height: calc(100vh - 6rem);
-  background-image: url('../../Assets/img/AboutMePageImages/aboutMePage.png');
-  background-position: left;
-  background-size: cover;
-  background-repeat: no-repeat;
+  // background-image: url('../../Assets/img/AboutMePageImages/aboutMePage.png');
+  // background-position: left;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  border: 1px solid rgb(0, 17, 255);
+  overflow: hidden;
 }
 
 .textArea {
+  border: 1px solid red;
   position: relative;
-  right: -58%;
+  right: -50%;
   max-width: 50%;
   @media (min-width: 1900px) and (max-width: 1921px) {
     max-width: 60%;
-    right: -50%;
   }
 
-  @media (min-width: 1350px) and (max-width: 1901px) {
+  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 2000px) {
+    max-width: 47%;
+    right: -53%;
+  }
+
+  @media (min-width: 1350px) and (max-width: 1601px) {
     max-width: 57%;
     right: -47%;
   }

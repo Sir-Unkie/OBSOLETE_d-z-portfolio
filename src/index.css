@@ -78,19 +78,45 @@ html {
   --color-icon: hsl(0, 0%, 60%);
 }
 
-@media (min-width: 1900px) and (max-width: 1921px) {
+/* here will go the medias for main displays: 2k, 1080p, 1377x700 */
+
+@media (min-width: 1900px) and (min-height: 1000px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1901px) and (min-height: 1000px) {
   html {
     font-size: 60%;
   }
 }
 
-@media (min-width: 1600px) and (max-width: 1901px) {
+@media (min-width: 1350px) and (max-width: 1601px) and (min-height: 1000px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (min-width: 1900px) and (max-width: 1921px) and (min-height: 700px) and (max-height: 1001px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1901px) and (min-height: 500px) and (max-height: 701px) {
   html {
     font-size: 55%;
   }
 }
 
-@media (min-width: 1350px) and (max-width: 1601px) {
+@media (min-width: 1350px) and (max-width: 1601px) and (min-height: 500px) and (max-height: 701px) {
   html {
     font-size: 50%;
   }

@@ -1,0 +1,94 @@
+.aboutMe {
+  width: 80%;
+  margin: auto;
+  min-height: calc(100vh - 6rem);
+  position: relative;
+  padding-top: 5rem;
+
+  @media (min-width: 1350px) and (max-width: 1901px) {
+    width: 90%;
+  }
+}
+
+.optionsContainer {
+  top: 15%;
+  left: 16%;
+  height: 84%;
+  width: 40%;
+  position: absolute;
+  overflow: hidden;
+
+  & > * {
+    position: absolute;
+    z-index: 10;
+  }
+}
+
+.techStack {
+  top: 5%;
+  left: 5%;
+  @media (min-width: 1900px) and (max-width: 1921px) {
+    top: 5%;
+    left: 5%;
+  }
+
+  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1000px) {
+    top: 10%;
+    left: 20%;
+  }
+}
+
+.experience {
+  top: 32%;
+  left: 34%;
+  @media (min-width: 1900px) and (max-width: 1921px) {
+    top: 32%;
+    left: 32%;
+  }
+  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1000px) {
+    top: 35%;
+    left: 40%;
+  }
+}
+
+.Education {
+  top: 70%;
+  left: 45%;
+  @media (min-width: 1900px) and (max-width: 1921px) {
+    top: 68%;
+    left: 41%;
+  }
+  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1000px) {
+    top: 67%;
+    left: 48%;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.bg {
+  background-position: left;
+  width: 100%;
+  min-height: calc(100vh - 6rem);
+  background-image: url('../../Assets/img/AboutMePageImages/aboutMePage.png');
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.textArea {
+  position: relative;
+  right: -58%;
+  max-width: 50%;
+  @media (min-width: 1900px) and (max-width: 1921px) {
+    max-width: 60%;
+    right: -50%;
+  }
+
+  @media (min-width: 1350px) and (max-width: 1901px) {
+    max-width: 57%;
+    right: -47%;
+  }
+}

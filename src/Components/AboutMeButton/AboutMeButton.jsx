@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './AboutMeButton.module.scss';
-import { motion } from 'framer-motion';
 
 const AboutMeButton = ({ children, selected, clickHandler, option }) => {
   const handleClick = e => {
@@ -12,8 +11,8 @@ const AboutMeButton = ({ children, selected, clickHandler, option }) => {
     }, 0);
   };
   return (
-    <motion.div
-      whileHover={{ scale: 1.1 }}
+    <div
+      // whileHover={{ scale: 1 }}
       // id='option'
       onClick={handleClick}
       className={
@@ -23,7 +22,7 @@ const AboutMeButton = ({ children, selected, clickHandler, option }) => {
       }
     >
       {children}
-    </motion.div>
+    </div>
   );
 };
 
