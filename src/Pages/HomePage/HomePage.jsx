@@ -16,7 +16,7 @@ const HomePage = () => {
     >
       <div className={styles.homepage}>
         <main className={styles.textContentContainer}>
-          <div>
+          <div className={styles.text}>
             <h1 className={styles.primaryHeading}>
               FRONT-END
               <br />

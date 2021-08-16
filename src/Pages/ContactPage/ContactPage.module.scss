@@ -8,12 +8,22 @@
   overflow: hidden;
 }
 
+.pageBorderOverflowContainer {
+  min-height: calc(100vh - 6rem);
+  position: relative;
+  top: 0%;
+  left: 0%;
+  // border: 1px solid blue;
+  width: 100%;
+  overflow: hidden;
+}
+
 .contactPage {
   width: 80%;
   margin: auto;
   min-height: calc(100vh - 6rem);
   padding-top: 5rem;
-
+  // border: 1px solid blue;
   @media (min-width: 1350px) and (max-width: 1901px) {
     width: 90%;
   }
@@ -25,14 +35,17 @@
   padding-top: 5rem;
   padding-bottom: 5rem;
   // border: 1px solid blue;
-  @media (min-width: 1600px) and (max-width: 1901px) {
+
+  // medias for 1080p
+  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1001px) {
     padding-bottom: 5rem;
     padding-top: 5rem;
   }
-  @media (min-width: 1350px) and (max-width: 1601px) {
+  @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 700px) and (max-height: 1001px) {
     padding-bottom: 2rem;
     padding-top: 3rem;
   }
+  // medias for 720p
 
   h2 {
     font-size: 2.4rem;
@@ -59,17 +72,6 @@
   }
 }
 
-.rightOverflow {
-  min-height: calc(100vh - 6rem);
-  position: relative;
-  top: 0%;
-  left: 0%;
-  // border: 1px solid blue;
-  width: 100%;
-  overflow: hidden;
-  // border: 1px solid red;
-}
-
 .rightArea {
   width: 100%;
   // border: 1px solid red;
@@ -79,7 +81,38 @@
   right: -25%;
   top: 6%;
   border-radius: 50%;
-  // border: 1px solid red;
+  /* medias for 2k displays */
+  @media (min-width: 1900px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 1000px) {
+    pointer-events: none;
+
+    right: -45%;
+    & > * > * {
+      pointer-events: all;
+    }
+  }
+
+  @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
+    pointer-events: none;
+    right: -55%;
+    & > * {
+      pointer-events: all;
+    }
+  }
+
+  @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
+    pointer-events: none;
+    & > * {
+      pointer-events: all;
+    }
+  }
+  /* medias for 1080p displays */
+
   &::after {
     z-index: -1;
     content: '';
@@ -91,31 +124,111 @@
     width: 85%;
     height: 85%;
     border-radius: 50%;
+
+    /* medias for 2k displays */
+    @media (min-width: 1900px) and (min-height: 1000px) {
+    }
+
+    @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 1000px) {
+    }
+
+    @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 1000px) {
+    }
+
+    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
+      transform: translate(-20%, -106%);
+      width: 55%;
+      height: 45%;
+      border-radius: 3rem;
+    }
+
+    @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
+      transform: translate(0%, -13%);
+      width: 75%;
+      height: 75%;
+      border-radius: 50%;
+    }
+    /* medias for 1080p displays */
   }
 
   .github {
     position: absolute;
     top: 3%;
-    left: 40%;
+    left: 40.5%;
+    /* medias for 2k displays */
+    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
+      top: 5%;
+      left: 40.5%;
+    }
+
+    @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
+      top: 56%;
+      left: 74%;
+    }
+    /* medias for 1080p displays */
   }
   .mail {
     position: absolute;
     top: 9%;
     left: 23%;
+    /* medias for 2k displays */
+    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
+      top: 13%;
+      left: 40.5%;
+    }
+
+    @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
+      top: 49%;
+      left: 74%;
+    }
+    /* medias for 1080p displays */
   }
   .whatsapp {
     position: absolute;
     top: 21%;
     left: 10.8%;
+    /* medias for 2k displays */
+    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
+      top: 21%;
+      left: 40.5%;
+    }
+
+    @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
+      top: 56%;
+      left: 58%;
+    }
+    /* medias for 1080p displays */
   }
   .telegram {
     position: absolute;
     top: 36%;
     left: 4.7%;
+    /* medias for 2k displays */
+    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
+      top: 29%;
+      left: 40.5%;
+    }
+
+    @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
+      top: 56%;
+      left: 66%;
+    }
+    /* medias for 1080p displays */
   }
   .linkedIn {
     position: absolute;
     top: 51%;
     left: 4%;
+    /* medias for 2k displays */
+    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
+      top: 37%;
+      left: 40.5%;
+    }
+
+    @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
+      top: 49%;
+      left: 66%;
+    }
+    /* medias for 1080p displays */
   }
 }

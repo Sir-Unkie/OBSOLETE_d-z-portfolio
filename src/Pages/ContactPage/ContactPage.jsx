@@ -15,7 +15,7 @@ const ContactPage = () => {
       exit='exit'
       className={styles.bg}
     >
-      <div className={styles.rightOverflow}>
+      <div className={styles.pageBorderOverflowContainer}>
         <div className={styles.contactPage}>
           <MyHeading>Contact me</MyHeading>
           <div className={styles.leftArea}>
