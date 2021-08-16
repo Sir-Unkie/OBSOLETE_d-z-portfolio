@@ -25,7 +25,44 @@
   justify-content: flex-start;
   gap: 10rem;
 
+  // medias for 2k displays
+  @media (min-width: 1900px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 150px) and (max-width: 1001px) and (min-height: 1000px) {
+    align-items: center;
+    margin: auto;
+    // border: 1px solid red;
+  }
   .text {
+    // medias for 2k displays
+    @media (min-width: 1900px) and (min-height: 1000px) {
+    }
+
+    @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 1000px) {
+    }
+
+    @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 1000px) {
+    }
+
+    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
+    }
+
+    @media (min-width: 150px) and (max-width: 1001px) and (min-height: 1000px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
 }
 
@@ -102,10 +139,18 @@
 
   @media (min-width: 1900px) and (min-height: 1000px) {
   }
+
   @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 1000px) {
   }
 
   @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 150px) and (max-width: 1001px) and (min-height: 1000px) {
+    font-size: 9rem;
   }
 
   // medias for 1080p displays

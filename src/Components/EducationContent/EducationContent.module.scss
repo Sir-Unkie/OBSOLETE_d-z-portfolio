@@ -7,6 +7,22 @@
   color: var(--color-aboutCard-light-text);
   font-size: 1.6rem;
   // border: 1px solid red;
+  /* medias for 2k displays */
+  @media (min-width: 1900px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
+    padding: 1rem 0rem;
+  }
 
   h2 {
     color: var(--color-aboutCard-light-text);
@@ -28,6 +44,22 @@
     font-weight: bold;
     text-decoration: none;
     color: var(--color-aboutCard-light-text);
+  }
+
+  @media (min-width: 1900px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
+    padding: 1rem 3rem;
   }
 
   &.sectionDark {
@@ -56,8 +88,20 @@
   .rowText {
     width: 70%;
     // border: 1px solid red;
-    @media (min-width: 1350px) and (max-width: 1901px) {
-      width: 85%;
+    @media (min-width: 1900px) and (min-height: 1000px) {
+    }
+
+    @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 1000px) {
+    }
+
+    @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 1000px) {
+    }
+
+    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
+    }
+
+    @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
+      width: 100%;
     }
   }
 }
@@ -75,6 +119,22 @@
   flex-grow: 0;
   // align-items: center;
   // border: 1px solid green;
+
+  @media (min-width: 1900px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
+  }
+
+  @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
+    display: none;
+  }
 
   .MPEILogo {
     position: relative;

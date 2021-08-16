@@ -17,13 +17,13 @@
   }
 
   @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
-    transform: scale(0.85);
+    transform: scale(0.92);
     transform-origin: left;
   }
 
-  @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
-    transform: scale(0.75);
-    transform-origin: left;
+  @media (min-width: 150px) and (max-width: 1001px) and (min-height: 1000px) {
+    transform: scale(0.88);
+    transform-origin: center;
   }
 
   // medias for 1080p displays
