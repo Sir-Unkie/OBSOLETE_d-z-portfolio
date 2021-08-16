@@ -24,6 +24,31 @@
     padding: 1rem 0rem;
   }
 
+  /* medias for 1080p displays */
+  @media (min-width: 1900px) and (min-height: 700px) and (max-height: 1001px) {
+    width: 60%;
+    position: relative;
+    right: -40%;
+  }
+
+  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1001px) {
+  }
+
+  @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 700px) and (max-height: 1001px) {
+    width: 70%;
+    position: relative;
+    right: -15%;
+  }
+
+  @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 700px) and (max-height: 1001px) {
+    width: 80%;
+    position: relative;
+    right: -10%;
+  }
+
+  @media (min-width: 150px) and (max-width: 1001px) and (min-height: 700px) and (max-height: 1001px) {
+  }
+
   h2 {
     color: var(--color-aboutCard-light-text);
     font-size: 2rem;
@@ -58,7 +83,7 @@
   @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
   }
 
-  @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
+  @media (min-width: 150px) and (max-width: 1001px) and (min-height: 1000px) {
     padding: 1rem 3rem;
   }
 
@@ -88,19 +113,14 @@
   .rowText {
     width: 70%;
     // border: 1px solid red;
-    @media (min-width: 1900px) and (min-height: 1000px) {
+
+    // medias for 2k displays
+    @media (min-width: 150px) and (max-width: 1001px) and (min-height: 1000px) {
+      width: 100%;
     }
 
-    @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 1000px) {
-    }
-
-    @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 1000px) {
-    }
-
-    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
-    }
-
-    @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
+    // medias for 1080p displays
+    @media (min-width: 150px) and (max-width: 1001px) and (min-height: 700px) and (max-height: 1001px) {
       width: 100%;
     }
   }
@@ -120,19 +140,12 @@
   // align-items: center;
   // border: 1px solid green;
 
-  @media (min-width: 1900px) and (min-height: 1000px) {
+  // medias for 2k displays
+  @media (min-width: 150px) and (max-width: 1001px) and (min-height: 1000px) {
+    display: none;
   }
-
-  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 1000px) {
-  }
-
-  @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 1000px) {
-  }
-
-  @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
-  }
-
-  @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
+  // medias for 1080p displays
+  @media (min-width: 150px) and (max-width: 1001px) and (min-height: 700px) and (max-height: 1001px) {
     display: none;
   }
 

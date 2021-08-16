@@ -21,7 +21,7 @@
   top: -3%;
   left: -33%;
   overflow: hidden;
-  border: 1px solid red;
+  // border: 1px solid red;
   border-radius: 50%;
   & > * {
     position: absolute;
@@ -87,7 +87,48 @@
     left: -42%;
   }
   @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 700px) and (max-height: 1001px) {
-    height: 21%;
+    height: 18rem;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    border-radius: 0%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: visible;
+    // border-bottom: 1px solid black;
+    & > * {
+      // border: 1px solid red;
+      position: relative;
+
+      margin-bottom: 1rem;
+    }
+  }
+  @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 700px) and (max-height: 1001px) {
+    height: 20rem;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    border-radius: 0%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: visible;
+    // border-bottom: 1px solid black;
+    & > * {
+      // border: 1px solid red;
+      position: relative;
+
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (min-width: 150px) and (max-width: 1001px) and (min-height: 700px) and (max-height: 1001px) {
+    height: 20rem;
     width: 100%;
     top: 0%;
     left: 0%;
@@ -284,7 +325,7 @@
 }
 
 .textArea {
-  border: 1px solid red;
+  // border: 1px solid red;
   position: relative;
   right: -50%;
   max-width: 50%;
@@ -328,11 +369,20 @@
   }
 
   @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 700px) and (max-height: 1001px) {
+    max-width: 100%;
+    right: 0%;
+    margin-top: 9rem;
   }
 
   @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 700px) and (max-height: 1001px) {
+    max-width: 100%;
+    right: 0%;
+    margin-top: 9rem;
   }
 
   @media (min-width: 150px) and (max-width: 1001px) and (min-height: 700px) and (max-height: 1001px) {
+    max-width: 100%;
+    right: 0%;
+    margin-top: 9rem;
   }
 }

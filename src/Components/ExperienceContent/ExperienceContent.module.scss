@@ -86,19 +86,13 @@
     width: 80%;
     // border: 1px solid red;
     /* medias for 2k displays */
-    @media (min-width: 1900px) and (min-height: 1000px) {
-    }
-
-    @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 1000px) {
-    }
-
-    @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 1000px) {
-    }
-
-    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
-    }
 
     @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
+      width: 100%;
+    }
+
+    // medias for 1080p displays
+    @media (min-width: 150px) and (max-width: 1001px) and (min-height: 700px) and (max-height: 1001px) {
       width: 100%;
     }
   }
@@ -116,19 +110,12 @@
     // border: 1px solid blue;
 
     /* medias for 2k displays */
-    @media (min-width: 1900px) and (min-height: 1000px) {
-    }
-
-    @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 1000px) {
-    }
-
-    @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 1000px) {
-    }
-
-    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
-    }
 
     @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
+      display: none;
+    }
+    // medias for 1080p displays
+    @media (min-width: 150px) and (max-width: 1001px) and (min-height: 700px) and (max-height: 1001px) {
       display: none;
     }
   }
