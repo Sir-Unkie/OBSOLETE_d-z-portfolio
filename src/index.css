@@ -76,6 +76,14 @@ html {
   --color-icon-hover: hsl(0, 0%, 46%);
   --color-inner-circle: white;
   --color-icon: hsl(0, 0%, 60%);
+
+  /* colors for gradient */
+  --color-home-gradient-1: rgba(255, 255, 255, 0.99);
+  --color-home-gradient-2: rgba(255, 255, 255, 0.99);
+  --color-home-gradient-3: rgba(255, 255, 255, 0.98);
+  --color-home-gradient-4: rgba(255, 255, 255, 0.96);
+  --color-home-gradient-5: rgba(255, 255, 255, 0);
+  --color-home-gradient-simple: rgba(255, 255, 255, 0.9);
 }
 
 /* here will go the medias for main displays: 2k, 1080p, 1377x700 */
@@ -226,6 +234,14 @@ html.dark {
   --color-icon-hover: hsl(0, 0%, 100%);
   --color-inner-circle: rgb(75, 75, 75);
   --color-icon: hsl(0, 0%, 70%);
+
+  /* colors for gradient */
+  --color-home-gradient-1: rgba(0, 0, 0, 0.99);
+  --color-home-gradient-2: rgba(0, 0, 0, 0.99);
+  --color-home-gradient-3: rgba(0, 0, 0, 0.98);
+  --color-home-gradient-4: rgba(0, 0, 0, 0.96);
+  --color-home-gradient-5: rgba(0, 0, 0, 0);
+  --color-home-gradient-simple: rgba(0, 0, 0, 0.68);
 }
 
 /* for future */

@@ -40,6 +40,24 @@
     margin: auto;
     // border: 1px solid red;
   }
+  // medias for 1080p displays
+  @media (min-width: 1900px) and (min-height: 700px) and (max-height: 1001px) {
+  }
+
+  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1001px) {
+  }
+
+  @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 700px) and (max-height: 1001px) {
+  }
+
+  @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 700px) and (max-height: 1001px) {
+  }
+
+  @media (min-width: 150px) and (max-width: 1001px) and (min-height: 700px) and (max-height: 1001px) {
+    align-items: center;
+    margin: auto;
+  }
+
   .text {
     // medias for 2k displays
     @media (min-width: 1900px) and (min-height: 1000px) {
@@ -55,6 +73,27 @@
     }
 
     @media (min-width: 150px) and (max-width: 1001px) and (min-height: 1000px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    // medias for 1080p displays
+
+    @media (min-width: 1900px) and (min-height: 700px) and (max-height: 1001px) {
+    }
+
+    @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1001px) {
+    }
+
+    @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 700px) and (max-height: 1001px) {
+    }
+
+    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 700px) and (max-height: 1001px) {
+    }
+
+    @media (min-width: 150px) and (max-width: 1001px) and (min-height: 700px) and (max-height: 1001px) {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -84,11 +123,11 @@
   @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 1000px) {
     background-image: linear-gradient(
         to right,
-        rgba(255, 255, 255, 0.9) 0%,
-        rgba(255, 255, 255, 0.99) 40%,
-        rgba(255, 255, 255, 0.98) 45%,
-        rgba(255, 255, 255, 0.96) 50%,
-        rgba(255, 255, 255, 0) 100%
+        var(--color-home-gradient-1) 0%,
+        var(--color-home-gradient-2) 40%,
+        var(--color-home-gradient-3) 45%,
+        var(--color-home-gradient-4) 50%,
+        var(--color-home-gradient-5) 100%
       ),
       url('../../Assets/img/HomePage/HomePageImage2000px.png');
   }
@@ -111,13 +150,37 @@
   }
 
   @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 700px) and (max-height: 1001px) {
-    background-position: 75% 100%;
+    background-image: linear-gradient(
+        to right,
+        var(--color-home-gradient-1) 0%,
+        var(--color-home-gradient-2) 40%,
+        var(--color-home-gradient-3) 45%,
+        var(--color-home-gradient-4) 50%,
+        var(--color-home-gradient-5) 100%
+      ),
+      url('../../Assets/img/HomePage/HomePageImage2000px.png');
   }
 
   @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 700px) and (max-height: 1001px) {
+    background-image: linear-gradient(
+        to right,
+        var(--color-home-gradient-1) 0%,
+        var(--color-home-gradient-2) 40%,
+        var(--color-home-gradient-3) 45%,
+        var(--color-home-gradient-4) 50%,
+        var(--color-home-gradient-5) 100%
+      ),
+      url('../../Assets/img/HomePage/HomePageImage2000px.png');
   }
 
   @media (min-width: 150px) and (max-width: 1001px) and (min-height: 700px) and (max-height: 1001px) {
+    background-image: linear-gradient(
+        to right,
+        var(--color-home-gradient-simple),
+        var(--color-home-gradient-simple)
+      ),
+      url('../../Assets/img/HomePage/HomePageImage2000px.png');
+    background-position: 95% 100%;
   }
 
   // medias for 720p
@@ -136,12 +199,11 @@
   @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 500px) and (max-height: 701px) {
     background-image: linear-gradient(
         to right,
-        white 0%,
-        rgba(255, 255, 255, 0.99) 50%,
-        rgba(255, 255, 255, 0.99) 50%,
-        rgba(255, 255, 255, 0.9) 60%,
-        rgba(255, 255, 255, 0.9) 60%,
-        rgba(255, 255, 255, 0) 100%
+        var(--color-home-gradient-1) 0%,
+        var(--color-home-gradient-2) 40%,
+        var(--color-home-gradient-3) 45%,
+        var(--color-home-gradient-4) 50%,
+        var(--color-home-gradient-5) 100%
       ),
       url('../../Assets/img/HomePage/HomePageImage1000px.png');
   }
@@ -180,15 +242,20 @@
 
   // medias for 1080p displays
 
-  @media (min-width: 1900px) and (max-width: 1922px) and (min-height: 700px) and (max-height: 1001px) {
-    padding-top: 17rem;
-  }
-  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1000px) {
-    padding-top: 20rem;
+  @media (min-width: 1900px) and (min-height: 700px) and (max-height: 1001px) {
   }
 
-  @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 500px) and (max-height: 701px) {
-    padding-top: 14rem;
+  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1001px) {
+  }
+
+  @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 700px) and (max-height: 1001px) {
+  }
+
+  @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 700px) and (max-height: 1001px) {
+  }
+
+  @media (min-width: 150px) and (max-width: 1001px) and (min-height: 700px) and (max-height: 1001px) {
+    font-size: 9rem;
   }
 
   // lets add a shine effect
