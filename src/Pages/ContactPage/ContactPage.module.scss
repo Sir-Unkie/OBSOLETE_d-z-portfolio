@@ -61,7 +61,6 @@
 }
 
 .rightArea {
-  // width: 100%;
   // border: 1px solid red;
   height: 140vh;
   width: 140vh;
@@ -69,57 +68,6 @@
   right: -25%;
   top: 6%;
   border-radius: 50%;
-  /* medias for 2k displays */
-  @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 1000px) {
-    pointer-events: none;
-    right: -45%;
-    & > * > * {
-      pointer-events: all;
-    }
-  }
-
-  @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
-    pointer-events: none;
-    right: -55%;
-    & > * {
-      pointer-events: all;
-    }
-  }
-
-  @media (min-width: 150px) and (max-width: 1001px) and (min-height: 1000px) {
-    pointer-events: none;
-    & > * {
-      pointer-events: all;
-    }
-  }
-  /* medias for 1080p displays */
-
-  @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 700px) and (max-height: 1001px) {
-    pointer-events: none;
-
-    right: -40%;
-    & > * > * {
-      pointer-events: all;
-    }
-  }
-
-  @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 700px) and (max-height: 1001px) {
-    pointer-events: none;
-    height: 80%;
-    width: 50%;
-    left: 50%;
-    top: 50%;
-    transform: translate(65%, -50%);
-    // border: 1px solid blue;
-    border-radius: 0%;
-    & > * {
-      pointer-events: all;
-    }
-  }
-
-  @media (min-width: 150px) and (max-width: 1001px) and (min-height: 700px) and (max-height: 1001px) {
-    display: none;
-  }
 
   &::after {
     z-index: -1;
@@ -132,138 +80,190 @@
     width: 85%;
     height: 85%;
     border-radius: 50%;
-
-    /* medias for 2k displays */
-    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
-      transform: translate(-20%, -106%);
-      width: 55%;
-      height: 45%;
-      border-radius: 3rem;
-    }
-
-    @media (min-width: 150px) and (max-width: 1001px) and (min-height: 1000px) {
-      transform: translate(0%, -13%);
-      width: 75%;
-      height: 75%;
-      border-radius: 50%;
-    }
-    /* medias for 1080p displays */
-
-    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 700px) and (max-height: 1001px) {
-      transform: translate(-50%, -57%);
-      width: 100%;
-      height: 90%;
-      border-radius: 3rem;
-    }
   }
 
   .github {
     position: absolute;
     top: 3%;
     left: 40.5%;
-    /* medias for 2k displays */
-    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
-      top: 5%;
-      left: 40.5%;
-    }
-
-    @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
-      top: 56%;
-      left: 74%;
-    }
-    /* medias for 1080p displays */
-
-    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 700px) and (max-height: 1001px) {
-      transform: scale(0.85);
-      top: 3%;
-      left: 3%;
-    }
   }
   .mail {
     position: absolute;
     top: 9%;
     left: 23%;
-    /* medias for 2k displays */
-    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
-      top: 13%;
-      left: 40.5%;
-    }
-
-    @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
-      top: 49%;
-      left: 74%;
-    }
-    /* medias for 1080p displays */
-    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 700px) and (max-height: 1001px) {
-      transform: scale(0.85);
-      top: 19%;
-      left: 3%;
-    }
   }
   .whatsapp {
     position: absolute;
     top: 21%;
     left: 10.8%;
-    /* medias for 2k displays */
-    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
-      top: 21%;
-      left: 40.5%;
-    }
-
-    @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
-      top: 56%;
-      left: 58%;
-    }
-    /* medias for 1080p displays */
-
-    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 700px) and (max-height: 1001px) {
-      transform: scale(0.85);
-      top: 35%;
-      left: 3%;
-    }
   }
   .telegram {
     position: absolute;
     top: 36%;
     left: 4.7%;
-    /* medias for 2k displays */
-    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
-      top: 29%;
-      left: 40.5%;
-    }
-
-    @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
-      top: 56%;
-      left: 66%;
-    }
-    /* medias for 1080p displays */
-
-    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 700px) and (max-height: 1001px) {
-      transform: scale(0.85);
-      top: 51%;
-      left: 3%;
-    }
   }
   .linkedIn {
     position: absolute;
     top: 51%;
     left: 4%;
-    /* medias for 2k displays */
-    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// medias for 2k displays
+@media (min-width: 1900px) and (min-height: 1000px) {
+}
+
+@media (min-width: 1600px) and (max-width: 1901px) and (min-height: 1000px) {
+}
+
+@media (min-width: 1350px) and (max-width: 1601px) and (min-height: 1000px) {
+  .rightArea {
+    pointer-events: none;
+    right: -45%;
+    & > * > * {
+      pointer-events: all;
+    }
+  }
+}
+@media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
+  .rightArea {
+    pointer-events: none;
+    right: -55%;
+    & > * {
+      pointer-events: all;
+    }
+    &::after {
+      transform: translate(-20%, -106%);
+      width: 55%;
+      height: 45%;
+      border-radius: 3rem;
+    }
+    .github {
+      top: 5%;
+      left: 40.5%;
+    }
+    .mail {
+      top: 13%;
+      left: 40.5%;
+    }
+    .whatsapp {
+      top: 21%;
+      left: 40.5%;
+    }
+    .telegram {
+      top: 29%;
+      left: 40.5%;
+    }
+    .linkedIn {
       top: 37%;
       left: 40.5%;
     }
+  }
+}
 
-    @media (min-width: 450px) and (max-width: 1001px) and (min-height: 1000px) {
+@media (min-width: 150px) and (max-width: 1001px) and (min-height: 1000px) {
+  .rightArea {
+    pointer-events: none;
+    & > * {
+      pointer-events: all;
+    }
+    &::after {
+      transform: translate(0%, -13%);
+      width: 75%;
+      height: 75%;
+      border-radius: 50%;
+    }
+    .github {
+      top: 56%;
+      left: 74%;
+    }
+    .mail {
+      top: 49%;
+      left: 74%;
+    }
+    .whatsapp {
+      top: 56%;
+      left: 58%;
+    }
+    .telegram {
+      top: 56%;
+      left: 66%;
+    }
+    .linkedIn {
       top: 49%;
       left: 66%;
     }
-    /* medias for 1080p displays */
+  }
+}
 
-    @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 700px) and (max-height: 1001px) {
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// medias for 1080p displays
+
+@media (min-width: 1350px) and (max-width: 1601px) and (min-height: 700px) and (max-height: 1001px) {
+  .rightArea {
+    pointer-events: none;
+
+    right: -40%;
+    & > * > * {
+      pointer-events: all;
+    }
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1351px) and (min-height: 700px) and (max-height: 1001px) {
+  .rightArea {
+    pointer-events: none;
+    height: 80%;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(65%, -50%);
+    // border: 1px solid blue;
+    border-radius: 0%;
+    & > * {
+      pointer-events: all;
+    }
+    &::after {
+      transform: translate(-50%, -57%);
+      width: 100%;
+      height: 90%;
+      border-radius: 3rem;
+    }
+    .github {
+      transform: scale(0.85);
+      top: 3%;
+      left: 3%;
+    }
+    .mail {
+      transform: scale(0.85);
+      top: 19%;
+      left: 3%;
+    }
+    .whatsapp {
+      transform: scale(0.85);
+      top: 35%;
+      left: 3%;
+    }
+    .telegram {
+      transform: scale(0.85);
+      top: 51%;
+      left: 3%;
+    }
+    .linkedIn {
       transform: scale(0.85);
       top: 67%;
       left: 3%;
     }
+  }
+}
+
+@media (min-width: 150px) and (max-width: 1001px) and (min-height: 700px) and (max-height: 1001px) {
+  .rightArea {
+    display: none;
   }
 }

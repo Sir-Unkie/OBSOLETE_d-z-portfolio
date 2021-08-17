@@ -7,14 +7,6 @@
   // border: 1px solid red;
 
   // medias for 2k displays
-  @media (min-width: 1900px) and (min-height: 1000px) {
-  }
-
-  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 1000px) {
-  }
-
-  @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 1000px) {
-  }
 
   @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
     transform: scale(0.92);
@@ -25,17 +17,7 @@
     transform: scale(0.88);
     transform-origin: center;
   }
-
   // medias for 1080p displays
-  @media (min-width: 1900px) and (min-height: 700px) and (max-height: 1001px) {
-  }
-
-  @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1001px) {
-  }
-
-  @media (min-width: 1350px) and (max-width: 1601px) and (min-height: 700px) and (max-height: 1001px) {
-  }
-
   @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 700px) and (max-height: 1001px) {
     transform: scale(0.92);
     transform-origin: left;
