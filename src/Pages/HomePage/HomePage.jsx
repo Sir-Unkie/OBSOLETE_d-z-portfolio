@@ -36,7 +36,7 @@ const HomePage = () => {
               See my projects
             </Link>
           </div>
-          <IconsBar></IconsBar>
+          <IconsBar className={styles.iconBar}></IconsBar>
         </main>
       </div>
     </motion.div>

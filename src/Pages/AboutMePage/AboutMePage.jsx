@@ -8,6 +8,7 @@ import MyHeading from '../../Components/MyHeading/MyHeading';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { defaultSlide } from '../../FramerMotion/framerMotion.pages.configs';
+import myImage from '../../Assets/img/AboutMePageImages/About 2000px.png';
 
 const AboutMePage = () => {
   const initialState = {
@@ -31,6 +32,7 @@ const AboutMePage = () => {
       exit='exit'
       className={styles.bg}
     >
+      <img src={myImage} alt='Me' className={styles.myImage} />
       <div className={styles.optionsContainer}>
         <div className={styles.techStack}>
           <AboutMeButton

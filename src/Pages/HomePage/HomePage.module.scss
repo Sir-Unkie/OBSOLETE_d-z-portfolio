@@ -13,8 +13,8 @@
 }
 
 .textContentContainer {
+  width: 100%;
   min-height: calc(100vh - 6rem);
-  // border: 1px solid blue;
   margin: 0;
   padding: 0;
   display: flex;
@@ -160,8 +160,6 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // medias for 2k displays
-@media (min-width: 1900px) and (min-height: 1000px) {
-}
 
 @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 1000px) {
   .bg {
@@ -282,5 +280,165 @@
   }
   .primaryHeading {
     font-size: 9rem;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// medias for 720p displays
+
+@media (min-width: 1350px) and (max-width: 1601px) and (max-height: 701px) {
+  .primaryHeading {
+    padding-top: 7rem;
+  }
+  .bg {
+    background-image: url('../../Assets/img/HomePage/HomePageImage1366px.png');
+  }
+
+  .textContentContainer {
+    gap: 8rem;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1351px) and (max-height: 701px) {
+  .primaryHeading {
+    padding-top: 10rem;
+  }
+  .bg {
+    background-image: linear-gradient(
+        to right,
+        var(--color-home-gradient-1) 0%,
+        var(--color-home-gradient-2) 40%,
+        var(--color-home-gradient-3) 45%,
+        var(--color-home-gradient-4) 50%,
+        var(--color-home-gradient-5) 100%
+      ),
+      url('../../Assets/img/HomePage/HomePageImage1366px.png');
+  }
+  .textContentContainer {
+    gap: 8rem;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1001px) and (max-height: 701px) {
+  .primaryHeading {
+    padding-top: 10rem;
+  }
+  .bg {
+    background-image: linear-gradient(
+        to right,
+        var(--color-home-gradient-1) 0%,
+        var(--color-home-gradient-2) 65%,
+        var(--color-home-gradient-3) 66%,
+        var(--color-home-gradient-4) 67%,
+        var(--color-home-gradient-5) 100%
+      ),
+      url('../../Assets/img/HomePage/HomePageImage1366px.png');
+    background-position: 90% 100%;
+  }
+  .textContentContainer {
+    gap: 8rem;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 701px) and (max-height: 701px) {
+  .primaryHeading {
+    padding-top: 5rem;
+    font-size: 8rem;
+    text-align: center;
+  }
+  .bg {
+    background-image: linear-gradient(
+        to right,
+        var(--color-home-gradient-simple),
+        var(--color-home-gradient-simple)
+      ),
+      url('../../Assets/img/HomePage/HomePageImage1366px.png');
+    background-position: 90% 100%;
+  }
+  .textContentContainer {
+    gap: 8rem;
+    align-items: center;
+    margin: auto;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .feature {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 2%;
+      transform: translateY(-50%);
+      width: 0.4rem;
+      height: 100%;
+      border-radius: 0%;
+      background-color: var(--color-accent-1);
+    }
+  }
+}
+@media (max-width: 401px) and (max-height: 701px) {
+  .primaryHeading {
+    padding-top: 20rem;
+    font-size: 6rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .bg {
+    background-image: linear-gradient(
+        to right,
+        var(--color-home-gradient-simple),
+        var(--color-home-gradient-simple)
+      ),
+      url('../../Assets/img/HomePage/HomePageImage1366px.png');
+    background-position: 90% 100%;
+  }
+  .textContentContainer {
+    gap: 1rem;
+    align-items: fle;
+    margin: auto;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+  .paragraph {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    font-weight: 300;
+  }
+
+  .featuresList {
+    list-style: none;
+    color: var(--color-dark-text);
+    font-size: 2.6rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .feature {
+    transform: translateX(3%);
+    &::after {
+      content: '';
+      position: absolute;
+      // top: 50%;
+      left: 11%;
+      transform: translateY(-50%);
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background-color: var(--color-accent-1);
+    }
   }
 }

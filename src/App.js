@@ -33,6 +33,7 @@ const ContactPage = React.lazy(() => import('./Pages/ContactPage/ContactPage'));
 // add page tab logo icon
 // probablu custom scrollbar
 // add telephone number
+// change the contact page popup linked in
 
 // also i can add elstic dragable circles
 // in future i can add google stats
