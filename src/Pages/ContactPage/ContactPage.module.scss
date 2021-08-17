@@ -134,72 +134,165 @@
 }
 @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
   .rightArea {
-    pointer-events: none;
-    right: -55%;
+    // new relative  styles
+    position: fixed;
+    pointer-events: all;
+    height: 77%;
+    width: 50%;
+    left: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 3rem;
+    background-color: rgba(0, 0, 0, 0.787);
+    transition: all 0.3s;
+    &:hover {
+      left: 85%;
+      &::after {
+        color: transparent;
+      }
+
+      & > * {
+        margin-left: 0rem;
+      }
+    }
+
     & > * {
-      pointer-events: all;
+      padding: 1rem;
+      margin-left: 8rem;
+      transition: all 0.3s;
     }
     &::after {
-      transform: translate(-20%, -106%);
-      width: 55%;
-      height: 45%;
-      border-radius: 3rem;
+      pointer-events: none;
+      transition: all 0.2s;
+      left: -2rem;
+      top: 50%;
+      background-color: transparent;
+      width: 20%;
+      height: 50%;
+      content: 'HOVER ME';
+      color: white;
+      font-size: 2rem;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      z-index: 10;
+      text-align: center;
     }
     .github {
-      top: 5%;
-      left: 40.5%;
+      transform: scale(0.85);
+      top: unset;
+      left: unset;
+      position: relative;
     }
     .mail {
-      top: 13%;
-      left: 40.5%;
+      transform: scale(0.85);
+      top: unset;
+      left: unset;
+      position: relative;
     }
     .whatsapp {
-      top: 21%;
-      left: 40.5%;
+      transform: scale(0.85);
+      top: unset;
+      left: unset;
+      position: relative;
     }
     .telegram {
-      top: 29%;
-      left: 40.5%;
+      transform: scale(0.85);
+      top: unset;
+      left: unset;
+      position: relative;
     }
     .linkedIn {
-      top: 37%;
-      left: 40.5%;
+      transform: scale(0.85);
+      top: unset;
+      left: unset;
+      position: relative;
     }
   }
 }
 
-@media (min-width: 150px) and (max-width: 1001px) and (min-height: 1000px) {
+@media (min-width: 600px) and (max-width: 1001px) and (min-height: 1000px) {
   .rightArea {
-    pointer-events: none;
+    // new relative  styles
+    position: fixed;
+    pointer-events: all;
+    height: 77%;
+    width: 67%;
+    left: 91%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 3rem;
+    background-color: rgba(0, 0, 0, 0.787);
+    transition: all 0.3s;
+    &:hover {
+      left: 83%;
+      &::after {
+        color: transparent;
+      }
+
+      & > * {
+        margin-left: 0rem;
+      }
+    }
+
     & > * {
-      pointer-events: all;
+      padding: 1rem;
+      margin-left: 9rem;
+      transition: all 0.3s;
     }
     &::after {
-      transform: translate(0%, -13%);
-      width: 75%;
-      height: 75%;
-      border-radius: 50%;
+      pointer-events: none;
+      transition: all 0.2s;
+      left: -2rem;
+      top: 50%;
+      background-color: transparent;
+      width: 20%;
+      height: 50%;
+      content: 'HOVER ME';
+      color: white;
+      font-size: 2rem;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      z-index: 10;
+      text-align: center;
     }
     .github {
-      top: 56%;
-      left: 74%;
+      transform: scale(0.85);
+      top: unset;
+      left: unset;
+      position: relative;
     }
     .mail {
-      top: 49%;
-      left: 74%;
+      transform: scale(0.85);
+      top: unset;
+      left: unset;
+      position: relative;
     }
     .whatsapp {
-      top: 56%;
-      left: 58%;
+      transform: scale(0.85);
+      top: unset;
+      left: unset;
+      position: relative;
     }
     .telegram {
-      top: 56%;
-      left: 66%;
+      transform: scale(0.85);
+      top: unset;
+      left: unset;
+      position: relative;
     }
     .linkedIn {
-      top: 49%;
-      left: 66%;
+      transform: scale(0.85);
+      top: unset;
+      left: unset;
+      position: relative;
     }
+  }
+}
+
+@media (min-width: 150px) and (max-width: 601px) and (min-height: 1000px) {
+  .rightArea {
+    display: none;
   }
 }
 
@@ -250,6 +343,8 @@
       transition: all 0.3s;
     }
     &::after {
+      margin: 0;
+      padding: 0;
       pointer-events: none;
       transition: all 0.2s;
       left: 0;
@@ -329,6 +424,8 @@
       transition: all 0.3s;
     }
     &::after {
+      margin: 0;
+      padding: 0;
       pointer-events: none;
       transition: all 0.2s;
       left: 0;
