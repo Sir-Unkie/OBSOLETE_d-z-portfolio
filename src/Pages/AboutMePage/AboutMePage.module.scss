@@ -23,7 +23,9 @@
   overflow: hidden;
   // border: 1px solid red;
   border-radius: 50%;
+  pointer-events: none;
   & > * {
+    pointer-events: all;
     position: absolute;
     z-index: 10;
   }

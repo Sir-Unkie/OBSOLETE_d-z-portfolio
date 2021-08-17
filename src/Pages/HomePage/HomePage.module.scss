@@ -134,8 +134,8 @@
   @media (max-width: 1351px) and (min-height: 1000px) {
     background-image: linear-gradient(
         to right,
-        rgba(255, 255, 255, 0.9),
-        rgba(255, 255, 255, 0.9)
+        var(--color-home-gradient-simple),
+        var(--color-home-gradient-simple)
       ),
       url('../../Assets/img/HomePage/HomePageImage2000px.png');
     background-position: 95% 100%;
