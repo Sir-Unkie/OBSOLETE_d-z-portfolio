@@ -37,7 +37,13 @@
   @media (min-width: 150px) and (max-width: 1001px) and (min-height: 1000px) {
     padding: 1rem 3rem;
   }
-
+  /* medias for 720p displays */
+  @media (min-width: 1350px) and (max-width: 1601px) and (max-height: 701px) {
+    padding: 0.8rem 2rem 0.8rem 3rem;
+  }
+  @media (min-width: 150px) and (max-width: 1001px) and (max-height: 701px) {
+    padding: 0.8rem 1rem 0.8rem 3rem;
+  }
   &.sectionDark {
     background-color: var(--color-aboutCard-dark);
     color: var(--color-white-1);
@@ -72,6 +78,14 @@
     @media (min-width: 150px) and (max-width: 1001px) and (min-height: 700px) and (max-height: 1001px) {
       width: 100%;
     }
+
+    /* medias for 720p displays */
+    @media (min-width: 1350px) and (max-width: 1601px) and (max-height: 701px) {
+      width: 100%;
+    }
+    @media (min-width: 150px) and (max-width: 1001px) and (max-height: 701px) {
+      width: 100%;
+    }
   }
 
   .list {
@@ -95,6 +109,11 @@
     @media (min-width: 150px) and (max-width: 1001px) and (min-height: 700px) and (max-height: 1001px) {
       display: none;
     }
+
+    // medias for 720p displays
+    @media (min-width: 150px) and (max-width: 1001px) and (max-height: 701px) {
+      display: none;
+    }
   }
 
   .TELLogo {
@@ -106,6 +125,10 @@
     background-repeat: no-repeat;
     background-image: url('../../Assets/img/AboutMePageImages/TELLogo.jpg');
     background-size: contain;
+    /* medias for 720p displays */
+    @media (min-width: 1350px) and (max-width: 1601px) and (max-height: 701px) {
+      left: 0%;
+    }
   }
 
   .oboronEnergoLogo {
@@ -114,6 +137,11 @@
     // border: 1px solid blue;
     width: 100%;
     fill: white;
+
+    /* medias for 720p displays */
+    @media (min-width: 1350px) and (max-width: 1601px) and (max-height: 701px) {
+      left: 0%;
+    }
   }
 
   .MOESKLogo {
@@ -125,5 +153,9 @@
     background-repeat: no-repeat;
     background-image: url('../../Assets/img/AboutMePageImages/Moesk2.png');
     background-size: contain;
+    /* medias for 720p displays */
+    @media (min-width: 1350px) and (max-width: 1601px) and (max-height: 701px) {
+      left: 0%;
+    }
   }
 }
