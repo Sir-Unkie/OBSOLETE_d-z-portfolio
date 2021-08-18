@@ -9,32 +9,139 @@
   top: 5vw;
   z-index: 15;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.198);
+
+  & > * {
+    position: absolute;
+    background-color: white;
+    width: 70%;
+    height: 8%;
+    transform: translateY(-50%);
+    transition: all 0.2s;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.377);
+  }
+
+  .line1 {
+    top: 30%;
+    left: 15%;
+  }
+  .line2 {
+    top: 50%;
+    left: 15%;
+  }
+  .line3 {
+    top: 70%;
+    left: 15%;
+  }
+
+  &.navShown.animate {
+    & .line1 {
+      animation: topLine 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    }
+    & .line3 {
+      animation: botLine 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    }
+    & .line2 {
+      animation: midLine 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    }
+  }
+
+  &.navHidden.animate {
+    & .line1 {
+      animation: topLineReverse 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    }
+    & .line3 {
+      animation: botLineReverse 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    }
+    & .line2 {
+      animation: midLineReverse 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    }
+  }
 }
 
-.line1 {
-  position: absolute;
-  background-color: white;
-  width: 70%;
-  height: 8%;
-  top: 30%;
-  left: 15%;
-  transform: translateY(-50%);
+@keyframes topLine {
+  0% {
+  }
+  35% {
+    top: 50%;
+  }
+  65% {
+    top: 50%;
+    transform: rotate(0);
+  }
+  100% {
+    top: 45%;
+    transform: rotate(135deg);
+  }
 }
-.line2 {
-  position: absolute;
-  background-color: white;
-  width: 70%;
-  height: 8%;
-  top: 50%;
-  left: 15%;
-  transform: translateY(-50%);
+
+@keyframes botLine {
+  0% {
+  }
+  35% {
+    top: 50%;
+  }
+  65% {
+    top: 50%;
+    transform: rotate(0);
+  }
+  100% {
+    top: 45%;
+    transform: rotate(45deg);
+  }
 }
-.line3 {
-  position: absolute;
-  background-color: white;
-  width: 70%;
-  height: 8%;
-  top: 70%;
-  left: 15%;
-  transform: translateY(-50%);
+
+@keyframes midLine {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes topLineReverse {
+  0% {
+    top: 45%;
+    transform: rotate(135deg);
+  }
+  35% {
+    top: 50%;
+    transform: rotate(0);
+  }
+  65% {
+    top: 50%;
+  }
+  100% {
+  }
+}
+
+@keyframes botLineReverse {
+  0% {
+    top: 45%;
+    transform: rotate(45deg);
+  }
+  35% {
+    top: 50%;
+    transform: rotate(0);
+  }
+  65% {
+    top: 50%;
+  }
+  100% {
+  }
+}
+
+@keyframes midLineReverse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

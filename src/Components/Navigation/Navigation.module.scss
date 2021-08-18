@@ -95,12 +95,12 @@
     align-items: center;
     position: fixed;
     top: 0;
-    left: 40%;
+    left: 100%;
     z-index: 10;
-    //
-    display: none;
-
-    //
+    transition: all 0.3s ease-in;
+    &.shown {
+      left: 40%;
+    }
   }
   .navlist {
     // border: 1px solid red;

@@ -27,16 +27,34 @@ const Navigation = () => {
     });
   };
 
+  const backDropClickHandler = navHidden => {
+    setNavHidden(prevState => {
+      return !prevState;
+    });
+  };
+
   return (
     <React.Fragment>
       {width < 650 ? (
-        <Burger handler={burgerClickHandler.bind(null, navHidden)}></Burger>
+        <Burger
+          navHidden={navHidden}
+          handler={burgerClickHandler.bind(null, navHidden)}
+        ></Burger>
       ) : null}
 
       <AnimatePresence exitBeforeEnter>
-        {navHidden ? null : <BackDrop key='burger'></BackDrop>}
+        {navHidden ? null : (
+          <BackDrop
+            handler={backDropClickHandler.bind(null, navHidden)}
+            key='backdrop'
+          ></BackDrop>
+        )}
       </AnimatePresence>
-      <nav className={styles.nav}>
+      <nav
+        className={
+          navHidden ? `${styles.nav}` : `${styles.nav} ${styles.shown}`
+        }
+      >
         <ul className={styles.navlist}>
           <li className={styles.navitem}>
             <NavLink

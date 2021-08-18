@@ -30,7 +30,7 @@ const ExperienceContent = () => {
                 </li>
                 <li>
                   Managed the documentation process in all the regions (USA,
-                  Canda, Brazil, South Africa, Germany).
+                  Canada, Brazil, South Africa, Germany).
                 </li>
               </ul>
               <h3>2019-2020: Segment business development manager:</h3>

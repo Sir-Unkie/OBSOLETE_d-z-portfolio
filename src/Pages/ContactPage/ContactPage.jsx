@@ -20,7 +20,7 @@ const ContactPage = () => {
           <MyHeading>Contact me</MyHeading>
           <div className={styles.flexContainer}>
             <div className={styles.leftArea}>
-              <h2>Have any questions or an interesting project towork on?</h2>
+              <h2>Have any questions or an interesting project to work on?</h2>
               <p className={styles.paragraph}>
                 I'd love to hear from you!<br></br>
                 Just fill up the form or send an email at&nbsp;
