@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import styles from './Navigation.module.scss';
 import { NavLink } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 import Burger from '../Burger/Burger';
 import BackDrop from '../BackDrop/BackDrop';
 
 const Navigation = () => {
   const [navHidden, setNavHidden] = useState(true);
-  const par = 'asdasdd';
   let history = useHistory();
   const clickHandler = e => {
     e.preventDefault();
@@ -20,13 +20,17 @@ const Navigation = () => {
   };
 
   const burgerClickHandler = navHidden => {
-    alert(navHidden);
+    setNavHidden(prevState => {
+      return !prevState;
+    });
   };
 
   return (
     <React.Fragment>
       <Burger handler={burgerClickHandler.bind(null, navHidden)}></Burger>
-      <BackDrop></BackDrop>
+      <AnimatePresence exitBeforeEnter>
+        {navHidden ? null : <BackDrop key='burger'></BackDrop>}
+      </AnimatePresence>
       <nav className={styles.nav}>
         <ul className={styles.navlist}>
           <li className={styles.navitem}>
