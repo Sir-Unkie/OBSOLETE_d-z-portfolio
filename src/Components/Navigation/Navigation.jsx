@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import styles from './Navigation.module.scss';
 import { NavLink } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import Burger from '../Burger/Burger';
 import BackDrop from '../BackDrop/BackDrop';
+import useWindowDimensions from '../../hooks/useWindowDimensionsHook.js';
 
 const Navigation = () => {
+  const { height, width } = useWindowDimensions();
   const [navHidden, setNavHidden] = useState(true);
   let history = useHistory();
   const clickHandler = e => {
@@ -27,7 +29,10 @@ const Navigation = () => {
 
   return (
     <React.Fragment>
-      <Burger handler={burgerClickHandler.bind(null, navHidden)}></Burger>
+      {width < 650 ? (
+        <Burger handler={burgerClickHandler.bind(null, navHidden)}></Burger>
+      ) : null}
+
       <AnimatePresence exitBeforeEnter>
         {navHidden ? null : <BackDrop key='burger'></BackDrop>}
       </AnimatePresence>
