@@ -10,6 +10,16 @@
   align-items: center;
   box-shadow: 0 0 1.7rem rgba(0, 0, 0, 0.315);
 
+  @media (min-width: 1000px) and (max-width: 1351px) and (max-height: 701px) {
+    transform: scale(0.92);
+    transform-origin: center;
+  }
+
+  @media (min-width: 150px) and (max-width: 1001px) and (max-height: 701px) {
+    transform: scale(0.88);
+    transform-origin: center;
+  }
+
   &:hover {
     background-color: white;
     cursor: pointer;
@@ -94,5 +104,9 @@
     color: var(--color-icon-popup-text);
     background-color: var(--color-light-text);
     box-shadow: 0 0.1rem 5rem hsla(0, 0%, 0%, 0.246);
+
+    @media (max-width: 1350px) {
+      left: -185%;
+    }
   }
 }

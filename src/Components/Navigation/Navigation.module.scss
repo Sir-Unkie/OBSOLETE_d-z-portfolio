@@ -88,7 +88,7 @@
     font-weight: 400;
     height: 100vh;
     width: 60%;
-    background-color: rgba(255, 255, 255, 0.726);
+    background-color: var(--color-nav-mobile);
     backdrop-filter: blur(5px);
     display: flex;
     flex-direction: column;

@@ -84,6 +84,99 @@ html {
   --color-home-gradient-4: rgba(255, 255, 255, 0.96);
   --color-home-gradient-5: rgba(255, 255, 255, 0);
   --color-home-gradient-simple: rgba(255, 255, 255, 0.9);
+
+  /* mobile navigation color */
+  --color-nav-mobile: hsla(0, 0%, 100%, 0.7);
+}
+
+html.dark {
+  /* Here go my colours for dark mode */
+  /* color for h1, nav items and icons header border (slightly lighter grey) */
+  --color-light-text: hsl(0, 0%, 90%);
+  --color-H1: hsl(0, 0%, 80%);
+  --color-nav-items: hsl(0, 0%, 80%);
+  --color-icons1: hsl(0, 0%, 90%);
+  --color-icon-popup-text: hsl(0, 0%, 12%);
+  /* text color on dark BG */
+
+  /* this is the color for paragraphs (black one) homepage and contact page  */
+  --color-dark-text: hsl(0, 0%, 89%);
+
+  /* this is the main accent colour */
+  --color-accent-1: hsl(32, 55%, 52%);
+
+  --color-white-1: hsl(0, 0%, 100%);
+
+  /* colour for project card light version */
+  --color-prCard-light: hsl(0, 0%, 32%);
+  --color-prCard-dark: hsl(0, 2%, 93%);
+  --color-prCard-light-text: hsl(0, 0%, 87%);
+  --color-prCard-dark-text: hsl(0, 0%, 0%);
+  --color-prCard-text-hover: black;
+
+  /* CustomLink colors */
+  --color-customLink-default: hsl(0, 0%, 41%);
+  --color-customLink-dark: hsl(0, 0%, 15%);
+  --color-customLink-light: hsl(0, 0%, 63%);
+  --color-customlink-dark-text: hsl(0, 0%, 95%);
+  --color-customLink-text: hsl(0, 0%, 95%);
+
+  /* color for circle options on about me page */
+  --color-about-option: hsla(0, 0%, 46%, 0.548);
+  /* --color-about-option-selected: hsla(32, 55%, 52%, 0.904); */
+  --color-about-option-selected: rgba(159, 127, 43, 0.59);
+
+  --color-aboutCard-light: hsl(0, 0%, 73%);
+  --color-aboutCard-light-text: hsl(0, 0%, 16%);
+  --color-aboutCard-dark: hsl(0, 0%, 26%);
+
+  --color-form: hsl(0, 0%, 26%);
+  --color-form-label: hsl(0, 0%, 87%);
+  --color-form-text: hsl(0, 0%, 87%);
+  --color-form-input-bg: hsl(0, 0%, 16%);
+
+  /* colors for bg gradient in the light mode */
+  --color-bg-1: hsl(0, 0%, 25%);
+  --color-bg-2: hsl(0, 0%, 13%);
+
+  /* colors for contact buttons */
+  --color-outer-circle: hsl(0, 0%, 16%);
+  --color-small-outer-circle: hsl(0, 0%, 100%);
+  --color-icon-hover: hsl(0, 0%, 100%);
+  --color-inner-circle: rgb(75, 75, 75);
+  --color-icon: hsl(0, 0%, 70%);
+
+  /* colors for gradient */
+  --color-home-gradient-1: rgba(0, 0, 0, 0.99);
+  --color-home-gradient-2: rgba(0, 0, 0, 0.99);
+  --color-home-gradient-3: rgba(0, 0, 0, 0.98);
+  --color-home-gradient-4: rgba(0, 0, 0, 0.96);
+  --color-home-gradient-5: rgba(0, 0, 0, 0);
+  --color-home-gradient-simple: rgba(0, 0, 0, 0.68);
+
+  /* mobile navigation color */
+  --color-nav-mobile: rgba(53, 53, 53, 0.726);
+}
+
+/* for future */
+/* ::selection {
+  background-color: black;
+  color: white;
+} */
+
+/* resolutions */
+
+/* 1. DESKTOP width: 2100 - ,  height:1440 goes to 1096 */
+/* 2. DESKTOP width: 1920 - 2100,  height:1080 goes to 969 */
+/* 2.b DESKTOP width: 1600 - 1921 probably: height:1080 goes to 969*/
+/* 3. DESKTOP width: 1350 - 1601, probably: height:768 goes to 689 */
+/* 4. TABLET LAND width: 1000 - 1351, probably: height:768 goes to 689 */
+/* 5. TABLET PORT width: 760 - 1000, probably: height:1024 goes to 918 */
+/* 6. Phone width: 320 - 760, probably: height:480 goes to 430 */
+
+#modal-root {
+  position: fixed;
+  z-index: 100;
 }
 
 /* here will go the medias for main displays: 2k, 1080p, 1377x700 */
@@ -174,91 +267,4 @@ html {
   html {
     font-size: 40%;
   }
-}
-
-html.dark {
-  /* Here go my colours for dark mode */
-  /* color for h1, nav items and icons header border (slightly lighter grey) */
-  --color-light-text: hsl(0, 0%, 90%);
-  --color-H1: hsl(0, 0%, 80%);
-  --color-nav-items: hsl(0, 0%, 80%);
-  --color-icons1: hsl(0, 0%, 90%);
-  --color-icon-popup-text: hsl(0, 0%, 12%);
-  /* text color on dark BG */
-
-  /* this is the color for paragraphs (black one) homepage and contact page  */
-  --color-dark-text: hsl(0, 0%, 89%);
-
-  /* this is the main accent colour */
-  --color-accent-1: hsl(32, 55%, 52%);
-
-  --color-white-1: hsl(0, 0%, 100%);
-
-  /* colour for project card light version */
-  --color-prCard-light: hsl(0, 0%, 32%);
-  --color-prCard-dark: hsl(0, 2%, 93%);
-  --color-prCard-light-text: hsl(0, 0%, 87%);
-  --color-prCard-dark-text: hsl(0, 0%, 0%);
-  --color-prCard-text-hover: black;
-
-  /* CustomLink colors */
-  --color-customLink-default: hsl(0, 0%, 41%);
-  --color-customLink-dark: hsl(0, 0%, 15%);
-  --color-customLink-light: hsl(0, 0%, 63%);
-  --color-customlink-dark-text: hsl(0, 0%, 95%);
-  --color-customLink-text: hsl(0, 0%, 95%);
-
-  /* color for circle options on about me page */
-  --color-about-option: hsla(0, 0%, 46%, 0.548);
-  /* --color-about-option-selected: hsla(32, 55%, 52%, 0.904); */
-  --color-about-option-selected: rgba(159, 127, 43, 0.59);
-
-  --color-aboutCard-light: hsl(0, 0%, 73%);
-  --color-aboutCard-light-text: hsl(0, 0%, 16%);
-  --color-aboutCard-dark: hsl(0, 0%, 26%);
-
-  --color-form: hsl(0, 0%, 26%);
-  --color-form-label: hsl(0, 0%, 87%);
-  --color-form-text: hsl(0, 0%, 87%);
-  --color-form-input-bg: hsl(0, 0%, 16%);
-
-  /* colors for bg gradient in the light mode */
-  --color-bg-1: hsl(0, 0%, 25%);
-  --color-bg-2: hsl(0, 0%, 13%);
-
-  /* colors for contact buttons */
-  --color-outer-circle: hsl(0, 0%, 16%);
-  --color-small-outer-circle: hsl(0, 0%, 100%);
-  --color-icon-hover: hsl(0, 0%, 100%);
-  --color-inner-circle: rgb(75, 75, 75);
-  --color-icon: hsl(0, 0%, 70%);
-
-  /* colors for gradient */
-  --color-home-gradient-1: rgba(0, 0, 0, 0.99);
-  --color-home-gradient-2: rgba(0, 0, 0, 0.99);
-  --color-home-gradient-3: rgba(0, 0, 0, 0.98);
-  --color-home-gradient-4: rgba(0, 0, 0, 0.96);
-  --color-home-gradient-5: rgba(0, 0, 0, 0);
-  --color-home-gradient-simple: rgba(0, 0, 0, 0.68);
-}
-
-/* for future */
-/* ::selection {
-  background-color: black;
-  color: white;
-} */
-
-/* resolutions */
-
-/* 1. DESKTOP width: 2100 - ,  height:1440 goes to 1096 */
-/* 2. DESKTOP width: 1920 - 2100,  height:1080 goes to 969 */
-/* 2.b DESKTOP width: 1600 - 1921 probably: height:1080 goes to 969*/
-/* 3. DESKTOP width: 1350 - 1601, probably: height:768 goes to 689 */
-/* 4. TABLET LAND width: 1000 - 1351, probably: height:768 goes to 689 */
-/* 5. TABLET PORT width: 760 - 1000, probably: height:1024 goes to 918 */
-/* 6. Phone width: 320 - 760, probably: height:480 goes to 430 */
-
-#modal-root {
-  position: fixed;
-  z-index: 100;
 }

@@ -8,7 +8,7 @@ import BackDrop from '../BackDrop/BackDrop';
 import useWindowDimensions from '../../hooks/useWindowDimensionsHook.js';
 
 const Navigation = () => {
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
   const [navHidden, setNavHidden] = useState(true);
   let history = useHistory();
   const clickHandler = e => {

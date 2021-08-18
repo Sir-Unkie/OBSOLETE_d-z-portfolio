@@ -6,6 +6,7 @@ import { Switch, Route, useLocation } from 'react-router-dom';
 import { Suspense } from 'react';
 import SuspenseSpinner from './Components/SuspenseSpinner/SuspenseSpinner';
 import { AnimatePresence } from 'framer-motion';
+import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
 
 // import HomePage from './Pages/HomePage/HomePage';
 // import ProjectsPage from './Pages/ProjectsPage/ProjectsPage';
@@ -25,19 +26,15 @@ const ContactPage = React.lazy(() => import('./Pages/ContactPage/ContactPage'));
 // Update Hero image
 // Optimize the image for different screens
 // add a night icon on the toggle theme btn
-// burger navigation
 // cleane up the index css colors
-// probably can add router redirect to 404page just in SWITCH add the last * route with 404 data
-// fix the layout issue with the mobile view
+// convert images to webp
 // add page tab logo icon
 // probablu custom scrollbar
-// add telephone number
-// change the contact page popup linked in
 // burger is not visible on every width
+// do something with the mobile homepage image
 
-// also i can add elstic dragable circles
+// cleanup the media querries (do it in the end, when you will be already looking for a job)
 // in future i can add google stats
-// https://gooey-react.netlify.app  gooey effect on some elements?
 
 function App() {
   const location = useLocation();
@@ -65,6 +62,11 @@ function App() {
           <Route path='/' exact>
             <Suspense fallback={<SuspenseSpinner />}>
               <HomePage></HomePage>
+            </Suspense>
+          </Route>
+          <Route path='*' exact>
+            <Suspense fallback={<SuspenseSpinner />}>
+              <NotFoundPage></NotFoundPage>
             </Suspense>
           </Route>
         </Switch>

@@ -30,6 +30,13 @@ const ContactPage = () => {
                 >
                   ZhidovlenkovDI@gmail.com
                 </a>
+                <p>
+                  or call:{' '}
+                  <a className={styles.colored} href='tel: +79197255841'>
+                    +7 (919) 725-58-41
+                  </a>
+                  .
+                </p>
               </p>
               <CustomForm></CustomForm>
             </div>
