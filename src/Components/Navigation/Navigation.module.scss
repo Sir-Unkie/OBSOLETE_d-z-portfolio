@@ -83,28 +83,36 @@
 
 @media (max-width: 650px) {
   .nav {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     text-transform: uppercase;
     font-weight: 400;
-    height: 100%;
-    width: 50%;
-    background-color: rgba(211, 211, 211, 0.493);
-    backdrop-filter: blur(2px);
+    height: 100vh;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.726);
+    backdrop-filter: blur(5px);
     display: flex;
     flex-direction: column;
-    position: absolute;
+    align-items: center;
+    position: fixed;
     top: 0;
-    left: 50%;
-    border: 1px solid blue;
+    left: 40%;
     z-index: 10;
+    //
+    display: none;
+
+    //
   }
   .navlist {
+    // border: 1px solid red;
+    height: 40%;
     width: 100%;
+    padding-left: 3rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     list-style: none;
-    gap: 5rem;
+    justify-content: space-around;
   }
   .navitem {
     height: 100%;
@@ -120,4 +128,16 @@
       }
     }
   }
+
+  .navlink::after {
+    top: 80%;
+  }
+
+  .activeNavlink {
+    &::after {
+      top: 80%;
+    }
+  }
+
+  // //////////////////////////////////////////////
 }
