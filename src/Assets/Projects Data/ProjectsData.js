@@ -43,7 +43,7 @@ const ProjectsData = [
     ],
     website: 'https://vcb-configurator.netlify.app/',
     github: 'https://github.com/Sir-Unkie/Tavrida-VCB-Configurator',
-    image: '/img/draftMonitor.png',
+    image: '/img/ProjectsImg/Tavrida.png',
   },
   {
     projectName: 'Food application',
@@ -54,9 +54,9 @@ const ProjectsData = [
       'Pagination',
       'Bookmarks functionality',
     ],
-    website: '',
-    github: '',
-    image: '/img/draftMonitor.png',
+    website: 'https://myfirst-app-unkie.netlify.app/#5ed6604591c37cdc054bcb34',
+    github: 'https://github.com/Sir-Unkie/Food-app-project',
+    image: '/img/ProjectsImg/Food.png',
   },
 ];
 
