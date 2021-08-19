@@ -32,6 +32,7 @@ const ContactPage = React.lazy(() => import('./Pages/ContactPage/ContactPage'));
 // probablu custom scrollbar
 // burger is not visible on every width
 // do something with the mobile homepage image
+// on tablet there is always a scroll and also about me section is fucked up in all the tabs - shrink them and fix oboronEnergo logo
 
 // cleanup the media querries (do it in the end, when you will be already looking for a job)
 // in future i can add google stats
