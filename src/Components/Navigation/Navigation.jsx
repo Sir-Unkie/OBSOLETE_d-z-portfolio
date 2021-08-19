@@ -37,7 +37,7 @@ const Navigation = () => {
 
   return (
     <React.Fragment>
-      {width < 650 ? (
+      {width <= 650 ? (
         <Burger
           navHidden={navHidden}
           handler={burgerClickHandler.bind(null, navHidden)}

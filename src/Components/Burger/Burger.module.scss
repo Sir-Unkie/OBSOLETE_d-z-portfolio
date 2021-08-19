@@ -1,18 +1,24 @@
 .button {
   width: 6rem;
   height: 6rem;
-  background-color: rgba(0, 0, 0, 0.315);
-  backdrop-filter: blur(2px);
+  background-color: var(--color-icon-popup-text);
   position: fixed;
   border-radius: 50%;
   right: 5vw;
-  top: 1.8%;
+  top: 2rem;
   z-index: 15;
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.198);
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.267);
+  transition: all 0.2s;
+  &:hover {
+    cursor: pointer;
+    transform: translateY(5%);
+    transform-origin: center;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.185);
+  }
 
   & > * {
     position: absolute;
-    background-color: white;
+    background-color: var(--color-accent-1);
     width: 70%;
     height: 8%;
     transform: translateY(-50%);

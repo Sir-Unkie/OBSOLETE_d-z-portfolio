@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './Burger.module.scss';
-import { motion } from 'framer-motion';
 
 const Burger = ({ handler, navHidden }) => {
   const [animate, setAnimate] = useState('');
@@ -9,8 +8,7 @@ const Burger = ({ handler, navHidden }) => {
     setAnimate(`${styles.animate}`);
   };
   return (
-    <motion.div
-      whileHover={{ scale: 1.1 }}
+    <div
       onClick={clickHandler}
       className={
         navHidden
@@ -21,7 +19,7 @@ const Burger = ({ handler, navHidden }) => {
       <div className={styles.line1}></div>
       <div className={styles.line2}></div>
       <div className={styles.line3}></div>
-    </motion.div>
+    </div>
   );
 };
 
