@@ -30,17 +30,15 @@ const ThemeBtn = () => {
   }, [theme, htmlEl.classList, themeLocalStorage]);
 
   return (
-    <div className={styles.btnContainer}>
-      <div
-        className={
-          theme === 'light'
-            ? `${styles.outerCircle}`
-            : `${styles.outerCircle} ${styles.dark}`
-        }
-        onClick={clickHandler}
-      >
-        <div className={styles.innerCircle}></div>
-      </div>
+    <div
+      className={
+        theme === 'light'
+          ? `${styles.outerCircle}`
+          : `${styles.outerCircle} ${styles.dark}`
+      }
+      onClick={clickHandler}
+    >
+      <div className={styles.innerCircle}></div>
     </div>
   );
 };

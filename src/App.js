@@ -23,7 +23,6 @@ const ContactPage = React.lazy(() => import('./Pages/ContactPage/ContactPage'));
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // Make a Logo
-// Update Hero image
 // Optimize the image for different screens
 // convert images to webp
 // add page tab logo icon
@@ -31,6 +30,7 @@ const ContactPage = React.lazy(() => import('./Pages/ContactPage/ContactPage'));
 // do something with the mobile homepage image
 // on tablet there is always a scroll and also about me section is fucked up in all the tabs - shrink them and fix oboronEnergo logo
 // center all the projects on mobile view
+// contact page, make rectangle relative and stretch it so it is responsive
 
 // cleanup the media querries (do it in the end, when you will be already looking for a job)
 // in future i can add google stats
