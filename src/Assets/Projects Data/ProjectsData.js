@@ -19,7 +19,7 @@ const ProjectsData = [
     ],
     website: 'https://e-commerce-test-website.netlify.app/',
     github: 'https://github.com/Sir-Unkie/e-commerce-trainings',
-    image: '/img/draftMonitor.png',
+    image: '/img/ProjectsImg/E-commerce.png',
   },
   {
     projectName: 'ON Journey landing page',
@@ -31,7 +31,7 @@ const ProjectsData = [
     ],
     website: 'https://on-journey-demo.netlify.app/',
     github: 'https://github.com/Sir-Unkie/ON-JOURNEY-DEMO-WEBSITE',
-    image: '/img/draftMonitor.png',
+    image: '/img/ProjectsImg/OnJourney.png',
   },
   {
     projectName: 'Tavrida Electric selection tool',

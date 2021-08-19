@@ -13,7 +13,9 @@ const Navigation = () => {
   let history = useHistory();
   const clickHandler = e => {
     e.preventDefault();
-
+    if (width < 650) {
+      setNavHidden(true);
+    }
     if (history.location.pathname === e.target.pathname) {
       // console.log('not going anywhere');
       return;
