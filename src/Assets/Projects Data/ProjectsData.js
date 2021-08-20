@@ -44,7 +44,7 @@ const ProjectsData = [
     ],
     website: 'https://on-journey-demo.netlify.app/',
     github: 'https://github.com/Sir-Unkie/ON-JOURNEY-DEMO-WEBSITE',
-    image: '/img/ProjectsImg/Frame1.png',
+    image: '/img/ProjectsImg/OnJourney.png',
   },
 
   {
