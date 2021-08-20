@@ -22,14 +22,14 @@ const AboutMePage = React.lazy(() => import('./Pages/AboutMePage/AboutMePage'));
 const ContactPage = React.lazy(() => import('./Pages/ContactPage/ContactPage'));
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// Optimize the image for different screens
-// convert images to webp
-// add page tab logo icon
+// Optimize the image for different screens and prepare webp images
 // probablu custom scrollbar
 // do something with the mobile homepage image
-// on tablet there is always a scroll and also about me section is fucked up in all the tabs - shrink them and fix oboronEnergo logo
+// experience OboronEnergo tablet fucked up size
 // center all the projects on mobile view
 // i can add the same thing as a theme but with the about section, so the option selected is stored in the browser
+// MPEI logo
+// linked in skill badge
 
 // cleanup the media querries (do it in the end, when you will be already looking for a job)
 // in future i can add google stats

@@ -21,7 +21,16 @@ const TechStackContent = () => {
             <h2>Frameworks:</h2>
             <div className={styles.list}>
               <ul>
-                <li>React</li>
+                <li>
+                  React{' '}
+                  <a
+                    rel='noreferrer'
+                    target='_blank'
+                    href='https://ibb.co/Pjd5PHT'
+                  >
+                    (Linked In skill badge)
+                  </a>
+                </li>
                 <li>
                   React ecosystem (React-Redux + toolkit, React Router, Styled
                   Components, CSS Modules)
@@ -40,9 +49,27 @@ const TechStackContent = () => {
             <h2>Programming/Markup languages:</h2>
             <div className={styles.list}>
               <ul>
-                <li>Vanilla Javascript </li>
+                <li>
+                  Vanilla Javascript{' '}
+                  <a
+                    rel='noreferrer'
+                    target='_blank'
+                    href='https://ibb.co/TkXW5LQ'
+                  >
+                    (Linked In skill badge)
+                  </a>{' '}
+                </li>
                 <li>Typescript</li>
-                <li>CSS</li>
+                <li>
+                  CSS{' '}
+                  <a
+                    rel='noreferrer'
+                    target='_blank'
+                    href='https://ibb.co/28sWcVT'
+                  >
+                    (Linked In skill badge)
+                  </a>
+                </li>
                 <li>SASS preprocessor</li>
                 <li>HTML</li>
               </ul>
