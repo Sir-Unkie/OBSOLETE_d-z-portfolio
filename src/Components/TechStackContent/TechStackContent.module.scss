@@ -118,6 +118,9 @@
     @media (min-width: 1350px) and (max-width: 1901px) {
       width: 75%;
     }
+    @media (max-width: 650px) {
+      width: 90%;
+    }
   }
   .icons {
     // this one is to push the icons to the right to compensate the listed items offset
