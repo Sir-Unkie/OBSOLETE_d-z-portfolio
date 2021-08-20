@@ -22,8 +22,6 @@ const AboutMePage = React.lazy(() => import('./Pages/AboutMePage/AboutMePage'));
 const ContactPage = React.lazy(() => import('./Pages/ContactPage/ContactPage'));
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// Make a Logo
-// make On journey image on the Tavrida BG and tavrida bg should be replaced with isometric one
 // Optimize the image for different screens
 // convert images to webp
 // add page tab logo icon

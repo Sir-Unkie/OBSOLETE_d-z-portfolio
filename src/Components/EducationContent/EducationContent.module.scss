@@ -39,6 +39,20 @@
     right: -20%;
   }
 
+  @media (max-width: 1351px) and (max-height: 701px) {
+    width: 60%;
+    position: relative;
+
+    margin: auto;
+  }
+
+  @media (max-width: 901px) and (max-height: 701px) {
+    width: 100%;
+    position: relative;
+
+    margin: auto;
+  }
+
   h2 {
     color: var(--color-aboutCard-light-text);
     font-size: 2rem;

@@ -13,9 +13,11 @@
 }
 .react {
   grid-area: a;
+  justify-self: center;
 }
 .router {
   grid-area: b;
+  justify-self: center;
 }
 .redux {
   grid-area: c;

@@ -33,11 +33,14 @@
 }
 
 .logo {
-  width: 10rem;
-  height: 5rem;
+  margin-left: 1rem;
+  // width: 10rem;
+  left: 0;
+  // margin-top: 1.5rem;
+  // height: 5rem;
   cursor: pointer;
   // border: 1px solid red;
-  background-image: url(../../Assets/img/FakeLogo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  // background-image: url(../../Assets/img/FakeLogo.png);
+  // background-size: contain;
+  // background-repeat: no-repeat;
 }
