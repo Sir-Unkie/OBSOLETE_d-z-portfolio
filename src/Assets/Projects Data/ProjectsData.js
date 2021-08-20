@@ -4,13 +4,13 @@ const ProjectsData = [
     technologyStack: [
       'React',
       'Redux',
-      'React Touter',
+      'React Router',
       'SCSS modules',
       'Firebase',
       'Stripe',
     ],
     mainFeatures: [
-      'Authentication (google and email)',
+      'Authentication (Google and email)',
       'Cart functionality',
       'Firestore data storage',
       'React lazy loading',
@@ -22,6 +22,19 @@ const ProjectsData = [
     image: '/img/ProjectsImg/E-commerce.png',
   },
   {
+    projectName: 'Tavrida Electric selection tool',
+    technologyStack: ['React', 'Redux', 'React Router', 'SCSS modules'],
+    mainFeatures: [
+      'Reactive expirience for customers',
+      'Authentication (Google, Linkedin and email)',
+      'React lazy loading',
+      'Responsive design',
+    ],
+    website: 'https://vcb-configurator.netlify.app/',
+    github: 'https://github.com/Sir-Unkie/Tavrida-VCB-Configurator',
+    image: '/img/ProjectsImg/Tavrida.png',
+  },
+  {
     projectName: 'ON Journey landing page',
     technologyStack: ['Javascript', 'SCSS', 'HTML'],
     mainFeatures: [
@@ -31,26 +44,16 @@ const ProjectsData = [
     ],
     website: 'https://on-journey-demo.netlify.app/',
     github: 'https://github.com/Sir-Unkie/ON-JOURNEY-DEMO-WEBSITE',
-    image: '/img/ProjectsImg/OnJourney.png',
+    image: '/img/ProjectsImg/Frame1.png',
   },
+
   {
-    projectName: 'Tavrida Electric selection tool',
-    technologyStack: ['React', 'Redux', 'React Touter', 'SCSS modules'],
-    mainFeatures: [
-      'Reactive expirience for customers',
-      'Authentication (Google, Linkedin and email)',
-      'Responsive design',
-    ],
-    website: 'https://vcb-configurator.netlify.app/',
-    github: 'https://github.com/Sir-Unkie/Tavrida-VCB-Configurator',
-    image: '/img/ProjectsImg/Tavrida.png',
-  },
-  {
-    projectName: 'Food application',
+    projectName: 'Food recipes application',
     technologyStack: ['Javascript', 'SCSS', 'HTML'],
     mainFeatures: [
       'External API',
       'MVC architecture',
+      'OOP',
       'Pagination',
       'Bookmarks functionality',
     ],
