@@ -146,8 +146,9 @@
   .MPEILogo {
     position: relative;
     left: 20%;
-    background-image: url('../../Assets/img/AboutMePageImages/MPEI.png');
-    width: 80%;
+    background-image: url('../../Assets/img/AboutMePageImages/compressedPng/MPEI-min.png');
+    background-image: url('../../Assets/img/AboutMePageImages/WebP/MPEI-min.webp');
+    width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -160,7 +161,8 @@
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('../../Assets/img/AboutMePageImages/MPEI2_L.png');
+    background-image: url('../../Assets/img/AboutMePageImages/compressedPng/MPEI2_L-min.png');
+    background-image: url('../../Assets/img/AboutMePageImages/WebP/MPEI2_L-min.webp');
     background-size: contain;
   }
 
@@ -169,16 +171,17 @@
     position: relative;
     min-height: 7rem;
     // border: 1px solid green;
-    width: 100%;
+    width: 120%;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('../../Assets/img/AboutMePageImages/msu.png');
+    background-image: url('../../Assets/img/AboutMePageImages/compressedPng/msu-min.png');
+    background-image: url('../../Assets/img/AboutMePageImages/WebP/msu-min.webp');
   }
 
   .UdemyLogo {
     position: relative;
     left: 20%;
-    top: 5%;
+    top: 25%;
   }
 }

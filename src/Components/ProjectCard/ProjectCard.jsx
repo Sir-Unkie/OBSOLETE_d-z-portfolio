@@ -1,3 +1,4 @@
+/* eslint-disable no-dupe-keys */
 import React from 'react';
 import styles from './ProjectCard.module.scss';
 import CustomLink from '../CustomButton/CustomLink';
@@ -27,7 +28,6 @@ const ProjectCard = ({
             backgroundImage: `url(${imageLink})`,
             backgroundImage: `url(${imageLinkWebP})`,
           }}
-          // style={{ backgroundImage: `url(${props.imageUrl})` }}
         ></div>
       </div>
       <div className={styles.content}>

@@ -8,20 +8,24 @@ import MyHeading from '../../Components/MyHeading/MyHeading';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { defaultSlide } from '../../FramerMotion/framerMotion.pages.configs';
-import myImage from '../../Assets/img/AboutMePageImages/About 2000px.png';
+import myImage from '../../Assets/img/AboutMePageImages/compressedPng/About 2000px-min.png';
 
 const AboutMePage = () => {
-  const initialState = {
-    tech: false,
+  const initialState = JSON.parse(localStorage.getItem('aboutMeOption')) || {
+    tech: true,
     exp: false,
     education: false,
   };
   const [visibleOption, setVisibleOption] = useState(initialState);
   const selectOption = option => {
-    setVisibleOption({
-      ...initialState,
+    const optionObject = {
+      tech: false,
+      exp: false,
+      education: false,
       [option]: true,
-    });
+    };
+    localStorage.setItem('aboutMeOption', JSON.stringify(optionObject));
+    setVisibleOption(optionObject);
   };
 
   return (
@@ -62,9 +66,7 @@ const AboutMePage = () => {
           </AboutMeButton>
         </div>
       </div>
-      {/*  */}
-      {/*  */}
-      {/*  */}
+
       <div className={styles.aboutMe}>
         <MyHeading>About me</MyHeading>
         <div className={styles.textArea}>

@@ -120,10 +120,11 @@
     left: 20%;
     position: relative;
     // border: 1px solid blue;
-    width: 100%;
+    width: 90%;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('../../Assets/img/AboutMePageImages/TELLogo.jpg');
+    background-image: url('../../Assets/img/AboutMePageImages/compressedPng/TEL\ World-min.png');
+    background-image: url('../../Assets/img/AboutMePageImages/WebP/TEL\ World-min.webp');
     background-size: contain;
     /* medias for 720p displays */
     @media (min-width: 1350px) and (max-width: 1601px) and (max-height: 701px) {
@@ -157,9 +158,11 @@
     position: relative;
     // border: 1px solid blue;
     width: 100%;
+    min-height: 10rem;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('../../Assets/img/AboutMePageImages/Moesk2.jpg');
+    background-image: url('../../Assets/img/AboutMePageImages/compressedPng/Moesk2-min.png');
+    background-image: url('../../Assets/img/AboutMePageImages/WebP/Moesk2-min.webp');
     background-size: contain;
     /* medias for 720p displays */
     @media (min-width: 1350px) and (max-width: 1601px) and (max-height: 701px) {
