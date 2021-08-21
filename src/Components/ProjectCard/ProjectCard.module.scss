@@ -18,6 +18,7 @@
 
   @media (min-width: 150px) and (max-width: 701px) {
     flex-direction: column-reverse;
+    border: 1px solid blue;
     // for old safari
     row-gap: 2rem;
     column-gap: 2rem;

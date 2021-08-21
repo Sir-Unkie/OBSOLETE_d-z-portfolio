@@ -19,8 +19,10 @@
   & > * {
     position: absolute;
     background-color: var(--color-accent-1);
-    width: 70%;
+    width: 60%;
+    left: 20%;
     height: 8%;
+    height: 5%;
     transform: translateY(-50%);
     transition: all 0.2s;
     box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.377);
@@ -28,15 +30,12 @@
 
   .line1 {
     top: 30%;
-    left: 15%;
   }
   .line2 {
     top: 50%;
-    left: 15%;
   }
   .line3 {
     top: 70%;
-    left: 15%;
   }
 
   &.navShown.animate {
