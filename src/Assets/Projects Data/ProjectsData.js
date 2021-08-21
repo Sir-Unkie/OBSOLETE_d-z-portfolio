@@ -19,7 +19,8 @@ const ProjectsData = [
     ],
     website: 'https://e-commerce-test-website.netlify.app/',
     github: 'https://github.com/Sir-Unkie/e-commerce-trainings',
-    image: '/img/ProjectsImg/E-commerce.png',
+    image: '/img/ProjectsImg/compressedPng/E-commerce-min-min.png',
+    imageWebP: '/img/ProjectsImg/WebP/E-commerce-min.webp',
   },
   {
     projectName: 'Tavrida Electric selection tool',
@@ -32,7 +33,8 @@ const ProjectsData = [
     ],
     website: 'https://vcb-configurator.netlify.app/',
     github: 'https://github.com/Sir-Unkie/Tavrida-VCB-Configurator',
-    image: '/img/ProjectsImg/Tavrida.png',
+    image: '/img/ProjectsImg/compressedPng/Tavrida-min.png',
+    imageWebP: '/img/ProjectsImg/WebP/Tavrida-min.webp',
   },
   {
     projectName: 'ON Journey landing page',
@@ -44,7 +46,8 @@ const ProjectsData = [
     ],
     website: 'https://on-journey-demo.netlify.app/',
     github: 'https://github.com/Sir-Unkie/ON-JOURNEY-DEMO-WEBSITE',
-    image: '/img/ProjectsImg/OnJourney.png',
+    image: '/img/ProjectsImg/compressedPng/OnJourney-min.png',
+    imageWebP: '/img/ProjectsImg/WebP/OnJourney-min.webp',
   },
 
   {
@@ -59,7 +62,8 @@ const ProjectsData = [
     ],
     website: 'https://myfirst-app-unkie.netlify.app/#5ed6604591c37cdc054bcb34',
     github: 'https://github.com/Sir-Unkie/Food-app-project',
-    image: '/img/ProjectsImg/Food.png',
+    image: '/img/ProjectsImg/compressedPng/Food-min.png',
+    imageWebP: '/img/ProjectsImg/WebP/Food-min.webp',
   },
 ];
 
