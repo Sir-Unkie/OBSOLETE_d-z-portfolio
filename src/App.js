@@ -24,7 +24,6 @@ const ContactPage = React.lazy(() => import('./Pages/ContactPage/ContactPage'));
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // Optimize the image for different screens and prepare webp images
 // probablu custom scrollbar
-// center all the projects on mobile view
 // i can add the same thing as a theme but with the about section, so the option selected is stored in the browser
 // MPEI logo
 // for small screens adjust the padding on the about ma cards
