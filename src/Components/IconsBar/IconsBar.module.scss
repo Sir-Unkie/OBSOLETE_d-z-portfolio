@@ -62,12 +62,9 @@
     transform-origin: center;
   }
   @media (min-width: 150px) and (max-width: 401px) and (max-height: 701px) {
-    margin-bottom: 2rem;
-    transform: scale(0.7) translateX(-8%);
-    transform-origin: center;
+    transform: scale(0.6);
+    transform-origin: left;
     gap: 2.4rem;
-
-    // border: 1px solid red;
   }
 }
 
