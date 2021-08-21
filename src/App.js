@@ -24,8 +24,6 @@ const ContactPage = React.lazy(() => import('./Pages/ContactPage/ContactPage'));
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // Optimize the image for different screens and prepare webp images
 // probablu custom scrollbar
-// do something with the mobile homepage image
-// experience OboronEnergo tablet fucked up size
 // center all the projects on mobile view
 // i can add the same thing as a theme but with the about section, so the option selected is stored in the browser
 // MPEI logo
