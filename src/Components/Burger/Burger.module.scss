@@ -29,13 +29,13 @@
   }
 
   .line1 {
-    top: 30%;
+    top: 32%;
   }
   .line2 {
     top: 50%;
   }
   .line3 {
-    top: 70%;
+    top: 68%;
   }
 
   &.navShown.animate {
@@ -74,7 +74,7 @@
     transform: rotate(0);
   }
   100% {
-    top: 45%;
+    top: 48%;
     transform: rotate(135deg);
   }
 }
@@ -90,7 +90,7 @@
     transform: rotate(0);
   }
   100% {
-    top: 45%;
+    top: 48%;
     transform: rotate(45deg);
   }
 }
