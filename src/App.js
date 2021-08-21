@@ -26,8 +26,6 @@ const ContactPage = React.lazy(() => import('./Pages/ContactPage/ContactPage'));
 // probablu custom scrollbar
 // i can add the same thing as a theme but with the about section, so the option selected is stored in the browser
 // MPEI logo
-// for small screens adjust the padding on the about ma cards
-// award recieved link styling
 
 // cleanup the media querries (do it in the end, when you will be already looking for a job)
 // in future i can add google stats

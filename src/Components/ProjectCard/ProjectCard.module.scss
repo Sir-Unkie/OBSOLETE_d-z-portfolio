@@ -18,6 +18,9 @@
 
   @media (min-width: 150px) and (max-width: 701px) {
     flex-direction: column-reverse;
+    // for old safari
+    row-gap: 2rem;
+
     gap: 2rem;
   }
 
@@ -62,6 +65,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 1px solid red;
 }
 
 .projectName {

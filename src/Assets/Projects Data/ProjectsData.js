@@ -25,7 +25,7 @@ const ProjectsData = [
     projectName: 'Tavrida Electric selection tool',
     technologyStack: ['React', 'Redux', 'React Router', 'SCSS modules'],
     mainFeatures: [
-      'Reactive expirience for customers',
+      'Fast and responsive service for customers',
       'Authentication (Google, Linkedin and email)',
       'React lazy loading',
       'Responsive design',
