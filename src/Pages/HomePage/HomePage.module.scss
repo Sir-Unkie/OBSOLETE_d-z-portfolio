@@ -30,22 +30,10 @@
   z-index: -1;
   width: 100%;
   min-height: calc(100vh - 6rem);
-  background-image: url('../../Assets/img/HomePage/HomePageImage2000pxv2.png');
-  // medias for 760p
-  @media (min-width: 1000px) and (max-width: 1351px) and (min-height: 500px) and (max-height: 701px) {
-    background-image: linear-gradient(
-        to right,
-        var(--color-home-gradient-1) 0%,
-        var(--color-home-gradient-2) 40%,
-        var(--color-home-gradient-3) 45%,
-        var(--color-home-gradient-4) 50%,
-        var(--color-home-gradient-5) 100%
-      ),
-      url('../../Assets/img/HomePage/HomePageImage1000px.png');
-  }
+  background-image: url('../../Assets/img/HomePage/HomePageImage2k.png');
 
   // @media (min-width: 1350px) and (max-width: 1901px) {
-  //   background-image: url('../../Assets/img/HomePage/HomePageImage1920px.png');
+  //   background-image: url('../../Assets/img/HomePage/HomePageImage1080p.png');
   // }
 }
 
@@ -161,7 +149,7 @@
   }
 }
 
-@media (min-width: 1350px) and (max-width: 1601px) and (min-height: 1000px) {
+@media (min-width: 1000px) and (max-width: 1601px) and (min-height: 1000px) {
   .bg {
     background-image: linear-gradient(
         to right,
@@ -171,28 +159,14 @@
         var(--color-home-gradient-4) 50%,
         var(--color-home-gradient-5) 100%
       ),
-      url('../../Assets/img/HomePage/HomePageImage2000px.png');
-  }
-}
-@media (min-width: 1000px) and (max-width: 1351px) and (min-height: 1000px) {
-  .bg {
-    background-image: linear-gradient(
-        to right,
-        var(--color-home-gradient-1) 0%,
-        var(--color-home-gradient-2) 40%,
-        var(--color-home-gradient-3) 45%,
-        var(--color-home-gradient-4) 50%,
-        var(--color-home-gradient-5) 100%
-      ),
-      url('../../Assets/img/HomePage/HomePageImage2000px.png');
+      url('../../Assets/img/HomePage/HomePageImage2k.png');
   }
 }
 
-@media (min-width: 649px) and (max-width: 1001px) and (min-height: 1000px) {
+@media (max-width: 1001px) and (min-height: 1000px) {
   .textContentContainer {
     align-items: center;
     margin: auto;
-    // border: 1px solid red;
   }
   .primaryHeading {
     font-size: 9rem;
@@ -209,7 +183,7 @@
         var(--color-home-gradient-simple),
         var(--color-home-gradient-simple)
       ),
-      url('../../Assets/img/HomePage/HomePageImage2000px.png');
+      url('../../Assets/img/HomePage/HomePageImage2k.png');
     background-position: 95% 100%;
   }
 }
@@ -220,28 +194,13 @@
   }
   .textContentContainer {
     min-height: calc(100vh - 10rem);
-    align-items: center;
-    margin: auto;
-    // border: 1px solid red;
   }
   .primaryHeading {
     font-size: 9rem;
   }
-  .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+
   .bg {
     min-height: calc(100vh - 10rem);
-    background-image: linear-gradient(
-        to right,
-        var(--color-home-gradient-simple),
-        var(--color-home-gradient-simple)
-      ),
-      url('../../Assets/img/HomePage/HomePageImage2000px.png');
-    background-position: 95% 100%;
   }
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -249,9 +208,16 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // medias for 1080p displays
 
+@media (min-width: 190px) and (min-height: 700px) and (max-height: 1001px) {
+  .bg {
+    background-image: url('../../Assets/img/HomePage/HomePageImage1080p.png');
+  }
+}
+
 @media (min-width: 1600px) and (max-width: 1901px) and (min-height: 700px) and (max-height: 1001px) {
   .bg {
-    background-position: 45% 100%;
+    background-position: 50% 100%;
+    background-image: url('../../Assets/img/HomePage/HomePageImage1080p.png');
   }
 }
 
@@ -265,7 +231,7 @@
         var(--color-home-gradient-4) 50%,
         var(--color-home-gradient-5) 100%
       ),
-      url('../../Assets/img/HomePage/HomePageImage2000px.png');
+      url('../../Assets/img/HomePage/HomePageImage1080p.png');
   }
 }
 
@@ -279,7 +245,7 @@
         var(--color-home-gradient-4) 50%,
         var(--color-home-gradient-5) 100%
       ),
-      url('../../Assets/img/HomePage/HomePageImage2000px.png');
+      url('../../Assets/img/HomePage/HomePageImage1080p.png');
   }
 }
 
@@ -300,7 +266,7 @@
         var(--color-home-gradient-simple),
         var(--color-home-gradient-simple)
       ),
-      url('../../Assets/img/HomePage/HomePageImage2000px.png');
+      url('../../Assets/img/HomePage/HomePageImage1080p.png');
     background-position: 95% 100%;
   }
   .primaryHeading {
@@ -331,7 +297,7 @@
         var(--color-home-gradient-simple),
         var(--color-home-gradient-simple)
       ),
-      url('../../Assets/img/HomePage/HomePageImage2000px.png');
+      url('../../Assets/img/HomePage/HomePageImage1080p.png');
     background-position: 95% 100%;
   }
   .primaryHeading {
@@ -349,7 +315,7 @@
     padding-top: 7rem;
   }
   .bg {
-    background-image: url('../../Assets/img/HomePage/HomePageImage1366px.png');
+    background-image: url('../../Assets/img/HomePage/HomePageImage720p.png');
   }
 
   .textContentContainer {
@@ -370,7 +336,7 @@
         var(--color-home-gradient-4) 50%,
         var(--color-home-gradient-5) 100%
       ),
-      url('../../Assets/img/HomePage/HomePageImage1366px.png');
+      url('../../Assets/img/HomePage/HomePageImage720p.png');
   }
   .textContentContainer {
     gap: 8rem;
@@ -390,7 +356,7 @@
         var(--color-home-gradient-4) 67%,
         var(--color-home-gradient-5) 100%
       ),
-      url('../../Assets/img/HomePage/HomePageImage1366px.png');
+      url('../../Assets/img/HomePage/HomePageImage720p.png');
     background-position: 90% 100%;
   }
   .textContentContainer {
@@ -410,7 +376,7 @@
         var(--color-home-gradient-simple),
         var(--color-home-gradient-simple)
       ),
-      url('../../Assets/img/HomePage/HomePageImage1366px.png');
+      url('../../Assets/img/HomePage/HomePageImage720p.png');
     background-position: 90% 100%;
   }
   .textContentContainer {
@@ -451,7 +417,7 @@
   }
   .bg {
     min-height: calc(100vh - 10rem);
-    background-image: url('../../Assets/img/HomePage/mobiles.png');
+    background-image: url('../../Assets/img/HomePage/HomePageMobiles.png');
     background-position: bottom;
     background-position: 90% 100%;
   }
