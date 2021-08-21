@@ -19,7 +19,7 @@ const ProjectsData = [
     ],
     website: 'https://e-commerce-test-website.netlify.app/',
     github: 'https://github.com/Sir-Unkie/e-commerce-trainings',
-    image: '/img/ProjectsImg/compressedPng/E-commerce-min-min.png',
+    image: '/img/ProjectsImg/compressedPng/E-commerce-min.png',
     imageWebP: '/img/ProjectsImg/WebP/E-commerce-min.webp',
   },
   {
