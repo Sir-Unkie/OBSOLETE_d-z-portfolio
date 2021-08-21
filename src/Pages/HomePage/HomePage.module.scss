@@ -159,6 +159,15 @@
         var(--color-home-gradient-5) 100%
       ),
       url('../../Assets/img/HomePage/compressedPng/HomePageImage2k-min.png');
+    background-image: linear-gradient(
+        to right,
+        var(--color-home-gradient-1) 0%,
+        var(--color-home-gradient-2) 40%,
+        var(--color-home-gradient-3) 45%,
+        var(--color-home-gradient-4) 50%,
+        var(--color-home-gradient-5) 100%
+      ),
+      url('../../Assets/img/HomePage/WebP/HomePageImage2k-min.webp');
   }
 }
 
@@ -183,6 +192,12 @@
         var(--color-home-gradient-simple)
       ),
       url('../../Assets/img/HomePage/compressedPng/HomePageImage2k-min.png');
+    background-image: linear-gradient(
+        to right,
+        var(--color-home-gradient-simple),
+        var(--color-home-gradient-simple)
+      ),
+      url('../../Assets/img/HomePage/WebP/HomePageImage2k-min.webp');
     background-position: 95% 100%;
   }
 }
@@ -210,6 +225,7 @@
   .bg {
     background-position: 50% 100%;
     background-image: url('../../Assets/img/HomePage/compressedPng/HomePageImage1080p-min.png');
+    background-image: url('../../Assets/img/HomePage/WebP/HomePageImage1080p-min.webp');
   }
 }
 
@@ -217,6 +233,7 @@
   .bg {
     background-position: 50% 100%;
     background-image: url('../../Assets/img/HomePage/compressedPng/HomePageImage1080p-min.png');
+    background-image: url('../../Assets/img/HomePage/WebP/HomePageImage1080p-min.webp');
   }
 }
 
@@ -231,6 +248,15 @@
         var(--color-home-gradient-5) 100%
       ),
       url('../../Assets/img/HomePage/compressedPng/HomePageImage1080p-min.png');
+    background-image: linear-gradient(
+        to right,
+        var(--color-home-gradient-1) 0%,
+        var(--color-home-gradient-2) 40%,
+        var(--color-home-gradient-3) 45%,
+        var(--color-home-gradient-4) 50%,
+        var(--color-home-gradient-5) 100%
+      ),
+      url('../../Assets/img/HomePage/WebP/HomePageImage1080p-min.webp');
   }
 }
 
@@ -245,6 +271,15 @@
         var(--color-home-gradient-5) 100%
       ),
       url('../../Assets/img/HomePage/compressedPng/HomePageImage1080p-min.png');
+    background-image: linear-gradient(
+        to right,
+        var(--color-home-gradient-1) 0%,
+        var(--color-home-gradient-2) 40%,
+        var(--color-home-gradient-3) 45%,
+        var(--color-home-gradient-4) 50%,
+        var(--color-home-gradient-5) 100%
+      ),
+      url('../../Assets/img/HomePage/WebP/HomePageImage1080p-min.webp');
   }
 }
 
@@ -266,6 +301,12 @@
         var(--color-home-gradient-simple)
       ),
       url('../../Assets/img/HomePage/compressedPng/HomePageImage1080p-min.png');
+    background-image: linear-gradient(
+        to right,
+        var(--color-home-gradient-simple),
+        var(--color-home-gradient-simple)
+      ),
+      url('../../Assets/img/HomePage/WebP/HomePageImage1080p-min.webp');
     background-position: 95% 100%;
   }
   .primaryHeading {
@@ -297,6 +338,12 @@
         var(--color-home-gradient-simple)
       ),
       url('../../Assets/img/HomePage/compressedPng/HomePageImage1080p-min.png');
+    background-image: linear-gradient(
+        to right,
+        var(--color-home-gradient-simple),
+        var(--color-home-gradient-simple)
+      ),
+      url('../../Assets/img/HomePage/WebP/HomePageImage1080p-min.webp');
     background-position: 95% 100%;
   }
   .primaryHeading {
@@ -315,6 +362,7 @@
   }
   .bg {
     background-image: url('../../Assets/img/HomePage/compressedPng/HomePageImage720p-min.png');
+    background-image: url('../../Assets/img/HomePage/WebP/HomePageImage720p-min.webp');
   }
 
   .textContentContainer {
@@ -336,6 +384,15 @@
         var(--color-home-gradient-5) 100%
       ),
       url('../../Assets/img/HomePage/compressedPng/HomePageImage720p-min.png');
+    background-image: linear-gradient(
+        to right,
+        var(--color-home-gradient-1) 0%,
+        var(--color-home-gradient-2) 40%,
+        var(--color-home-gradient-3) 45%,
+        var(--color-home-gradient-4) 50%,
+        var(--color-home-gradient-5) 100%
+      ),
+      url('../../Assets/img/HomePage/WebP/HomePageImage720p-min.webp');
   }
   .textContentContainer {
     gap: 8rem;
@@ -356,6 +413,15 @@
         var(--color-home-gradient-5) 100%
       ),
       url('../../Assets/img/HomePage/compressedPng/HomePageImage720p-min.png');
+    background-image: linear-gradient(
+        to right,
+        var(--color-home-gradient-1) 0%,
+        var(--color-home-gradient-2) 65%,
+        var(--color-home-gradient-3) 66%,
+        var(--color-home-gradient-4) 67%,
+        var(--color-home-gradient-5) 100%
+      ),
+      url('../../Assets/img/HomePage/WebP/HomePageImage720p-min.webp');
     background-position: 90% 100%;
   }
   .textContentContainer {
@@ -376,6 +442,12 @@
         var(--color-home-gradient-simple)
       ),
       url('../../Assets/img/HomePage/compressedPng/HomePageImage720p-min.png');
+    background-image: linear-gradient(
+        to right,
+        var(--color-home-gradient-simple),
+        var(--color-home-gradient-simple)
+      ),
+      url('../../Assets/img/HomePage/WebP/HomePageImage720p-min.webp');
     background-position: 90% 100%;
   }
   .textContentContainer {
@@ -417,6 +489,7 @@
   .bg {
     min-height: calc(100vh - 10rem);
     background-image: url('../../Assets/img/HomePage/compressedPng/HomePageMobiles-min.png');
+    background-image: url('../../Assets/img/HomePage/WebP/HomePageMobiles-min.webp');
     background-position: bottom;
     background-position: 90% 100%;
   }
