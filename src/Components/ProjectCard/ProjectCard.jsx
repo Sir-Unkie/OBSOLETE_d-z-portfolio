@@ -7,6 +7,7 @@ const ProjectCard = ({
   mainFeatures,
   projectName,
   imageLink,
+  imageLinkWebP,
   websiteURL,
   githubURL,
   dark,
@@ -24,6 +25,7 @@ const ProjectCard = ({
           className={styles.image}
           style={{
             backgroundImage: `url(${imageLink})`,
+            backgroundImage: `url(${imageLinkWebP})`,
           }}
           // style={{ backgroundImage: `url(${props.imageUrl})` }}
         ></div>

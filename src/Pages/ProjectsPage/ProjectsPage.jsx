@@ -25,6 +25,7 @@ const ProjectsPage = () => {
               mainFeatures={project.mainFeatures}
               projectName={project.projectName}
               imageLink={project.image}
+              imageLinkWebP={project.imageWebP}
               websiteURL={project.website}
               githubURL={project.github}
               dark={index % 2 === 1 ? true : false}
