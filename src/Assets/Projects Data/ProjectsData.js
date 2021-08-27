@@ -24,10 +24,10 @@ const ProjectsData = [
   },
   {
     projectName: 'Tavrida Electric selection tool',
-    technologyStack: ['React', 'Redux', 'React Router', 'SCSS modules'],
+    technologyStack: ['React', 'Redux', 'React Router', 'SCSS modules', 'Firebase',],
     mainFeatures: [
       'Fast and responsive service for customers',
-      'Authentication (Google, Linkedin and email)',
+      'Authentication (Google and email)',
       'React lazy loading',
       'Responsive design',
     ],
@@ -51,7 +51,7 @@ const ProjectsData = [
   },
 
   {
-    projectName: 'Food recipes application',
+    projectName: 'Food recipes application (desktop only)',
     technologyStack: ['Javascript', 'SCSS', 'HTML'],
     mainFeatures: [
       'External API',
